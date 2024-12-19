@@ -592,7 +592,7 @@
         <mxCell id="DKlUDa0g7rmCu-vv5rfz-163" value="Ebon Blood of the Scorpion" style="text;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontFamily=Georgia;fontSize=15;fontColor=default;labelBackgroundColor=none;fontStyle=1" parent="DKlUDa0g7rmCu-vv5rfz-119" vertex="1">
           <mxGeometry x="820" y="1000" width="160" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="DKlUDa0g7rmCu-vv5rfz-164" value="Rite of Forebearance" style="text;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontFamily=Georgia;fontSize=15;fontColor=default;labelBackgroundColor=none;fontStyle=1" parent="DKlUDa0g7rmCu-vv5rfz-119" vertex="1">
+        <mxCell id="DKlUDa0g7rmCu-vv5rfz-164" value="Rite of Forebearance" style="text;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontFamily=Georgia;fontSize=15;fontColor=default;labelBackgroundColor=none;fontStyle=1;spacing=0;" parent="DKlUDa0g7rmCu-vv5rfz-119" vertex="1">
           <mxGeometry x="620" y="1120" width="160" height="40" as="geometry" />
         </mxCell>
         <mxCell id="DKlUDa0g7rmCu-vv5rfz-166" value="Blood Burst" style="text;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontFamily=Georgia;fontSize=15;fontColor=default;labelBackgroundColor=none;" parent="DKlUDa0g7rmCu-vv5rfz-119" vertex="1">
