@@ -34,7 +34,7 @@
             <mxPoint x="600" y="1180" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="-dR2T00Uhgw3VuPTZwKf-47" value="Legend" style="rounded=1;fillColor=none;verticalAlign=top;labelBackgroundColor=none;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;container=0;noLabel=1;" parent="1" vertex="1">
+        <mxCell id="-dR2T00Uhgw3VuPTZwKf-47" value="Legend" style="rounded=1;fillColor=none;verticalAlign=top;labelBackgroundColor=none;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;container=0;fontStyle=1;fontColor=#667788;" parent="1" vertex="1">
           <mxGeometry x="1260" y="690" width="200" height="480" as="geometry" />
         </mxCell>
         <mxCell id="-dR2T00Uhgw3VuPTZwKf-555" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FCF4C4;labelBackgroundColor=none;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;container=0;" parent="1" vertex="1">
@@ -766,7 +766,7 @@
         <mxCell id="DKlUDa0g7rmCu-vv5rfz-166" value="Blood Burst" style="text;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontFamily=Georgia;fontSize=15;fontColor=default;labelBackgroundColor=none;" vertex="1" parent="DKlUDa0g7rmCu-vv5rfz-119">
           <mxGeometry x="620" y="920" width="160" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="DKlUDa0g7rmCu-vv5rfz-178" value="Special requirements in italics" style="text;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontFamily=Georgia;fontSize=15;fontColor=default;labelBackgroundColor=none;fontStyle=2" vertex="1" parent="DKlUDa0g7rmCu-vv5rfz-119">
+        <mxCell id="DKlUDa0g7rmCu-vv5rfz-178" value="Special requirements in italics" style="text;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontFamily=Georgia;fontSize=15;fontColor=#667788;labelBackgroundColor=none;fontStyle=2" vertex="1" parent="DKlUDa0g7rmCu-vv5rfz-119">
           <mxGeometry x="1280" y="720" width="160" height="40" as="geometry" />
         </mxCell>
         <mxCell id="DKlUDa0g7rmCu-vv5rfz-180" value="Corruption" style="text;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontFamily=Georgia;fontSize=15;fontColor=default;labelBackgroundColor=none;" vertex="1" parent="DKlUDa0g7rmCu-vv5rfz-119">
@@ -787,10 +787,10 @@
         <mxCell id="DKlUDa0g7rmCu-vv5rfz-185" value="Anabasis" style="text;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontFamily=Georgia;fontSize=15;fontColor=default;labelBackgroundColor=none;" vertex="1" parent="DKlUDa0g7rmCu-vv5rfz-119">
           <mxGeometry x="1280" y="1010" width="160" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="DKlUDa0g7rmCu-vv5rfz-186" value="Signature spells in bold" style="text;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontFamily=Georgia;fontSize=15;fontColor=default;labelBackgroundColor=none;fontStyle=1" vertex="1" parent="DKlUDa0g7rmCu-vv5rfz-119">
+        <mxCell id="DKlUDa0g7rmCu-vv5rfz-186" value="Signature spells in bold" style="text;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontFamily=Georgia;fontSize=15;fontColor=#667788;labelBackgroundColor=none;fontStyle=1" vertex="1" parent="DKlUDa0g7rmCu-vv5rfz-119">
           <mxGeometry x="1280" y="1060" width="160" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="DKlUDa0g7rmCu-vv5rfz-187" value="T                          ●○○○&#xa;Magic skill &amp; Spell slot cost" style="text;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontFamily=Georgia;fontSize=15;fontColor=default;labelBackgroundColor=none;" vertex="1" parent="DKlUDa0g7rmCu-vv5rfz-119">
+        <mxCell id="DKlUDa0g7rmCu-vv5rfz-187" value="T                          ●○○○&#xa;Magic skill &amp; Spell slot cost" style="text;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontFamily=Georgia;fontSize=15;fontColor=#667788;labelBackgroundColor=none;" vertex="1" parent="DKlUDa0g7rmCu-vv5rfz-119">
           <mxGeometry x="1280" y="1100" width="160" height="40" as="geometry" />
         </mxCell>
         <mxCell id="DKlUDa0g7rmCu-vv5rfz-188" value="Spell cost bubbles text" style="locked=1;" parent="0" />
@@ -1071,22 +1071,22 @@
           <mxGeometry x="620" y="1140" width="20" height="20" as="geometry" />
         </mxCell>
         <mxCell id="DKlUDa0g7rmCu-vv5rfz-316" value="Spellbook borders" style="locked=1;" parent="0" />
-        <mxCell id="DKlUDa0g7rmCu-vv5rfz-317" value="" style="rounded=1;fontFamily=Helvetica;fontSize=11;fontColor=default;labelBackgroundColor=none;fillColor=none;dashed=1;dashPattern=12 12;strokeColor=#194a7a;opacity=30;" vertex="1" parent="DKlUDa0g7rmCu-vv5rfz-316">
+        <mxCell id="DKlUDa0g7rmCu-vv5rfz-317" value="" style="rounded=1;fontFamily=Helvetica;fontSize=11;fontColor=default;labelBackgroundColor=none;fillColor=none;dashed=1;dashPattern=12 12;strokeColor=#194a7a;opacity=75;glass=1;shadow=1;" vertex="1" parent="DKlUDa0g7rmCu-vv5rfz-316">
           <mxGeometry x="10" y="50" width="980" height="180" as="geometry" />
         </mxCell>
-        <mxCell id="DKlUDa0g7rmCu-vv5rfz-318" value="" style="rounded=1;fontFamily=Helvetica;fontSize=11;fontColor=default;labelBackgroundColor=none;fillColor=none;dashed=1;dashPattern=12 12;strokeColor=#147a6d;opacity=30;" vertex="1" parent="DKlUDa0g7rmCu-vv5rfz-316">
+        <mxCell id="DKlUDa0g7rmCu-vv5rfz-318" value="" style="rounded=1;fontFamily=Helvetica;fontSize=11;fontColor=default;labelBackgroundColor=none;fillColor=none;dashed=1;dashPattern=12 12;strokeColor=#147a6d;opacity=75;glass=1;shadow=1;" vertex="1" parent="DKlUDa0g7rmCu-vv5rfz-316">
           <mxGeometry x="410" y="250" width="980" height="180" as="geometry" />
         </mxCell>
-        <mxCell id="DKlUDa0g7rmCu-vv5rfz-319" value="" style="rounded=1;fontFamily=Helvetica;fontSize=11;fontColor=default;labelBackgroundColor=none;fillColor=none;dashed=1;dashPattern=12 12;strokeColor=#f4c46c;opacity=30;" vertex="1" parent="DKlUDa0g7rmCu-vv5rfz-316">
+        <mxCell id="DKlUDa0g7rmCu-vv5rfz-319" value="" style="rounded=1;fontFamily=Helvetica;fontSize=11;fontColor=default;labelBackgroundColor=none;fillColor=none;dashed=1;dashPattern=12 12;strokeColor=#f4c46c;opacity=75;glass=1;shadow=1;" vertex="1" parent="DKlUDa0g7rmCu-vv5rfz-316">
           <mxGeometry x="10" y="450" width="1380" height="180" as="geometry" />
         </mxCell>
-        <mxCell id="DKlUDa0g7rmCu-vv5rfz-320" value="" style="rounded=1;fontFamily=Helvetica;fontSize=11;fontColor=default;labelBackgroundColor=none;fillColor=none;dashed=1;dashPattern=12 12;strokeColor=#44a4b4;opacity=25;" vertex="1" parent="DKlUDa0g7rmCu-vv5rfz-316">
+        <mxCell id="DKlUDa0g7rmCu-vv5rfz-320" value="" style="rounded=1;fontFamily=Helvetica;fontSize=11;fontColor=default;labelBackgroundColor=none;fillColor=none;dashed=1;dashPattern=12 12;strokeColor=#44a4b4;opacity=75;glass=1;shadow=1;" vertex="1" parent="DKlUDa0g7rmCu-vv5rfz-316">
           <mxGeometry x="210" y="650" width="980" height="180" as="geometry" />
         </mxCell>
-        <mxCell id="DKlUDa0g7rmCu-vv5rfz-321" value="" style="rounded=1;fontFamily=Helvetica;fontSize=11;fontColor=default;labelBackgroundColor=none;fillColor=none;dashed=1;dashPattern=12 12;strokeColor=#74ac94;opacity=25;" vertex="1" parent="DKlUDa0g7rmCu-vv5rfz-316">
+        <mxCell id="DKlUDa0g7rmCu-vv5rfz-321" value="" style="rounded=1;fontFamily=Helvetica;fontSize=11;fontColor=default;labelBackgroundColor=none;fillColor=none;dashed=1;dashPattern=12 12;strokeColor=#74ac94;opacity=75;glass=1;shadow=1;" vertex="1" parent="DKlUDa0g7rmCu-vv5rfz-316">
           <mxGeometry x="10" y="850" width="1180" height="120" as="geometry" />
         </mxCell>
-        <mxCell id="DKlUDa0g7rmCu-vv5rfz-322" value="" style="rounded=1;fontFamily=Helvetica;fontSize=11;fontColor=default;labelBackgroundColor=none;fillColor=none;dashed=1;dashPattern=12 12;strokeColor=#fcf4c4;opacity=25;glass=1;perimeterSpacing=0;" vertex="1" parent="DKlUDa0g7rmCu-vv5rfz-316">
+        <mxCell id="DKlUDa0g7rmCu-vv5rfz-322" value="" style="rounded=1;fontFamily=Helvetica;fontSize=11;fontColor=default;labelBackgroundColor=none;fillColor=none;dashed=1;dashPattern=12 12;strokeColor=#fcf4c4;glass=1;perimeterSpacing=0;shadow=1;opacity=75;" vertex="1" parent="DKlUDa0g7rmCu-vv5rfz-316">
           <mxGeometry x="410" y="990" width="780" height="180" as="geometry" />
         </mxCell>
         <mxCell id="-dR2T00Uhgw3VuPTZwKf-566" value="Transparency" style="locked=1;" parent="0" />
