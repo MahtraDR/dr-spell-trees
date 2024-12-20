@@ -3,7 +3,7 @@
     <mxGraphModel dx="1838" dy="953" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="715" pageHeight="1190" background="none" math="0" shadow="0">
       <root>
         <mxCell id="0" />
-        <mxCell id="1" style="locked=1;" parent="0" />
+        <mxCell id="1" style="" parent="0" />
         <mxCell id="-dR2T00Uhgw3VuPTZwKf-42" value="" style="html=1;rounded=0;strokeWidth=2;endArrow=none;endFill=0;dashed=1;labelBackgroundColor=none;shadow=1;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;fontColor=default;strokeColor=#667788;opacity=70;" parent="1" edge="1">
           <mxGeometry width="100" relative="1" as="geometry">
             <mxPoint x="200" y="10" as="sourcePoint" />
@@ -486,7 +486,7 @@
         <mxCell id="DKlUDa0g7rmCu-vv5rfz-399" value="" style="rounded=1;whiteSpace=wrap;strokeWidth=2;strokeColor=#667788;textShadow=1;labelBackgroundColor=none;fillColor=#AAC8EB;gradientColor=#B3D56A;gradientDirection=east;" parent="DKlUDa0g7rmCu-vv5rfz-324" vertex="1">
           <mxGeometry x="1020" y="1060" width="160" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="DKlUDa0g7rmCu-vv5rfz-119" value="Spell name text" style="" parent="0" />
+        <mxCell id="DKlUDa0g7rmCu-vv5rfz-119" value="Spell name text" style="locked=1;" parent="0" />
         <mxCell id="DKlUDa0g7rmCu-vv5rfz-120" value="Obfuscation" style="text;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontFamily=Georgia;fontSize=15;fontColor=#FFFFFF;labelBackgroundColor=none;fillColor=none;" parent="DKlUDa0g7rmCu-vv5rfz-119" vertex="1">
           <mxGeometry x="20" y="60" width="160" height="40" as="geometry" />
         </mxCell>
