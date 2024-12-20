@@ -1,6 +1,6 @@
 <mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36" version="25.0.3">
   <diagram name="Page-1" id="PuFN-wMOv0jWiG4jprAx">
-    <mxGraphModel dx="2840" dy="1473" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="715" pageHeight="1190" background="none" math="0" shadow="0">
+    <mxGraphModel dx="1116" dy="579" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="715" pageHeight="1190" background="none" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" style="locked=1;" parent="0" />
@@ -486,7 +486,7 @@
         <mxCell id="DKlUDa0g7rmCu-vv5rfz-399" value="" style="rounded=1;whiteSpace=wrap;strokeWidth=2;strokeColor=#667788;textShadow=1;labelBackgroundColor=none;fillColor=#44A4B4;gradientColor=#F4C46C;" parent="DKlUDa0g7rmCu-vv5rfz-324" vertex="1">
           <mxGeometry x="1020" y="1060" width="160" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="DKlUDa0g7rmCu-vv5rfz-119" value="Spell name text" style="locked=1;" parent="0" />
+        <mxCell id="DKlUDa0g7rmCu-vv5rfz-119" value="Spell name text" style="" parent="0" />
         <mxCell id="DKlUDa0g7rmCu-vv5rfz-120" value="Obfuscation" style="text;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontFamily=Georgia;fontSize=15;fontColor=#FFFFFF;labelBackgroundColor=none;fillColor=none;" parent="DKlUDa0g7rmCu-vv5rfz-119" vertex="1">
           <mxGeometry x="20" y="60" width="160" height="40" as="geometry" />
         </mxCell>
@@ -520,7 +520,7 @@
         <mxCell id="DKlUDa0g7rmCu-vv5rfz-130" value="Necrotic Reconstruction" style="text;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontFamily=Georgia;fontSize=14;fontColor=#000000;labelBackgroundColor=none;fontStyle=1;spacing=0;spacingBottom=8;fillColor=none;" parent="DKlUDa0g7rmCu-vv5rfz-119" vertex="1">
           <mxGeometry x="620" y="380" width="160" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="DKlUDa0g7rmCu-vv5rfz-131" value="Reverse Putrefaction" style="text;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontFamily=Georgia;fontSize=15;fontColor=#FFFFFF;labelBackgroundColor=none;fontStyle=1;fillColor=none;" parent="DKlUDa0g7rmCu-vv5rfz-119" vertex="1">
+        <mxCell id="DKlUDa0g7rmCu-vv5rfz-131" value="Reverse Putrefaction" style="text;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontFamily=Georgia;fontSize=15;fontColor=#FFFFFF;labelBackgroundColor=none;fontStyle=1;fillColor=none;spacing=0;spacingBottom=0;spacingTop=0;spacingRight=15;" parent="DKlUDa0g7rmCu-vv5rfz-119" vertex="1">
           <mxGeometry x="820" y="320" width="160" height="40" as="geometry" />
         </mxCell>
         <mxCell id="DKlUDa0g7rmCu-vv5rfz-132" value="Spiteful Rebirth" style="text;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontFamily=Georgia;fontSize=15;fontColor=#000000;labelBackgroundColor=none;fontStyle=1;fillColor=none;" parent="DKlUDa0g7rmCu-vv5rfz-119" vertex="1">
@@ -541,7 +541,7 @@
         <mxCell id="DKlUDa0g7rmCu-vv5rfz-139" value="Universal Solvent" style="text;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontFamily=Georgia;fontSize=15;fontColor=#000000;labelBackgroundColor=none;fontStyle=1;fillColor=none;" parent="DKlUDa0g7rmCu-vv5rfz-119" vertex="1">
           <mxGeometry x="1020" y="520" width="160" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="DKlUDa0g7rmCu-vv5rfz-140" value="Philospher&#39;s Preservation" style="text;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontFamily=Georgia;fontSize=15;fontColor=#FFFFFF;labelBackgroundColor=none;fontStyle=1;fillColor=none;" parent="DKlUDa0g7rmCu-vv5rfz-119" vertex="1">
+        <mxCell id="DKlUDa0g7rmCu-vv5rfz-140" value="Philospher&#39;s Preservation" style="text;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontFamily=Georgia;fontSize=15;fontColor=#FFFFFF;labelBackgroundColor=none;fontStyle=1;fillColor=none;spacing=0;spacingRight=15;" parent="DKlUDa0g7rmCu-vv5rfz-119" vertex="1">
           <mxGeometry x="820" y="580" width="160" height="40" as="geometry" />
         </mxCell>
         <mxCell id="DKlUDa0g7rmCu-vv5rfz-141" value="Viscous Solution" style="text;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontFamily=Georgia;fontSize=15;fontColor=#000000;labelBackgroundColor=none;fillColor=none;" parent="DKlUDa0g7rmCu-vv5rfz-119" vertex="1">
@@ -884,7 +884,7 @@
         <mxCell id="DKlUDa0g7rmCu-vv5rfz-315" value="D/U" style="text;align=center;verticalAlign=bottom;resizable=1;points=[];autosize=0;strokeColor=none;fillColor=none;fontFamily=Georgia;fontSize=12;fontColor=#000000;labelBackgroundColor=none;spacing=0;spacingRight=0;expand=0;recursiveResize=0;spacingLeft=4;" parent="DKlUDa0g7rmCu-vv5rfz-273" vertex="1">
           <mxGeometry x="620" y="1140" width="20" height="20" as="geometry" />
         </mxCell>
-        <mxCell id="DKlUDa0g7rmCu-vv5rfz-316" value="Spellbook borders" style="" parent="0" />
+        <mxCell id="DKlUDa0g7rmCu-vv5rfz-316" value="Spellbook borders" style="locked=1;" parent="0" />
         <mxCell id="DKlUDa0g7rmCu-vv5rfz-317" value="" style="rounded=1;fontFamily=Helvetica;fontSize=11;fontColor=default;labelBackgroundColor=none;fillColor=#FCF4C4;dashed=1;dashPattern=12 12;strokeColor=#667788;opacity=15;glass=1;shadow=1;align=center;verticalAlign=middle;gradientColor=none;" parent="DKlUDa0g7rmCu-vv5rfz-316" vertex="1">
           <mxGeometry x="10" y="50" width="980" height="180" as="geometry" />
         </mxCell>
