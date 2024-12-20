@@ -3,7 +3,7 @@
     <mxGraphModel dx="2231" dy="1157" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="715" pageHeight="1190" background="none" math="0" shadow="0">
       <root>
         <mxCell id="0" />
-        <mxCell id="1" style="" parent="0" />
+        <mxCell id="1" style="locked=1;" parent="0" />
         <mxCell id="-dR2T00Uhgw3VuPTZwKf-42" value="" style="html=1;rounded=0;strokeWidth=2;endArrow=none;endFill=0;dashed=1;labelBackgroundColor=none;shadow=1;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;fontColor=default;strokeColor=#667788;opacity=70;" parent="1" edge="1">
           <mxGeometry width="100" relative="1" as="geometry">
             <mxPoint x="200" y="10" as="sourcePoint" />
@@ -884,7 +884,7 @@
         <mxCell id="DKlUDa0g7rmCu-vv5rfz-315" value="D/U" style="text;align=center;verticalAlign=bottom;resizable=1;points=[];autosize=0;strokeColor=none;fillColor=none;fontFamily=Georgia;fontSize=12;fontColor=#000000;labelBackgroundColor=none;spacing=0;spacingRight=0;expand=0;recursiveResize=0;spacingLeft=4;" parent="DKlUDa0g7rmCu-vv5rfz-273" vertex="1">
           <mxGeometry x="620" y="1140" width="20" height="20" as="geometry" />
         </mxCell>
-        <mxCell id="DKlUDa0g7rmCu-vv5rfz-316" value="Spellbook borders" style="" parent="0" />
+        <mxCell id="DKlUDa0g7rmCu-vv5rfz-316" value="Spellbook borders" style="locked=1;" parent="0" />
         <mxCell id="DKlUDa0g7rmCu-vv5rfz-317" value="" style="rounded=1;fontFamily=Helvetica;fontSize=11;fontColor=default;labelBackgroundColor=none;fillColor=#FCF4C4;dashed=1;dashPattern=12 12;strokeColor=#667788;opacity=15;glass=0;shadow=0;align=center;verticalAlign=middle;gradientColor=none;" parent="DKlUDa0g7rmCu-vv5rfz-316" vertex="1">
           <mxGeometry x="10" y="50" width="980" height="180" as="geometry" />
         </mxCell>
