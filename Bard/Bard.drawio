@@ -553,7 +553,7 @@
         <mxCell id="tMcoaccfECgllcMHab5L-66" value="Beckon the Naga" style="text;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontFamily=Georgia;fontSize=15;fontColor=#000000;labelBackgroundColor=none;fillColor=none;fontStyle=1" vertex="1" parent="DKlUDa0g7rmCu-vv5rfz-119">
           <mxGeometry x="1020" y="840" width="160" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="DKlUDa0g7rmCu-vv5rfz-188" value="Spell cost bubbles text" style="" parent="0" />
+        <mxCell id="DKlUDa0g7rmCu-vv5rfz-188" value="Spell cost bubbles text" style="" parent="0" visible="0" />
         <mxCell id="DKlUDa0g7rmCu-vv5rfz-212" value="●○○" style="text;align=center;verticalAlign=middle;rounded=0;fontFamily=Helvetica;fontSize=13;fontColor=default;labelBackgroundColor=none;spacing=0;spacingTop=0;spacingBottom=-5;fillColor=none;" parent="DKlUDa0g7rmCu-vv5rfz-188" vertex="1">
           <mxGeometry x="140" y="920" width="40" height="20" as="geometry" />
         </mxCell>
