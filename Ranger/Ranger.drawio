@@ -23,6 +23,16 @@
           <mxGeometry x="10" y="190" width="140" height="40" as="geometry" />
         </mxCell>
         <mxCell id="DKlUDa0g7rmCu-vv5rfz-14" value="Shapes and Lines" style="" parent="0" />
+        <mxCell id="CoPnodNDMeY2YXLun1O6-32" style="edgeStyle=orthogonalEdgeStyle;shape=connector;curved=0;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.75;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;strokeColor=#667788;strokeWidth=2;align=center;verticalAlign=middle;fontFamily=Helvetica;fontSize=15;fontColor=default;labelBackgroundColor=none;endArrow=classic;endFill=1;jumpStyle=arc;dashed=1;" edge="1" parent="DKlUDa0g7rmCu-vv5rfz-14" source="CoPnodNDMeY2YXLun1O6-12">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1200" y="90" as="sourcePoint" />
+            <mxPoint x="1240" y="199.9999999999999" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="1210" y="150" />
+              <mxPoint x="1210" y="200" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
         <mxCell id="DKlUDa0g7rmCu-vv5rfz-31" value="Compost" style="rounded=1;strokeWidth=2;strokeColor=#667788;textShadow=0;labelBackgroundColor=none;whiteSpace=wrap;fontSize=15;fontFamily=Georgia;" parent="DKlUDa0g7rmCu-vv5rfz-14" vertex="1">
           <mxGeometry x="20" y="60" width="160" height="40" as="geometry" />
         </mxCell>
@@ -145,16 +155,6 @@
         <mxCell id="CoPnodNDMeY2YXLun1O6-30" style="edgeStyle=orthogonalEdgeStyle;shape=connector;curved=0;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;strokeColor=#667788;strokeWidth=2;align=center;verticalAlign=middle;fontFamily=Helvetica;fontSize=15;fontColor=default;labelBackgroundColor=none;endArrow=none;endFill=0;jumpStyle=arc;" edge="1" parent="DKlUDa0g7rmCu-vv5rfz-14" source="CoPnodNDMeY2YXLun1O6-12" target="CoPnodNDMeY2YXLun1O6-27">
           <mxGeometry relative="1" as="geometry">
             <Array as="points" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="CoPnodNDMeY2YXLun1O6-32" style="edgeStyle=orthogonalEdgeStyle;shape=connector;curved=0;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.75;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;strokeColor=#667788;strokeWidth=2;align=center;verticalAlign=middle;fontFamily=Helvetica;fontSize=15;fontColor=default;labelBackgroundColor=none;endArrow=classic;endFill=1;jumpStyle=arc;dashed=1;" edge="1" parent="DKlUDa0g7rmCu-vv5rfz-14" source="CoPnodNDMeY2YXLun1O6-12">
-          <mxGeometry relative="1" as="geometry">
-            <mxPoint x="1200" y="90" as="sourcePoint" />
-            <mxPoint x="1240" y="199.9999999999999" as="targetPoint" />
-            <Array as="points">
-              <mxPoint x="1210" y="150" />
-              <mxPoint x="1210" y="200" />
-            </Array>
           </mxGeometry>
         </mxCell>
         <mxCell id="CoPnodNDMeY2YXLun1O6-12" value="Awaken Forest" style="rounded=1;whiteSpace=wrap;strokeWidth=2;strokeColor=#667788;textShadow=0;labelBackgroundColor=none;fontSize=15;fontFamily=Georgia;fontStyle=1" vertex="1" parent="DKlUDa0g7rmCu-vv5rfz-14">
