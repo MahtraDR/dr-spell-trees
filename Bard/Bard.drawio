@@ -28,26 +28,26 @@
         <mxCell id="tMcoaccfECgllcMHab5L-111" value="Sound Manipulation" style="text;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=1;fontSize=16;fontFamily=Georgia;fontColor=#667788;strokeColor=none;" vertex="1" parent="DKlUDa0g7rmCu-vv5rfz-316">
           <mxGeometry x="10" y="50" width="140" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="1" style="locked=1;" parent="0" />
-        <mxCell id="-dR2T00Uhgw3VuPTZwKf-42" value="" style="html=1;rounded=0;strokeWidth=2;endArrow=none;endFill=0;dashed=1;labelBackgroundColor=none;shadow=1;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;fontColor=default;strokeColor=#667788;opacity=70;" parent="1" edge="1">
+        <mxCell id="1" style="" parent="0" />
+        <mxCell id="-dR2T00Uhgw3VuPTZwKf-42" value="" style="html=1;rounded=0;strokeWidth=2;endArrow=none;endFill=0;dashed=1;labelBackgroundColor=none;shadow=1;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;fontColor=default;strokeColor=#667788;opacity=70;dashPattern=1 2;" parent="1" edge="1">
           <mxGeometry width="100" relative="1" as="geometry">
             <mxPoint x="200" y="10" as="sourcePoint" />
             <mxPoint x="200" y="1180" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="-dR2T00Uhgw3VuPTZwKf-54" value="" style="html=1;rounded=0;strokeWidth=2;endArrow=none;endFill=0;dashed=1;exitX=0.633;exitY=0;exitDx=0;exitDy=0;exitPerimeter=0;labelBackgroundColor=none;shadow=1;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;fontColor=default;strokeColor=#667788;opacity=70;" parent="1" edge="1">
+        <mxCell id="-dR2T00Uhgw3VuPTZwKf-54" value="" style="html=1;rounded=0;strokeWidth=2;endArrow=none;endFill=0;dashed=1;exitX=0.633;exitY=0;exitDx=0;exitDy=0;exitPerimeter=0;labelBackgroundColor=none;shadow=1;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;fontColor=default;strokeColor=#667788;opacity=70;dashPattern=1 2;" parent="1" edge="1">
           <mxGeometry width="100" relative="1" as="geometry">
             <mxPoint x="1000" y="10" as="sourcePoint" />
             <mxPoint x="1000" y="1180" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="-dR2T00Uhgw3VuPTZwKf-70" value="" style="html=1;rounded=0;strokeWidth=2;endArrow=none;endFill=0;dashed=1;labelBackgroundColor=none;shadow=1;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;fontColor=default;strokeColor=#667788;opacity=70;" parent="1" edge="1">
+        <mxCell id="-dR2T00Uhgw3VuPTZwKf-70" value="" style="html=1;rounded=0;strokeWidth=2;endArrow=none;endFill=0;dashed=1;labelBackgroundColor=none;shadow=1;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;fontColor=default;strokeColor=#667788;opacity=70;dashPattern=1 2;" parent="1" edge="1">
           <mxGeometry width="100" relative="1" as="geometry">
             <mxPoint x="10" y="40" as="sourcePoint" />
             <mxPoint x="1420" y="40" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="DKlUDa0g7rmCu-vv5rfz-8" value="" style="html=1;rounded=0;strokeWidth=2;endArrow=none;endFill=0;dashed=1;labelBackgroundColor=none;shadow=1;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;fontColor=default;strokeColor=#667788;opacity=70;" parent="1" edge="1">
+        <mxCell id="DKlUDa0g7rmCu-vv5rfz-8" value="" style="html=1;rounded=0;strokeWidth=2;endArrow=none;endFill=0;dashed=1;labelBackgroundColor=none;shadow=1;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;fontColor=default;strokeColor=#667788;opacity=70;dashPattern=1 2;" parent="1" edge="1">
           <mxGeometry width="100" relative="1" as="geometry">
             <mxPoint x="600" y="10" as="sourcePoint" />
             <mxPoint x="600" y="1180" as="targetPoint" />
@@ -377,7 +377,7 @@
         <mxCell id="DKlUDa0g7rmCu-vv5rfz-399" value="" style="rounded=1;whiteSpace=wrap;strokeWidth=2;strokeColor=#667788;textShadow=1;labelBackgroundColor=none;fillColor=#E80538;gradientColor=#B3D56A;gradientDirection=east;" parent="DKlUDa0g7rmCu-vv5rfz-324" vertex="1">
           <mxGeometry x="1020" y="1060" width="160" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="DKlUDa0g7rmCu-vv5rfz-119" value="Spell name text" style="" parent="0" />
+        <mxCell id="DKlUDa0g7rmCu-vv5rfz-119" value="Spell name text" style="locked=1;" parent="0" />
         <mxCell id="DKlUDa0g7rmCu-vv5rfz-120" value="Aura of Tongues" style="text;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontFamily=Georgia;fontSize=15;fontColor=#000000;labelBackgroundColor=none;fillColor=none;" parent="DKlUDa0g7rmCu-vv5rfz-119" vertex="1">
           <mxGeometry x="20" y="120" width="160" height="40" as="geometry" />
         </mxCell>
