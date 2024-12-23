@@ -1,6 +1,6 @@
 <mxfile host="app.diagrams.net" agent="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36" version="25.0.3">
   <diagram name="Page-1" id="PuFN-wMOv0jWiG4jprAx">
-    <mxGraphModel dx="861" dy="499" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1630" pageHeight="690" background="none" math="0" shadow="0">
+    <mxGraphModel dx="1420" dy="824" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1630" pageHeight="690" background="none" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="DKlUDa0g7rmCu-vv5rfz-316" value="Spellbook borders" style="locked=1;" parent="0" visible="0" />
@@ -222,9 +222,7 @@
           <mxGeometry relative="1" as="geometry">
             <Array as="points">
               <mxPoint x="200" y="520" />
-              <mxPoint x="200" y="680" />
-              <mxPoint x="1000" y="680" />
-              <mxPoint x="1000" y="640" />
+              <mxPoint x="200" y="610" />
             </Array>
           </mxGeometry>
         </mxCell>
@@ -248,16 +246,16 @@
         <mxCell id="bMIZUlVMKYhtr8G9Qs2D-61" style="edgeStyle=orthogonalEdgeStyle;shape=connector;curved=0;rounded=1;jumpStyle=arc;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;strokeColor=#667788;strokeWidth=2;align=center;verticalAlign=middle;fontFamily=Helvetica;fontSize=11;fontColor=default;labelBackgroundColor=default;endArrow=none;endFill=0;" edge="1" parent="DKlUDa0g7rmCu-vv5rfz-14" source="bMIZUlVMKYhtr8G9Qs2D-44" target="bMIZUlVMKYhtr8G9Qs2D-49">
           <mxGeometry relative="1" as="geometry">
             <Array as="points">
-              <mxPoint x="800" y="580" />
-              <mxPoint x="800" y="520" />
+              <mxPoint x="810" y="580" />
+              <mxPoint x="810" y="580" />
             </Array>
           </mxGeometry>
         </mxCell>
         <mxCell id="bMIZUlVMKYhtr8G9Qs2D-62" style="edgeStyle=orthogonalEdgeStyle;shape=connector;curved=0;rounded=1;jumpStyle=arc;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;strokeColor=#667788;strokeWidth=2;align=center;verticalAlign=middle;fontFamily=Helvetica;fontSize=11;fontColor=default;labelBackgroundColor=default;endArrow=none;endFill=0;" edge="1" parent="DKlUDa0g7rmCu-vv5rfz-14" source="bMIZUlVMKYhtr8G9Qs2D-44" target="bMIZUlVMKYhtr8G9Qs2D-50">
           <mxGeometry relative="1" as="geometry">
             <Array as="points">
-              <mxPoint x="810" y="580" />
-              <mxPoint x="810" y="580" />
+              <mxPoint x="800" y="580" />
+              <mxPoint x="800" y="520" />
             </Array>
           </mxGeometry>
         </mxCell>
@@ -280,19 +278,19 @@
           <mxGeometry x="620" y="500" width="160" height="40" as="geometry" />
         </mxCell>
         <mxCell id="bMIZUlVMKYhtr8G9Qs2D-49" value="Rutilor&#39;s Edge" style="rounded=1;strokeWidth=2;strokeColor=#667788;textShadow=0;labelBackgroundColor=none;whiteSpace=wrap;fontSize=15;fontFamily=Georgia;fillColor=none;" vertex="1" parent="DKlUDa0g7rmCu-vv5rfz-14">
-          <mxGeometry x="820" y="500" width="160" height="40" as="geometry" />
+          <mxGeometry x="820" y="560" width="160" height="40" as="geometry" />
         </mxCell>
         <mxCell id="bMIZUlVMKYhtr8G9Qs2D-64" style="edgeStyle=orthogonalEdgeStyle;shape=connector;curved=0;rounded=1;jumpStyle=arc;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;strokeColor=#667788;strokeWidth=2;align=center;verticalAlign=middle;fontFamily=Helvetica;fontSize=11;fontColor=default;labelBackgroundColor=default;endArrow=none;endFill=0;" edge="1" parent="DKlUDa0g7rmCu-vv5rfz-14" source="bMIZUlVMKYhtr8G9Qs2D-50" target="bMIZUlVMKYhtr8G9Qs2D-52">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="bMIZUlVMKYhtr8G9Qs2D-50" value="Rebuke" style="rounded=1;strokeWidth=2;strokeColor=#667788;textShadow=0;labelBackgroundColor=none;whiteSpace=wrap;fontSize=15;fontFamily=Georgia;fillColor=none;" vertex="1" parent="DKlUDa0g7rmCu-vv5rfz-14">
-          <mxGeometry x="820" y="560" width="160" height="40" as="geometry" />
+          <mxGeometry x="820" y="500" width="160" height="40" as="geometry" />
         </mxCell>
         <mxCell id="bMIZUlVMKYhtr8G9Qs2D-51" value="Holy Warrior" style="rounded=1;strokeWidth=2;strokeColor=#667788;textShadow=0;labelBackgroundColor=none;whiteSpace=wrap;fontSize=15;fontFamily=Georgia;fillColor=none;fontStyle=1" vertex="1" parent="DKlUDa0g7rmCu-vv5rfz-14">
-          <mxGeometry x="1020" y="620" width="160" height="40" as="geometry" />
+          <mxGeometry x="1020" y="590" width="160" height="40" as="geometry" />
         </mxCell>
         <mxCell id="bMIZUlVMKYhtr8G9Qs2D-52" value="Smite Horde" style="rounded=1;strokeWidth=2;strokeColor=#667788;textShadow=0;labelBackgroundColor=none;whiteSpace=wrap;fontSize=15;fontFamily=Georgia;fillColor=none;" vertex="1" parent="DKlUDa0g7rmCu-vv5rfz-14">
-          <mxGeometry x="1020" y="560" width="160" height="40" as="geometry" />
+          <mxGeometry x="1020" y="500" width="160" height="40" as="geometry" />
         </mxCell>
         <mxCell id="1" style="locked=1;" parent="0" />
         <mxCell id="-dR2T00Uhgw3VuPTZwKf-42" value="" style="html=1;rounded=0;strokeWidth=2;endArrow=none;endFill=0;dashed=1;labelBackgroundColor=none;shadow=1;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;fontColor=default;strokeColor=#667788;opacity=70;dashPattern=1 1;" parent="1" edge="1">
