@@ -522,6 +522,100 @@
           <mxGeometry x="820" y="440" width="130" height="20" as="geometry" />
         </mxCell>
         <mxCell id="-dR2T00Uhgw3VuPTZwKf-566" value="Transparency" style="locked=1;" parent="0" />
+        <mxCell id="u5JJ2iUTMlOG-NKWuYbm-143" value="Spell Name Text" style="locked=1;" parent="0" />
+        <mxCell id="u5JJ2iUTMlOG-NKWuYbm-145" style="edgeStyle=orthogonalEdgeStyle;shape=connector;curved=0;rounded=1;jumpStyle=arc;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0;exitDx=0;exitDy=0;dashed=1;strokeColor=#667788;strokeWidth=2;align=center;verticalAlign=middle;fontFamily=Helvetica;fontSize=11;fontColor=default;labelBackgroundColor=default;endArrow=none;endFill=0;" edge="1" parent="u5JJ2iUTMlOG-NKWuYbm-143">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="420" y="580" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="400" y="420" />
+              <mxPoint x="400" y="580" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="u5JJ2iUTMlOG-NKWuYbm-155" value="Aspirant&#39;s Aegis" style="rounded=1;strokeWidth=2;strokeColor=#667788;textShadow=0;labelBackgroundColor=none;whiteSpace=wrap;fontSize=15;fontFamily=Georgia;fillColor=#147A6D;fontColor=#FFFFFF;" vertex="1" parent="u5JJ2iUTMlOG-NKWuYbm-143">
+          <mxGeometry x="20" y="90" width="160" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="u5JJ2iUTMlOG-NKWuYbm-157" value="Vessel of Salvation" style="rounded=1;strokeWidth=2;strokeColor=#667788;textShadow=0;labelBackgroundColor=none;whiteSpace=wrap;fontSize=15;fontFamily=Georgia;fillColor=#B3D56A;fontStyle=1" vertex="1" parent="u5JJ2iUTMlOG-NKWuYbm-143">
+          <mxGeometry x="220" y="60" width="160" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="u5JJ2iUTMlOG-NKWuYbm-158" value="Tamsine&#39;s Kiss" style="rounded=1;strokeWidth=2;strokeColor=#667788;textShadow=0;labelBackgroundColor=none;whiteSpace=wrap;fontSize=15;fontFamily=Georgia;fillColor=#147A6D;fontStyle=1;fontColor=#FFFFFF;" vertex="1" parent="u5JJ2iUTMlOG-NKWuYbm-143">
+          <mxGeometry x="420" y="90" width="160" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="u5JJ2iUTMlOG-NKWuYbm-159" value="Alamhif&#39;s Gift" style="rounded=1;strokeWidth=2;strokeColor=#667788;textShadow=0;labelBackgroundColor=none;whiteSpace=wrap;fontSize=15;fontFamily=Georgia;fillColor=#B3D56A;fontStyle=1" vertex="1" parent="u5JJ2iUTMlOG-NKWuYbm-143">
+          <mxGeometry x="1020" y="60" width="160" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="u5JJ2iUTMlOG-NKWuYbm-160" value="Crusader&#39;s Challenge" style="rounded=1;strokeWidth=2;strokeColor=#667788;textShadow=0;labelBackgroundColor=none;whiteSpace=wrap;fontSize=15;fontFamily=Georgia;fillColor=#AAC8EB;fontStyle=1;gradientColor=#B3D56A;gradientDirection=east;" vertex="1" parent="u5JJ2iUTMlOG-NKWuYbm-143">
+          <mxGeometry x="1020" y="120" width="160" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="u5JJ2iUTMlOG-NKWuYbm-166" value="Heroic Strength" style="rounded=1;strokeWidth=2;strokeColor=#667788;textShadow=0;labelBackgroundColor=none;whiteSpace=wrap;fontSize=15;fontFamily=Georgia;fillColor=#AAC8EB;" vertex="1" parent="u5JJ2iUTMlOG-NKWuYbm-143">
+          <mxGeometry x="20" y="310" width="160" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="u5JJ2iUTMlOG-NKWuYbm-169" value="Courage" style="rounded=1;strokeWidth=2;strokeColor=#667788;textShadow=0;labelBackgroundColor=none;whiteSpace=wrap;fontSize=15;fontFamily=Georgia;fillColor=#147A6D;fontColor=#FFFFFF;" vertex="1" parent="u5JJ2iUTMlOG-NKWuYbm-143">
+          <mxGeometry x="220" y="280" width="160" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="u5JJ2iUTMlOG-NKWuYbm-170" value="Divine Guidance" style="rounded=1;strokeWidth=2;strokeColor=#667788;textShadow=0;labelBackgroundColor=none;whiteSpace=wrap;fontSize=15;fontFamily=Georgia;fillColor=#AAC8EB;" vertex="1" parent="u5JJ2iUTMlOG-NKWuYbm-143">
+          <mxGeometry x="220" y="400" width="160" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="u5JJ2iUTMlOG-NKWuYbm-171" value="Righteous Wrath" style="rounded=1;strokeWidth=2;strokeColor=#667788;textShadow=0;labelBackgroundColor=none;whiteSpace=wrap;fontSize=15;fontFamily=Georgia;fillColor=#AAC8EB;" vertex="1" parent="u5JJ2iUTMlOG-NKWuYbm-143">
+          <mxGeometry x="220" y="340" width="160" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="u5JJ2iUTMlOG-NKWuYbm-173" value="Sentinel&#39;s Resolve" style="rounded=1;strokeWidth=2;strokeColor=#667788;textShadow=0;labelBackgroundColor=none;whiteSpace=wrap;fontSize=15;fontFamily=Georgia;fillColor=#AAC8EB;" vertex="1" parent="u5JJ2iUTMlOG-NKWuYbm-143">
+          <mxGeometry x="220" y="220" width="160" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="u5JJ2iUTMlOG-NKWuYbm-175" value="Anti-Stun" style="rounded=1;strokeWidth=2;strokeColor=#667788;textShadow=0;labelBackgroundColor=none;whiteSpace=wrap;fontSize=15;fontFamily=Georgia;fillColor=#B3D56A;" vertex="1" parent="u5JJ2iUTMlOG-NKWuYbm-143">
+          <mxGeometry x="620" y="340" width="160" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="u5JJ2iUTMlOG-NKWuYbm-177" value="Divine Armor" style="rounded=1;strokeWidth=2;strokeColor=#667788;textShadow=0;labelBackgroundColor=none;whiteSpace=wrap;fontSize=15;fontFamily=Georgia;fillColor=#B3D56A;fontStyle=1" vertex="1" parent="u5JJ2iUTMlOG-NKWuYbm-143">
+          <mxGeometry x="620" y="240" width="160" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="u5JJ2iUTMlOG-NKWuYbm-178" value="Bond Armaments" style="rounded=1;strokeWidth=2;strokeColor=#667788;textShadow=0;labelBackgroundColor=none;whiteSpace=wrap;fontSize=15;fontFamily=Georgia;fillColor=#B3D56A;fontStyle=1" vertex="1" parent="u5JJ2iUTMlOG-NKWuYbm-143">
+          <mxGeometry x="820" y="400" width="160" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="u5JJ2iUTMlOG-NKWuYbm-180" value="Marshal Order" style="rounded=1;strokeWidth=2;strokeColor=#667788;textShadow=0;labelBackgroundColor=none;whiteSpace=wrap;fontSize=15;fontFamily=Georgia;fillColor=#AAC8EB;fontStyle=1" vertex="1" parent="u5JJ2iUTMlOG-NKWuYbm-143">
+          <mxGeometry x="620" y="400" width="160" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="u5JJ2iUTMlOG-NKWuYbm-181" value="Truffenyi&#39;s Rally" style="rounded=1;strokeWidth=2;strokeColor=#667788;textShadow=0;labelBackgroundColor=none;whiteSpace=wrap;fontSize=15;fontFamily=Georgia;fillColor=#AAC8EB;fontStyle=1;gradientColor=#B3D56A;gradientDirection=east;" vertex="1" parent="u5JJ2iUTMlOG-NKWuYbm-143">
+          <mxGeometry x="1020" y="340" width="160" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="u5JJ2iUTMlOG-NKWuYbm-183" value="Veteran Insight" style="rounded=1;strokeWidth=2;strokeColor=#667788;textShadow=0;labelBackgroundColor=none;whiteSpace=wrap;fontSize=15;fontFamily=Georgia;fillColor=#D5D0CA;fontStyle=1" vertex="1" parent="u5JJ2iUTMlOG-NKWuYbm-143">
+          <mxGeometry x="420" y="240" width="160" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="u5JJ2iUTMlOG-NKWuYbm-184" value="Soldier&#39;s Prayer" style="rounded=1;strokeWidth=2;strokeColor=#667788;textShadow=0;labelBackgroundColor=none;whiteSpace=wrap;fontSize=15;fontFamily=Georgia;fillColor=#147A6D;fontStyle=0;fontColor=#FFFFFF;" vertex="1" parent="u5JJ2iUTMlOG-NKWuYbm-143">
+          <mxGeometry x="820" y="220" width="160" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="u5JJ2iUTMlOG-NKWuYbm-189" value="Stun Foe" style="rounded=1;strokeWidth=2;strokeColor=#667788;textShadow=0;labelBackgroundColor=none;whiteSpace=wrap;fontSize=15;fontFamily=Georgia;fillColor=#EBCD00;" vertex="1" parent="u5JJ2iUTMlOG-NKWuYbm-143">
+          <mxGeometry x="20" y="620" width="160" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="u5JJ2iUTMlOG-NKWuYbm-192" value="Halt" style="rounded=1;strokeWidth=2;strokeColor=#667788;textShadow=0;labelBackgroundColor=none;whiteSpace=wrap;fontSize=15;fontFamily=Georgia;fillColor=#EBCD00;" vertex="1" parent="u5JJ2iUTMlOG-NKWuYbm-143">
+          <mxGeometry x="220" y="620" width="160" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="u5JJ2iUTMlOG-NKWuYbm-195" value="Footman&#39;s Strike" style="rounded=1;strokeWidth=2;strokeColor=#667788;textShadow=0;labelBackgroundColor=none;whiteSpace=wrap;fontSize=15;fontFamily=Georgia;fillColor=#E80538;fontColor=#FFFFFF;" vertex="1" parent="u5JJ2iUTMlOG-NKWuYbm-143">
+          <mxGeometry x="420" y="590" width="160" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="u5JJ2iUTMlOG-NKWuYbm-196" value="Shatter" style="rounded=1;strokeWidth=2;strokeColor=#667788;textShadow=0;labelBackgroundColor=none;whiteSpace=wrap;fontSize=15;fontFamily=Georgia;fillColor=#EBCD00;" vertex="1" parent="u5JJ2iUTMlOG-NKWuYbm-143">
+          <mxGeometry x="420" y="660" width="160" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="u5JJ2iUTMlOG-NKWuYbm-197" value="Hands of Justice" style="rounded=1;strokeWidth=2;strokeColor=#667788;textShadow=0;labelBackgroundColor=none;whiteSpace=wrap;fontSize=15;fontFamily=Georgia;fillColor=#B3D56A;" vertex="1" parent="u5JJ2iUTMlOG-NKWuYbm-143">
+          <mxGeometry x="220" y="560" width="160" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="u5JJ2iUTMlOG-NKWuYbm-198" value="Clarity" style="rounded=1;strokeWidth=2;strokeColor=#667788;textShadow=0;labelBackgroundColor=none;whiteSpace=wrap;fontSize=15;fontFamily=Georgia;fillColor=#AAC8EB;" vertex="1" parent="u5JJ2iUTMlOG-NKWuYbm-143">
+          <mxGeometry x="620" y="560" width="160" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="u5JJ2iUTMlOG-NKWuYbm-199" value="Banner of Truce" style="rounded=1;strokeWidth=2;strokeColor=#667788;textShadow=0;labelBackgroundColor=none;whiteSpace=wrap;fontSize=15;fontFamily=Georgia;fillColor=#B3D56A;fontStyle=1" vertex="1" parent="u5JJ2iUTMlOG-NKWuYbm-143">
+          <mxGeometry x="620" y="640" width="160" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="u5JJ2iUTMlOG-NKWuYbm-200" value="Rutilor&#39;s Edge" style="rounded=1;strokeWidth=2;strokeColor=#667788;textShadow=0;labelBackgroundColor=none;whiteSpace=wrap;fontSize=15;fontFamily=Georgia;fillColor=#B3D56A;" vertex="1" parent="u5JJ2iUTMlOG-NKWuYbm-143">
+          <mxGeometry x="620" y="500" width="160" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="u5JJ2iUTMlOG-NKWuYbm-202" value="Rebuke" style="rounded=1;strokeWidth=2;strokeColor=#667788;textShadow=0;labelBackgroundColor=none;whiteSpace=wrap;fontSize=15;fontFamily=Georgia;fillColor=#E80538;fontColor=#FFFFFF;" vertex="1" parent="u5JJ2iUTMlOG-NKWuYbm-143">
+          <mxGeometry x="820" y="600" width="160" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="u5JJ2iUTMlOG-NKWuYbm-203" value="Holy Warrior" style="rounded=1;strokeWidth=2;strokeColor=#667788;textShadow=0;labelBackgroundColor=none;whiteSpace=wrap;fontSize=15;fontFamily=Georgia;fillColor=#147A6D;fontStyle=1;fontColor=#FFFFFF;gradientColor=#B3D56A;gradientDirection=east;" vertex="1" parent="u5JJ2iUTMlOG-NKWuYbm-143">
+          <mxGeometry x="1020" y="690" width="160" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="u5JJ2iUTMlOG-NKWuYbm-204" value="Smite Horde" style="rounded=1;strokeWidth=2;strokeColor=#667788;textShadow=0;labelBackgroundColor=none;whiteSpace=wrap;fontSize=15;fontFamily=Georgia;fillColor=#E80538;fontColor=#FFFFFF;" vertex="1" parent="u5JJ2iUTMlOG-NKWuYbm-143">
+          <mxGeometry x="1020" y="600" width="160" height="40" as="geometry" />
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
