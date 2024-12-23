@@ -278,9 +278,10 @@
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="u5JJ2iUTMlOG-NKWuYbm-141" style="edgeStyle=orthogonalEdgeStyle;shape=connector;curved=0;rounded=1;jumpStyle=arc;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.75;entryDx=0;entryDy=0;strokeColor=#667788;strokeWidth=2;align=center;verticalAlign=middle;fontFamily=Helvetica;fontSize=11;fontColor=default;labelBackgroundColor=default;endArrow=none;endFill=0;" edge="1" parent="DKlUDa0g7rmCu-vv5rfz-14" target="bMIZUlVMKYhtr8G9Qs2D-50">
+        <mxCell id="u5JJ2iUTMlOG-NKWuYbm-141" style="edgeStyle=orthogonalEdgeStyle;shape=connector;curved=0;rounded=1;jumpStyle=arc;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;strokeColor=#667788;strokeWidth=2;align=center;verticalAlign=middle;fontFamily=Helvetica;fontSize=11;fontColor=default;labelBackgroundColor=default;endArrow=none;endFill=0;" edge="1" parent="DKlUDa0g7rmCu-vv5rfz-14" target="bMIZUlVMKYhtr8G9Qs2D-50">
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="580" y="620" as="sourcePoint" />
+            <Array as="points" />
           </mxGeometry>
         </mxCell>
         <mxCell id="bMIZUlVMKYhtr8G9Qs2D-44" value="Footman&#39;s Strike" style="rounded=1;strokeWidth=2;strokeColor=#667788;textShadow=0;labelBackgroundColor=none;whiteSpace=wrap;fontSize=15;fontFamily=Georgia;fillColor=#E80538;fontColor=#FFFFFF;" parent="DKlUDa0g7rmCu-vv5rfz-14" vertex="1">
@@ -304,19 +305,19 @@
         <mxCell id="bMIZUlVMKYhtr8G9Qs2D-64" style="edgeStyle=orthogonalEdgeStyle;shape=connector;curved=0;rounded=1;jumpStyle=arc;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;strokeColor=#667788;strokeWidth=2;align=center;verticalAlign=middle;fontFamily=Helvetica;fontSize=11;fontColor=default;labelBackgroundColor=default;endArrow=none;endFill=0;" parent="DKlUDa0g7rmCu-vv5rfz-14" source="bMIZUlVMKYhtr8G9Qs2D-50" target="bMIZUlVMKYhtr8G9Qs2D-52" edge="1">
           <mxGeometry relative="1" as="geometry">
             <Array as="points">
-              <mxPoint x="1000" y="610" />
-              <mxPoint x="1000" y="610" />
+              <mxPoint x="1000" y="620" />
+              <mxPoint x="1000" y="620" />
             </Array>
           </mxGeometry>
         </mxCell>
         <mxCell id="bMIZUlVMKYhtr8G9Qs2D-50" value="Rebuke" style="rounded=1;strokeWidth=2;strokeColor=#667788;textShadow=0;labelBackgroundColor=none;whiteSpace=wrap;fontSize=15;fontFamily=Georgia;fillColor=#E80538;fontColor=#FFFFFF;" parent="DKlUDa0g7rmCu-vv5rfz-14" vertex="1">
-          <mxGeometry x="820" y="590" width="160" height="40" as="geometry" />
+          <mxGeometry x="820" y="600" width="160" height="40" as="geometry" />
         </mxCell>
         <mxCell id="bMIZUlVMKYhtr8G9Qs2D-51" value="Holy Warrior" style="rounded=1;strokeWidth=2;strokeColor=#667788;textShadow=0;labelBackgroundColor=none;whiteSpace=wrap;fontSize=15;fontFamily=Georgia;fillColor=#147A6D;fontStyle=1;fontColor=#FFFFFF;gradientColor=#B3D56A;gradientDirection=east;" parent="DKlUDa0g7rmCu-vv5rfz-14" vertex="1">
           <mxGeometry x="1020" y="690" width="160" height="40" as="geometry" />
         </mxCell>
         <mxCell id="bMIZUlVMKYhtr8G9Qs2D-52" value="Smite Horde" style="rounded=1;strokeWidth=2;strokeColor=#667788;textShadow=0;labelBackgroundColor=none;whiteSpace=wrap;fontSize=15;fontFamily=Georgia;fillColor=#E80538;fontColor=#FFFFFF;" parent="DKlUDa0g7rmCu-vv5rfz-14" vertex="1">
-          <mxGeometry x="1020" y="590" width="160" height="40" as="geometry" />
+          <mxGeometry x="1020" y="600" width="160" height="40" as="geometry" />
         </mxCell>
         <mxCell id="bMIZUlVMKYhtr8G9Qs2D-102" style="edgeStyle=orthogonalEdgeStyle;shape=connector;curved=0;rounded=1;jumpStyle=arc;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;strokeColor=#667788;strokeWidth=2;align=center;verticalAlign=middle;fontFamily=Helvetica;fontSize=11;fontColor=default;labelBackgroundColor=default;endArrow=classic;endFill=1;dashed=1;" parent="DKlUDa0g7rmCu-vv5rfz-14" source="bMIZUlVMKYhtr8G9Qs2D-49" target="bMIZUlVMKYhtr8G9Qs2D-17" edge="1">
           <mxGeometry relative="1" as="geometry">
@@ -474,10 +475,10 @@
           <mxGeometry x="740" y="520" width="40" height="20" as="geometry" />
         </mxCell>
         <mxCell id="bMIZUlVMKYhtr8G9Qs2D-89" value="●●○" style="text;align=center;verticalAlign=middle;rounded=0;fontFamily=Helvetica;fontSize=13;fontColor=#FFFFFF;labelBackgroundColor=none;spacing=0;spacingTop=0;spacingBottom=-5;fillColor=none;" parent="DKlUDa0g7rmCu-vv5rfz-188" vertex="1">
-          <mxGeometry x="940" y="610" width="40" height="20" as="geometry" />
+          <mxGeometry x="940" y="620" width="40" height="20" as="geometry" />
         </mxCell>
         <mxCell id="bMIZUlVMKYhtr8G9Qs2D-90" value="●●○" style="text;align=center;verticalAlign=middle;rounded=0;fontFamily=Helvetica;fontSize=13;fontColor=#FFFFFF;labelBackgroundColor=none;spacing=0;spacingTop=0;spacingBottom=-5;fillColor=none;" parent="DKlUDa0g7rmCu-vv5rfz-188" vertex="1">
-          <mxGeometry x="1140" y="610" width="40" height="20" as="geometry" />
+          <mxGeometry x="1140" y="620" width="40" height="20" as="geometry" />
         </mxCell>
         <mxCell id="bMIZUlVMKYhtr8G9Qs2D-91" value="●●○" style="text;align=center;verticalAlign=middle;rounded=0;fontFamily=Helvetica;fontSize=13;fontColor=default;labelBackgroundColor=none;spacing=0;spacingTop=0;spacingBottom=-5;fillColor=none;" parent="DKlUDa0g7rmCu-vv5rfz-188" vertex="1">
           <mxGeometry x="140" y="330" width="40" height="20" as="geometry" />
