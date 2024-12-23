@@ -22,7 +22,7 @@
         <mxCell id="4LNg5v-IOajOxHjOTWhF-4" value="Sacrifice" style="text;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=1;fontSize=16;fontFamily=Georgia;fontColor=#667788;strokeColor=none;" parent="DKlUDa0g7rmCu-vv5rfz-316" vertex="1">
           <mxGeometry x="10" y="140" width="140" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="DKlUDa0g7rmCu-vv5rfz-14" value="Shapes and Lines" style="" parent="0" />
+        <mxCell id="DKlUDa0g7rmCu-vv5rfz-14" value="Shapes and Lines" style="locked=1;" parent="0" />
         <mxCell id="bMIZUlVMKYhtr8G9Qs2D-5" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;strokeWidth=2;strokeColor=#667788;endArrow=none;endFill=0;jumpStyle=arc;curved=0;" parent="DKlUDa0g7rmCu-vv5rfz-14" source="DKlUDa0g7rmCu-vv5rfz-31" target="bMIZUlVMKYhtr8G9Qs2D-1" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
