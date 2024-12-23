@@ -290,7 +290,12 @@
           <mxGeometry x="820" y="500" width="160" height="40" as="geometry" />
         </mxCell>
         <mxCell id="bMIZUlVMKYhtr8G9Qs2D-64" style="edgeStyle=orthogonalEdgeStyle;shape=connector;curved=0;rounded=1;jumpStyle=arc;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;strokeColor=#667788;strokeWidth=2;align=center;verticalAlign=middle;fontFamily=Helvetica;fontSize=11;fontColor=default;labelBackgroundColor=default;endArrow=none;endFill=0;" parent="DKlUDa0g7rmCu-vv5rfz-14" source="bMIZUlVMKYhtr8G9Qs2D-50" target="bMIZUlVMKYhtr8G9Qs2D-52" edge="1">
-          <mxGeometry relative="1" as="geometry" />
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1010" y="580" />
+              <mxPoint x="1010" y="520" />
+            </Array>
+          </mxGeometry>
         </mxCell>
         <mxCell id="bMIZUlVMKYhtr8G9Qs2D-50" value="Rebuke" style="rounded=1;strokeWidth=2;strokeColor=#667788;textShadow=0;labelBackgroundColor=none;whiteSpace=wrap;fontSize=15;fontFamily=Georgia;fillColor=#E80538;fontColor=#FFFFFF;" parent="DKlUDa0g7rmCu-vv5rfz-14" vertex="1">
           <mxGeometry x="820" y="560" width="160" height="40" as="geometry" />
