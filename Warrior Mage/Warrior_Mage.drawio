@@ -1,6 +1,6 @@
 <mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36" version="25.0.3">
   <diagram name="Page-1" id="PuFN-wMOv0jWiG4jprAx">
-    <mxGraphModel dx="2580" dy="1327" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1800" pageHeight="1340" background="none" math="0" shadow="0">
+    <mxGraphModel dx="720" dy="370" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1800" pageHeight="1340" background="none" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="DKlUDa0g7rmCu-vv5rfz-316" value="Spellbook borders" style="" parent="0" />
@@ -669,7 +669,7 @@
         <mxCell id="rESuhYQJdn2nmY16vAaY-142" value="☸" style="text;whiteSpace=wrap;verticalAlign=middle;align=center;fontSize=15;spacing=0;" vertex="1" parent="DKlUDa0g7rmCu-vv5rfz-14">
           <mxGeometry x="420" y="1000" width="20" height="20" as="geometry" />
         </mxCell>
-        <mxCell id="rESuhYQJdn2nmY16vAaY-143" value="" style="endArrow=none;html=1;rounded=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;strokeWidth=2;endFill=0;startArrow=classic;startFill=1;strokeColor=#667788;" edge="1" parent="DKlUDa0g7rmCu-vv5rfz-14" source="ByqBd_FR368xJn7YFOeK-44">
+        <mxCell id="rESuhYQJdn2nmY16vAaY-143" value="" style="endArrow=none;html=1;rounded=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;strokeWidth=2;endFill=0;startArrow=classic;startFill=1;strokeColor=#667788;entryX=0.472;entryY=1.032;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="DKlUDa0g7rmCu-vv5rfz-14" source="ByqBd_FR368xJn7YFOeK-44" target="rESuhYQJdn2nmY16vAaY-55">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
             <mxPoint x="250" y="1080" as="sourcePoint" />
             <mxPoint x="300" y="1010" as="targetPoint" />
