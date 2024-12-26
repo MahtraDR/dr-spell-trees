@@ -1,6 +1,6 @@
 <mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36" version="25.0.3">
   <diagram name="Page-1" id="PuFN-wMOv0jWiG4jprAx">
-    <mxGraphModel dx="3310" dy="663" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="2020" pageHeight="1410" background="none" math="0" shadow="0">
+    <mxGraphModel dx="4231" dy="1137" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="2020" pageHeight="1410" background="none" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="DKlUDa0g7rmCu-vv5rfz-316" value="Spellbook borders" style="" parent="0" />
@@ -745,45 +745,6 @@
               <mxPoint x="1100" y="370" />
             </Array>
           </mxGeometry>
-        </mxCell>
-        <mxCell id="ByqBd_FR368xJn7YFOeK-179" value="" style="shape=image;verticalLabelPosition=bottom;labelBackgroundColor=default;verticalAlign=top;aspect=fixed;imageAspect=0;image=https://wow.zamimg.com/images/wow/icons/large/spell_shaman_thunderstorm.jpg;" parent="DKlUDa0g7rmCu-vv5rfz-14" vertex="1">
-          <mxGeometry x="220" y="1040" width="20" height="20" as="geometry" />
-        </mxCell>
-        <mxCell id="ByqBd_FR368xJn7YFOeK-180" value="" style="shape=image;verticalLabelPosition=bottom;labelBackgroundColor=default;verticalAlign=top;aspect=fixed;imageAspect=0;image=https://wow.zamimg.com/images/wow/icons/large/spell_shaman_thunderstorm.jpg;" parent="DKlUDa0g7rmCu-vv5rfz-14" vertex="1">
-          <mxGeometry x="820" y="1250" width="20" height="20" as="geometry" />
-        </mxCell>
-        <mxCell id="ByqBd_FR368xJn7YFOeK-183" value="" style="shape=image;verticalLabelPosition=bottom;labelBackgroundColor=default;verticalAlign=top;aspect=fixed;imageAspect=0;image=https://wow.zamimg.com/images/wow/icons/large/spell_shaman_thunderstorm.jpg;" parent="DKlUDa0g7rmCu-vv5rfz-14" vertex="1">
-          <mxGeometry x="420" y="1130" width="20" height="20" as="geometry" />
-        </mxCell>
-        <mxCell id="ByqBd_FR368xJn7YFOeK-184" value="" style="shape=image;verticalLabelPosition=bottom;labelBackgroundColor=default;verticalAlign=top;aspect=fixed;imageAspect=0;image=https://wow.zamimg.com/images/wow/icons/large/spell_shaman_thunderstorm.jpg;" parent="DKlUDa0g7rmCu-vv5rfz-14" vertex="1">
-          <mxGeometry x="420" y="770" width="20" height="20" as="geometry" />
-        </mxCell>
-        <mxCell id="ByqBd_FR368xJn7YFOeK-185" value="" style="shape=image;verticalLabelPosition=bottom;labelBackgroundColor=default;verticalAlign=top;aspect=fixed;imageAspect=0;image=https://wow.zamimg.com/images/wow/icons/large/spell_shaman_thunderstorm.jpg;" parent="DKlUDa0g7rmCu-vv5rfz-14" vertex="1">
-          <mxGeometry x="820" y="850" width="20" height="20" as="geometry" />
-        </mxCell>
-        <mxCell id="ByqBd_FR368xJn7YFOeK-186" value="" style="shape=image;verticalLabelPosition=bottom;labelBackgroundColor=default;verticalAlign=top;aspect=fixed;imageAspect=0;image=https://wow.zamimg.com/images/wow/icons/large/spell_shaman_thunderstorm.jpg;" parent="DKlUDa0g7rmCu-vv5rfz-14" vertex="1">
-          <mxGeometry x="420" y="640" width="20" height="20" as="geometry" />
-        </mxCell>
-        <mxCell id="ByqBd_FR368xJn7YFOeK-187" value="" style="shape=image;verticalLabelPosition=bottom;labelBackgroundColor=default;verticalAlign=top;aspect=fixed;imageAspect=0;image=https://wow.zamimg.com/images/wow/icons/large/spell_shaman_thunderstorm.jpg;" parent="DKlUDa0g7rmCu-vv5rfz-14" vertex="1">
-          <mxGeometry x="420" y="580" width="20" height="20" as="geometry" />
-        </mxCell>
-        <mxCell id="ByqBd_FR368xJn7YFOeK-188" value="" style="shape=image;verticalLabelPosition=bottom;labelBackgroundColor=default;verticalAlign=top;aspect=fixed;imageAspect=0;image=https://wow.zamimg.com/images/wow/icons/large/spell_shaman_thunderstorm.jpg;" parent="DKlUDa0g7rmCu-vv5rfz-14" vertex="1">
-          <mxGeometry x="620" y="540" width="20" height="20" as="geometry" />
-        </mxCell>
-        <mxCell id="ByqBd_FR368xJn7YFOeK-189" value="" style="shape=image;verticalLabelPosition=bottom;labelBackgroundColor=default;verticalAlign=top;aspect=fixed;imageAspect=0;image=https://wow.zamimg.com/images/wow/icons/large/spell_shaman_thunderstorm.jpg;" parent="DKlUDa0g7rmCu-vv5rfz-14" vertex="1">
-          <mxGeometry x="620" y="200" width="20" height="20" as="geometry" />
-        </mxCell>
-        <mxCell id="ByqBd_FR368xJn7YFOeK-190" value="" style="shape=image;verticalLabelPosition=bottom;labelBackgroundColor=default;verticalAlign=top;aspect=fixed;imageAspect=0;image=https://wow.zamimg.com/images/wow/icons/large/spell_shaman_thunderstorm.jpg;" parent="DKlUDa0g7rmCu-vv5rfz-14" vertex="1">
-          <mxGeometry x="820" y="80" width="20" height="20" as="geometry" />
-        </mxCell>
-        <mxCell id="ByqBd_FR368xJn7YFOeK-191" value="" style="shape=image;verticalLabelPosition=bottom;labelBackgroundColor=default;verticalAlign=top;aspect=fixed;imageAspect=0;image=https://wow.zamimg.com/images/wow/icons/large/spell_shaman_thunderstorm.jpg;" parent="DKlUDa0g7rmCu-vv5rfz-14" vertex="1">
-          <mxGeometry x="820" y="450" width="20" height="20" as="geometry" />
-        </mxCell>
-        <mxCell id="ByqBd_FR368xJn7YFOeK-192" value="" style="shape=image;verticalLabelPosition=bottom;labelBackgroundColor=default;verticalAlign=top;aspect=fixed;imageAspect=0;image=https://wow.zamimg.com/images/wow/icons/large/spell_shaman_thunderstorm.jpg;" parent="DKlUDa0g7rmCu-vv5rfz-14" vertex="1">
-          <mxGeometry x="420" y="410" width="20" height="20" as="geometry" />
-        </mxCell>
-        <mxCell id="ByqBd_FR368xJn7YFOeK-193" value="" style="shape=image;verticalLabelPosition=bottom;labelBackgroundColor=default;verticalAlign=top;aspect=fixed;imageAspect=0;image=https://wow.zamimg.com/images/wow/icons/large/spell_shaman_thunderstorm.jpg;" parent="DKlUDa0g7rmCu-vv5rfz-14" vertex="1">
-          <mxGeometry x="420" y="350" width="20" height="20" as="geometry" />
         </mxCell>
         <mxCell id="DKlUDa0g7rmCu-vv5rfz-188" value="Spell cost bubbles text" style="locked=1;" parent="0" visible="0" />
         <mxCell id="CoPnodNDMeY2YXLun1O6-93" value="●○○" style="text;align=center;verticalAlign=middle;rounded=0;fontFamily=Helvetica;fontSize=13;fontColor=default;labelBackgroundColor=none;spacing=0;spacingTop=0;spacingBottom=-5;fillColor=none;" parent="DKlUDa0g7rmCu-vv5rfz-188" vertex="1">
