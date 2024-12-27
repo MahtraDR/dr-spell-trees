@@ -188,6 +188,34 @@
           <mxGeometry x="620" y="300" width="150" height="30" as="geometry" />
         </mxCell>
         <mxCell id="-dR2T00Uhgw3VuPTZwKf-566" value="Transparency" style="locked=1;" parent="0" />
+        <mxCell id="XTSZ4LpZGUVSuUAdH5MW-34" value="Spell name text" style="locked=1;" visible="0" parent="0" />
+        <mxCell id="XTSZ4LpZGUVSuUAdH5MW-36" value="Ease Burden" style="rounded=1;strokeWidth=1;strokeColor=#667788;textShadow=0;labelBackgroundColor=none;whiteSpace=wrap;fontSize=18;fontFamily=Georgia;fillColor=#AAC8EB;fontColor=#000000;shadow=1;glass=0;align=center;verticalAlign=middle;fontStyle=1;resizable=1;" vertex="1" parent="XTSZ4LpZGUVSuUAdH5MW-34">
+          <mxGeometry x="20" y="140" width="160" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="XTSZ4LpZGUVSuUAdH5MW-40" value="Strange Arrow" style="rounded=1;strokeWidth=1;strokeColor=#667788;textShadow=0;labelBackgroundColor=none;whiteSpace=wrap;fontSize=15;fontFamily=Georgia;fillColor=#E80538;fontColor=#FFFFFF;shadow=1;glass=0;align=center;verticalAlign=middle;fontStyle=0;resizable=1;" vertex="1" parent="XTSZ4LpZGUVSuUAdH5MW-34">
+          <mxGeometry x="20" y="200" width="160" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="XTSZ4LpZGUVSuUAdH5MW-42" value="Gauge Flow" style="rounded=1;strokeWidth=1;strokeColor=#667788;textShadow=0;labelBackgroundColor=none;whiteSpace=wrap;fontSize=18;fontFamily=Georgia;fillColor=#B3D56A;fontColor=#000000;shadow=1;glass=0;align=center;verticalAlign=middle;fontStyle=1;resizable=1;" vertex="1" parent="XTSZ4LpZGUVSuUAdH5MW-34">
+          <mxGeometry x="220" y="100" width="160" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="XTSZ4LpZGUVSuUAdH5MW-45" value="Burden" style="rounded=1;strokeWidth=1;strokeColor=#667788;textShadow=0;labelBackgroundColor=none;whiteSpace=wrap;fontSize=18;fontFamily=Georgia;fillColor=#EBCD00;fontColor=#000000;shadow=1;glass=0;align=center;verticalAlign=middle;fontStyle=1;resizable=1;" vertex="1" parent="XTSZ4LpZGUVSuUAdH5MW-34">
+          <mxGeometry x="20" y="260" width="160" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="XTSZ4LpZGUVSuUAdH5MW-47" value="Seal Cambrinth" style="rounded=1;strokeWidth=1;strokeColor=#667788;textShadow=0;labelBackgroundColor=none;whiteSpace=wrap;fontSize=18;fontFamily=Georgia;fillColor=#B3D56A;fontColor=#000000;shadow=1;glass=0;align=center;verticalAlign=middle;fontStyle=1;resizable=1;" vertex="1" parent="XTSZ4LpZGUVSuUAdH5MW-34">
+          <mxGeometry x="420" y="140" width="160" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="XTSZ4LpZGUVSuUAdH5MW-49" value="Lay Ward" style="rounded=1;strokeWidth=1;strokeColor=#667788;textShadow=0;labelBackgroundColor=none;whiteSpace=wrap;fontSize=18;fontFamily=Georgia;fillColor=#147A6D;fontColor=#FFFFFF;shadow=1;glass=0;align=center;verticalAlign=middle;fontStyle=1;resizable=1;" vertex="1" parent="XTSZ4LpZGUVSuUAdH5MW-34">
+          <mxGeometry x="420" y="260" width="160" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="XTSZ4LpZGUVSuUAdH5MW-51" value="Manifest Force" style="rounded=1;strokeWidth=1;strokeColor=#667788;textShadow=0;labelBackgroundColor=none;whiteSpace=wrap;fontSize=18;fontFamily=Georgia;fillColor=#147A6D;fontColor=#FFFFFF;shadow=1;glass=0;align=center;verticalAlign=middle;fontStyle=1;resizable=1;" vertex="1" parent="XTSZ4LpZGUVSuUAdH5MW-34">
+          <mxGeometry x="20" y="60" width="160" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="XTSZ4LpZGUVSuUAdH5MW-52" value="Dispel" style="rounded=1;strokeWidth=1;strokeColor=#667788;textShadow=0;labelBackgroundColor=none;whiteSpace=wrap;fontSize=18;fontFamily=Georgia;fillColor=#B3D56A;fontColor=#000000;shadow=1;glass=0;align=center;verticalAlign=middle;fontStyle=1;resizable=1;" vertex="1" parent="XTSZ4LpZGUVSuUAdH5MW-34">
+          <mxGeometry x="620" y="140" width="160" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="XTSZ4LpZGUVSuUAdH5MW-53" value="Imbue" style="rounded=1;strokeWidth=1;strokeColor=#667788;textShadow=0;labelBackgroundColor=none;whiteSpace=wrap;fontSize=18;fontFamily=Georgia;fillColor=#B3D56A;fontColor=#000000;shadow=1;glass=0;align=center;verticalAlign=middle;fontStyle=1;resizable=1;" vertex="1" parent="XTSZ4LpZGUVSuUAdH5MW-34">
+          <mxGeometry x="620" y="260" width="160" height="40" as="geometry" />
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
