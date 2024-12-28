@@ -89,7 +89,7 @@
         <mxCell id="nrDkeawLvVhO7n4JyB0N-75" value="Ambushes" style="rounded=1;fontFamily=Helvetica;fontSize=18;fontColor=#667788;labelBackgroundColor=none;fillColor=#FCF4C4;strokeColor=#667788;opacity=30;glass=0;shadow=0;align=center;verticalAlign=top;gradientColor=none;strokeWidth=2;fontStyle=1" vertex="1" parent="DKlUDa0g7rmCu-vv5rfz-316">
           <mxGeometry x="1210" y="620" width="380" height="240" as="geometry" />
         </mxCell>
-        <mxCell id="DKlUDa0g7rmCu-vv5rfz-14" value="Shapes and Lines" style="locked=1;" parent="0" />
+        <mxCell id="DKlUDa0g7rmCu-vv5rfz-14" value="Shapes and Lines" style="" parent="0" />
         <mxCell id="Cg-prXCYWdKOKpc3LPME-3" value="Adaptation" style="rounded=1;strokeWidth=1;strokeColor=#667788;textShadow=0;labelBackgroundColor=none;whiteSpace=wrap;fontSize=18;fontFamily=Georgia;fillColor=#147A6D;fontColor=#FFFFFF;shadow=1;glass=0;align=center;verticalAlign=middle;fontStyle=1;resizable=1;" parent="DKlUDa0g7rmCu-vv5rfz-14" vertex="1">
           <mxGeometry x="220" y="680" width="160" height="40" as="geometry" />
         </mxCell>
@@ -165,7 +165,7 @@
           <mxGeometry x="220" y="60" width="160" height="40" as="geometry" />
         </mxCell>
         <mxCell id="nrDkeawLvVhO7n4JyB0N-3" value="Insight" style="rounded=1;strokeWidth=1;strokeColor=#667788;textShadow=0;labelBackgroundColor=none;whiteSpace=wrap;fontSize=18;fontFamily=Georgia;fillColor=#AAC8EB;fontColor=#000000;shadow=1;glass=0;align=center;verticalAlign=middle;fontStyle=1;resizable=1;" vertex="1" parent="DKlUDa0g7rmCu-vv5rfz-14">
-          <mxGeometry x="420" y="415" width="160" height="40" as="geometry" />
+          <mxGeometry x="420" y="430" width="160" height="40" as="geometry" />
         </mxCell>
         <mxCell id="nrDkeawLvVhO7n4JyB0N-4" value="Harrier" style="rounded=1;strokeWidth=1;strokeColor=#667788;textShadow=0;labelBackgroundColor=none;whiteSpace=wrap;fontSize=18;fontFamily=Georgia;fillColor=#AAC8EB;fontColor=#000000;shadow=1;glass=0;align=center;verticalAlign=middle;fontStyle=1;resizable=1;" vertex="1" parent="DKlUDa0g7rmCu-vv5rfz-14">
           <mxGeometry x="220" y="120" width="160" height="40" as="geometry" />
@@ -284,7 +284,7 @@
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="nrDkeawLvVhO7n4JyB0N-34" value="Sight" style="rounded=1;strokeWidth=1;strokeColor=#667788;textShadow=0;labelBackgroundColor=none;whiteSpace=wrap;fontSize=18;fontFamily=Georgia;fillColor=#AAC8EB;fontColor=#000000;shadow=1;glass=0;align=center;verticalAlign=middle;fontStyle=1;resizable=1;" vertex="1" parent="DKlUDa0g7rmCu-vv5rfz-14">
-          <mxGeometry x="220" y="415" width="160" height="40" as="geometry" />
+          <mxGeometry x="220" y="430" width="160" height="40" as="geometry" />
         </mxCell>
         <mxCell id="nrDkeawLvVhO7n4JyB0N-41" style="edgeStyle=orthogonalEdgeStyle;shape=connector;curved=0;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;strokeColor=#667788;strokeWidth=2;align=center;verticalAlign=middle;fontFamily=Helvetica;fontSize=11;fontColor=default;labelBackgroundColor=default;endArrow=none;endFill=0;" edge="1" parent="DKlUDa0g7rmCu-vv5rfz-14" source="nrDkeawLvVhO7n4JyB0N-35" target="nrDkeawLvVhO7n4JyB0N-7">
           <mxGeometry relative="1" as="geometry" />
@@ -318,7 +318,7 @@
         <mxCell id="nrDkeawLvVhO7n4JyB0N-74" value="Ambush&#xa;Screen" style="rounded=1;whiteSpace=wrap;fillColor=#EBCD00;labelBackgroundColor=none;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;container=0;fontFamily=Georgia;fontSize=18;strokeColor=#667788;shadow=1;glass=0;strokeWidth=1;align=center;fontStyle=1;verticalAlign=middle;fontColor=#000000;textShadow=0;" vertex="1" parent="DKlUDa0g7rmCu-vv5rfz-14">
           <mxGeometry x="1420" y="670" width="160" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="DKlUDa0g7rmCu-vv5rfz-188" value="Spell cost bubbles text" style="locked=1;" parent="0" />
+        <mxCell id="DKlUDa0g7rmCu-vv5rfz-188" value="Spell cost bubbles text" style="" parent="0" />
         <mxCell id="rESuhYQJdn2nmY16vAaY-94" value="●○○" style="text;align=center;verticalAlign=middle;rounded=0;fontFamily=Helvetica;fontSize=13;fontColor=default;labelBackgroundColor=none;spacing=0;spacingTop=0;spacingBottom=-5;fillColor=none;" parent="DKlUDa0g7rmCu-vv5rfz-188" vertex="1">
           <mxGeometry x="140" y="450" width="40" height="20" as="geometry" />
         </mxCell>
@@ -344,7 +344,7 @@
           <mxGeometry x="1140" y="360" width="40" height="20" as="geometry" />
         </mxCell>
         <mxCell id="nrDkeawLvVhO7n4JyB0N-84" value="●○○" style="text;align=center;verticalAlign=middle;rounded=0;fontFamily=Helvetica;fontSize=13;fontColor=default;labelBackgroundColor=none;spacing=0;spacingTop=0;spacingBottom=-5;fillColor=none;" vertex="1" parent="DKlUDa0g7rmCu-vv5rfz-188">
-          <mxGeometry x="540" y="435" width="40" height="20" as="geometry" />
+          <mxGeometry x="540" y="450" width="40" height="20" as="geometry" />
         </mxCell>
         <mxCell id="nrDkeawLvVhO7n4JyB0N-85" value="●○○" style="text;align=center;verticalAlign=middle;rounded=0;fontFamily=Helvetica;fontSize=13;fontColor=default;labelBackgroundColor=none;spacing=0;spacingTop=0;spacingBottom=-5;fillColor=none;" vertex="1" parent="DKlUDa0g7rmCu-vv5rfz-188">
           <mxGeometry x="1340" y="690" width="40" height="20" as="geometry" />
@@ -419,7 +419,7 @@
           <mxGeometry x="340" y="360" width="40" height="20" as="geometry" />
         </mxCell>
         <mxCell id="nrDkeawLvVhO7n4JyB0N-109" value="●●○" style="text;align=center;verticalAlign=middle;rounded=0;fontFamily=Helvetica;fontSize=13;fontColor=default;labelBackgroundColor=none;spacing=0;spacingTop=0;spacingBottom=-5;fillColor=none;" vertex="1" parent="DKlUDa0g7rmCu-vv5rfz-188">
-          <mxGeometry x="340" y="435" width="40" height="20" as="geometry" />
+          <mxGeometry x="340" y="450" width="40" height="20" as="geometry" />
         </mxCell>
         <mxCell id="nrDkeawLvVhO7n4JyB0N-110" value="●●○" style="text;align=center;verticalAlign=middle;rounded=0;fontFamily=Helvetica;fontSize=13;fontColor=default;labelBackgroundColor=none;spacing=0;spacingTop=0;spacingBottom=-5;fillColor=none;" vertex="1" parent="DKlUDa0g7rmCu-vv5rfz-188">
           <mxGeometry x="340" y="540" width="40" height="20" as="geometry" />
@@ -450,7 +450,7 @@
           <mxGeometry x="310" y="310" width="70" height="30" as="geometry" />
         </mxCell>
         <mxCell id="nrDkeawLvVhO7n4JyB0N-119" value="Circle 14" style="text;align=right;verticalAlign=bottom;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontFamily=Georgia;fontSize=13;fontColor=#667788;labelBackgroundColor=none;fontStyle=3" vertex="1" parent="DKlUDa0g7rmCu-vv5rfz-245">
-          <mxGeometry x="310" y="385" width="70" height="30" as="geometry" />
+          <mxGeometry x="310" y="400" width="70" height="30" as="geometry" />
         </mxCell>
         <mxCell id="nrDkeawLvVhO7n4JyB0N-120" value="Circle 14" style="text;align=right;verticalAlign=bottom;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontFamily=Georgia;fontSize=13;fontColor=#667788;labelBackgroundColor=none;fontStyle=3" vertex="1" parent="DKlUDa0g7rmCu-vv5rfz-245">
           <mxGeometry x="710" y="430" width="70" height="30" as="geometry" />
@@ -479,7 +479,7 @@
         <mxCell id="nrDkeawLvVhO7n4JyB0N-132" value="Circle 50" style="text;align=right;verticalAlign=bottom;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontFamily=Georgia;fontSize=13;fontColor=#667788;labelBackgroundColor=none;fontStyle=3" vertex="1" parent="DKlUDa0g7rmCu-vv5rfz-245">
           <mxGeometry x="1510" y="700" width="70" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="DKlUDa0g7rmCu-vv5rfz-268" value="Spell Pre-requisites text" style="locked=1;" parent="0" />
+        <mxCell id="DKlUDa0g7rmCu-vv5rfz-268" value="Spell Pre-requisites text" style="" parent="0" />
         <mxCell id="rESuhYQJdn2nmY16vAaY-65" value="One-time cost 35" style="text;align=left;verticalAlign=top;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontFamily=Georgia;fontSize=13;fontColor=#667788;labelBackgroundColor=none;spacing=0;spacingBottom=0;spacingTop=-4;fontStyle=3" parent="DKlUDa0g7rmCu-vv5rfz-268" vertex="1">
           <mxGeometry x="1020" y="500" width="110" height="20" as="geometry" />
         </mxCell>
