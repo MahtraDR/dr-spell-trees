@@ -80,7 +80,7 @@
         <mxCell id="AUKlwsZsXrIDSZh32TpE-13" value="Aggressive Stance" style="rounded=1;strokeWidth=1;strokeColor=#667788;textShadow=0;labelBackgroundColor=none;whiteSpace=wrap;fontSize=18;fontFamily=Georgia;fillColor=#AAC8EB;fontColor=#000000;shadow=1;glass=0;align=center;verticalAlign=middle;fontStyle=1;resizable=1;" vertex="1" parent="DKlUDa0g7rmCu-vv5rfz-14">
           <mxGeometry x="620" y="800" width="160" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="AUKlwsZsXrIDSZh32TpE-14" value="Iron Constitution" style="rounded=1;strokeWidth=1;strokeColor=#667788;textShadow=0;labelBackgroundColor=none;whiteSpace=wrap;fontSize=18;fontFamily=Georgia;fillColor=#B3D56A;fontColor=#000000;shadow=1;glass=0;align=center;verticalAlign=middle;fontStyle=1;resizable=1;" vertex="1" parent="DKlUDa0g7rmCu-vv5rfz-14">
+        <mxCell id="AUKlwsZsXrIDSZh32TpE-14" value="Iron Constitution" style="rounded=1;strokeWidth=1;strokeColor=#667788;textShadow=0;labelBackgroundColor=none;whiteSpace=wrap;fontSize=18;fontFamily=Georgia;fillColor=#147A6D;fontColor=#FFFFFF;shadow=1;glass=0;align=center;verticalAlign=middle;fontStyle=1;resizable=1;" vertex="1" parent="DKlUDa0g7rmCu-vv5rfz-14">
           <mxGeometry x="420" y="740" width="160" height="40" as="geometry" />
         </mxCell>
         <mxCell id="AUKlwsZsXrIDSZh32TpE-15" value="Innocence" style="rounded=1;strokeWidth=1;strokeColor=#667788;textShadow=0;labelBackgroundColor=none;whiteSpace=wrap;fontSize=18;fontFamily=Georgia;fillColor=#B3D56A;fontColor=#000000;shadow=1;glass=0;align=center;verticalAlign=middle;fontStyle=1;resizable=1;" vertex="1" parent="DKlUDa0g7rmCu-vv5rfz-14">
@@ -95,7 +95,7 @@
         <mxCell id="AUKlwsZsXrIDSZh32TpE-18" value="Aesandry Darlaeth" style="rounded=1;strokeWidth=1;strokeColor=#667788;textShadow=0;labelBackgroundColor=none;whiteSpace=wrap;fontSize=18;fontFamily=Georgia;fillColor=#AAC8EB;fontColor=#000000;shadow=1;glass=0;align=center;verticalAlign=middle;fontStyle=1;resizable=1;gradientColor=#B3D56A;gradientDirection=east;" vertex="1" parent="DKlUDa0g7rmCu-vv5rfz-14">
           <mxGeometry x="1220" y="800" width="160" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="AUKlwsZsXrIDSZh32TpE-19" value="Perseverance of Peri&#39;el" style="rounded=1;strokeWidth=1;strokeColor=#667788;textShadow=0;labelBackgroundColor=none;whiteSpace=wrap;fontSize=18;fontFamily=Georgia;fillColor=#B3D56A;fontColor=#000000;shadow=1;glass=0;align=center;verticalAlign=middle;fontStyle=1;resizable=1;" vertex="1" parent="DKlUDa0g7rmCu-vv5rfz-14">
+        <mxCell id="AUKlwsZsXrIDSZh32TpE-19" value="Perseverance of Peri&#39;el" style="rounded=1;strokeWidth=1;strokeColor=#667788;textShadow=0;labelBackgroundColor=none;whiteSpace=wrap;fontSize=18;fontFamily=Georgia;fillColor=#147A6D;fontColor=#FFFFFF;shadow=1;glass=0;align=center;verticalAlign=middle;fontStyle=1;resizable=1;" vertex="1" parent="DKlUDa0g7rmCu-vv5rfz-14">
           <mxGeometry x="1220" y="680" width="160" height="40" as="geometry" />
         </mxCell>
         <mxCell id="AUKlwsZsXrIDSZh32TpE-20" value="Guardian Spirit" style="rounded=1;strokeWidth=1;strokeColor=#667788;textShadow=0;labelBackgroundColor=none;whiteSpace=wrap;fontSize=18;fontFamily=Georgia;fillColor=#B3D56A;fontColor=#000000;shadow=1;glass=0;align=center;verticalAlign=middle;fontStyle=1;resizable=1;" vertex="1" parent="DKlUDa0g7rmCu-vv5rfz-14">
@@ -119,7 +119,7 @@
         <mxCell id="AUKlwsZsXrIDSZh32TpE-26" value="Vigor" style="rounded=1;strokeWidth=1;strokeColor=#667788;textShadow=0;labelBackgroundColor=none;whiteSpace=wrap;fontSize=18;fontFamily=Georgia;fillColor=#AAC8EB;fontColor=#000000;shadow=1;glass=0;align=center;verticalAlign=middle;fontStyle=1;resizable=1;" vertex="1" parent="DKlUDa0g7rmCu-vv5rfz-14">
           <mxGeometry x="820" y="990" width="160" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="AUKlwsZsXrIDSZh32TpE-27" value="Raise Power" style="rounded=1;strokeWidth=1;strokeColor=#667788;textShadow=0;labelBackgroundColor=none;whiteSpace=wrap;fontSize=15;fontFamily=Georgia;fillColor=#E80538;fontColor=#FFFFFF;shadow=1;glass=0;align=center;verticalAlign=middle;fontStyle=0;resizable=1;" vertex="1" parent="DKlUDa0g7rmCu-vv5rfz-14">
+        <mxCell id="AUKlwsZsXrIDSZh32TpE-27" value="Raise Power" style="rounded=1;strokeWidth=1;strokeColor=#667788;textShadow=0;labelBackgroundColor=none;whiteSpace=wrap;fontSize=18;fontFamily=Georgia;fillColor=#B3D56A;fontColor=#000000;shadow=1;glass=0;align=center;verticalAlign=middle;fontStyle=1;resizable=1;" vertex="1" parent="DKlUDa0g7rmCu-vv5rfz-14">
           <mxGeometry x="1020" y="930" width="160" height="40" as="geometry" />
         </mxCell>
         <mxCell id="AUKlwsZsXrIDSZh32TpE-29" value="Icutu Zaharenela" style="rounded=1;strokeWidth=1;strokeColor=#667788;textShadow=0;labelBackgroundColor=none;whiteSpace=wrap;fontSize=15;fontFamily=Georgia;fillColor=#E80538;fontColor=#FFFFFF;shadow=1;glass=0;align=center;verticalAlign=middle;fontStyle=1;resizable=1;" vertex="1" parent="DKlUDa0g7rmCu-vv5rfz-14">
