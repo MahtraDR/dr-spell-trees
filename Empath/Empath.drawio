@@ -3,7 +3,7 @@
     <mxGraphModel dx="1935" dy="995" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1600" pageHeight="1050" background="none" math="0" shadow="0">
       <root>
         <mxCell id="0" />
-        <mxCell id="DKlUDa0g7rmCu-vv5rfz-316" value="Spellbook borders" style="locked=1;" parent="0" visible="0" />
+        <mxCell id="DKlUDa0g7rmCu-vv5rfz-316" value="Spellbook borders" style="locked=1;" parent="0" />
         <mxCell id="DKlUDa0g7rmCu-vv5rfz-317" value="" style="rounded=1;fontFamily=Helvetica;fontSize=11;fontColor=default;labelBackgroundColor=none;fillColor=#FCF4C4;strokeColor=#667788;opacity=30;glass=0;shadow=0;align=center;verticalAlign=middle;gradientColor=none;strokeWidth=2;" parent="DKlUDa0g7rmCu-vv5rfz-316" vertex="1">
           <mxGeometry x="10" y="60" width="1380" height="140" as="geometry" />
         </mxCell>
@@ -34,7 +34,7 @@
         <mxCell id="AUKlwsZsXrIDSZh32TpE-81" value="Life Force Manipulation" style="text;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=1;fontSize=16;fontFamily=Georgia;fontColor=#667788;strokeColor=none;" vertex="1" parent="DKlUDa0g7rmCu-vv5rfz-316">
           <mxGeometry x="210" y="1000" width="140" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="DKlUDa0g7rmCu-vv5rfz-14" value="Shapes and Lines" style="locked=1;" parent="0" visible="0" />
+        <mxCell id="DKlUDa0g7rmCu-vv5rfz-14" value="Shapes and Lines" style="locked=1;" parent="0" />
         <mxCell id="AUKlwsZsXrIDSZh32TpE-60" style="edgeStyle=orthogonalEdgeStyle;shape=connector;curved=0;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;strokeColor=#667788;strokeWidth=2;align=center;verticalAlign=middle;fontFamily=Georgia;fontSize=17;fontColor=default;labelBackgroundColor=default;endArrow=none;endFill=0;jumpStyle=none;" edge="1" parent="DKlUDa0g7rmCu-vv5rfz-14" source="AUKlwsZsXrIDSZh32TpE-13" target="AUKlwsZsXrIDSZh32TpE-18">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
@@ -374,7 +374,7 @@
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="1" style="locked=1;" parent="0" visible="0" />
+        <mxCell id="1" style="locked=1;" parent="0" />
         <mxCell id="DKlUDa0g7rmCu-vv5rfz-415" value="Basic" style="text;align=center;verticalAlign=middle;resizable=0;points=[];autosize=0;strokeColor=none;fillColor=none;fontFamily=Helvetica;fontSize=18;fontColor=#667788;labelBackgroundColor=none;textShadow=1;" parent="1" vertex="1">
           <mxGeometry x="560" width="80" height="40" as="geometry" />
         </mxCell>
@@ -441,7 +441,7 @@
             <mxPoint x="400" y="1030" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="DKlUDa0g7rmCu-vv5rfz-188" value="Spell cost bubbles text" style="locked=1;" parent="0" visible="0" />
+        <mxCell id="DKlUDa0g7rmCu-vv5rfz-188" value="Spell cost bubbles text" style="locked=1;" parent="0" />
         <mxCell id="rESuhYQJdn2nmY16vAaY-105" value="●○○" style="text;align=center;verticalAlign=middle;rounded=0;fontFamily=Georgia;fontSize=13;fontColor=default;labelBackgroundColor=none;spacing=0;spacingTop=0;spacingBottom=-5;fillColor=none;" parent="DKlUDa0g7rmCu-vv5rfz-188" vertex="1">
           <mxGeometry x="1150" y="260" width="40" height="20" as="geometry" />
         </mxCell>
@@ -541,7 +541,7 @@
         <mxCell id="AUKlwsZsXrIDSZh32TpE-123" value="●●○" style="text;align=center;verticalAlign=middle;rounded=0;fontFamily=Georgia;fontSize=13;fontColor=default;labelBackgroundColor=none;spacing=0;spacingTop=0;spacingBottom=-5;fillColor=none;" vertex="1" parent="DKlUDa0g7rmCu-vv5rfz-188">
           <mxGeometry x="340" y="970" width="40" height="20" as="geometry" />
         </mxCell>
-        <mxCell id="DKlUDa0g7rmCu-vv5rfz-245" value="Circle Pre-requisites text" style="locked=1;" parent="0" visible="0" />
+        <mxCell id="DKlUDa0g7rmCu-vv5rfz-245" value="Circle Pre-requisites text" style="locked=1;" parent="0" />
         <mxCell id="AUKlwsZsXrIDSZh32TpE-124" value="Circle 30" style="text;align=right;verticalAlign=bottom;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontFamily=Georgia;fontSize=13;fontColor=#667788;labelBackgroundColor=none;fontStyle=3" vertex="1" parent="DKlUDa0g7rmCu-vv5rfz-245">
           <mxGeometry x="1300" y="50" width="80" height="30" as="geometry" />
         </mxCell>
@@ -560,7 +560,7 @@
         <mxCell id="AUKlwsZsXrIDSZh32TpE-130" value="Circle 20" style="text;align=right;verticalAlign=bottom;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontFamily=Georgia;fontSize=13;fontColor=#667788;labelBackgroundColor=none;fontStyle=3" vertex="1" parent="DKlUDa0g7rmCu-vv5rfz-245">
           <mxGeometry x="1300" y="430" width="80" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="DKlUDa0g7rmCu-vv5rfz-268" value="Spell Pre-requisites text" style="locked=1;" parent="0" visible="0" />
+        <mxCell id="DKlUDa0g7rmCu-vv5rfz-268" value="Spell Pre-requisites text" style="locked=1;" parent="0" />
         <mxCell id="rESuhYQJdn2nmY16vAaY-59" value="Requires CD or FP" style="text;align=left;verticalAlign=top;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontFamily=Georgia;fontSize=13;fontColor=#667788;labelBackgroundColor=none;spacing=0;spacingBottom=0;spacingTop=-4;fontStyle=3" parent="DKlUDa0g7rmCu-vv5rfz-268" vertex="1">
           <mxGeometry x="1020" y="280" width="130" height="20" as="geometry" />
         </mxCell>
@@ -585,7 +585,7 @@
         <mxCell id="AUKlwsZsXrIDSZh32TpE-137" value="Requires ability to Shift&#xa;Difficulty varies based&#xa;on level of Shock" style="text;align=left;verticalAlign=top;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontFamily=Georgia;fontSize=13;fontColor=#667788;labelBackgroundColor=none;spacing=0;spacingBottom=0;spacingTop=-4;fontStyle=3" vertex="1" parent="DKlUDa0g7rmCu-vv5rfz-268">
           <mxGeometry x="1220" y="960" width="160" height="50" as="geometry" />
         </mxCell>
-        <mxCell id="AUKlwsZsXrIDSZh32TpE-217" value="Spell name text" style="" parent="0" />
+        <mxCell id="AUKlwsZsXrIDSZh32TpE-217" value="Spell name text" style="locked=1;" visible="0" parent="0" />
         <mxCell id="AUKlwsZsXrIDSZh32TpE-219" value="Heal Wounds" style="rounded=1;strokeWidth=1;strokeColor=#667788;textShadow=0;labelBackgroundColor=none;whiteSpace=wrap;fontSize=17;fontFamily=Georgia;fillColor=#B3D56A;fontColor=#000000;shadow=1;glass=0;align=center;verticalAlign=middle;fontStyle=1;resizable=1;" vertex="1" parent="AUKlwsZsXrIDSZh32TpE-217">
           <mxGeometry x="20" y="110" width="160" height="40" as="geometry" />
         </mxCell>
