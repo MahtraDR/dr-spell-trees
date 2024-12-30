@@ -3,7 +3,7 @@
     <mxGraphModel dx="1495" dy="867" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1800" pageHeight="1340" background="none" math="0" shadow="0">
       <root>
         <mxCell id="0" />
-        <mxCell id="DKlUDa0g7rmCu-vv5rfz-316" value="Spellbook borders" style="" parent="0" />
+        <mxCell id="DKlUDa0g7rmCu-vv5rfz-316" value="Spellbook borders" style="locked=1;" parent="0" />
         <mxCell id="eY5dnLTpbY4zrGF3gSu3-124" value="" style="rounded=1;fontFamily=Helvetica;fontSize=11;fontColor=default;labelBackgroundColor=none;fillColor=#667788;strokeColor=#667788;opacity=30;glass=0;shadow=0;align=center;verticalAlign=middle;gradientColor=none;strokeWidth=2;" vertex="1" parent="DKlUDa0g7rmCu-vv5rfz-316">
           <mxGeometry x="810" y="220" width="380" height="180" as="geometry" />
         </mxCell>
@@ -37,7 +37,7 @@
         <mxCell id="eY5dnLTpbY4zrGF3gSu3-132" value="Psychic Projection" style="text;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=1;fontSize=16;fontFamily=Georgia;fontColor=#667788;strokeColor=none;" vertex="1" parent="DKlUDa0g7rmCu-vv5rfz-316">
           <mxGeometry x="220" y="1440" width="140" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="DKlUDa0g7rmCu-vv5rfz-14" value="Shapes and Lines" style="locked=1;" parent="0" />
+        <mxCell id="DKlUDa0g7rmCu-vv5rfz-14" value="Shapes and Lines" style="" parent="0" />
         <mxCell id="A4h3zCrJcsYcp54G7Gio-6" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;strokeColor=#667788;strokeWidth=2;align=center;verticalAlign=middle;fontFamily=Helvetica;fontSize=11;fontColor=default;labelBackgroundColor=default;endArrow=classic;curved=0;dashed=1;" parent="DKlUDa0g7rmCu-vv5rfz-14" source="DKlUDa0g7rmCu-vv5rfz-31" target="A4h3zCrJcsYcp54G7Gio-2" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
@@ -410,7 +410,7 @@
         <mxCell id="eY5dnLTpbY4zrGF3gSu3-118" style="edgeStyle=orthogonalEdgeStyle;shape=connector;curved=0;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;strokeColor=#667788;strokeWidth=2;align=center;verticalAlign=middle;fontFamily=Helvetica;fontSize=11;fontColor=default;labelBackgroundColor=default;endArrow=none;endFill=0;" edge="1" parent="DKlUDa0g7rmCu-vv5rfz-14" source="eY5dnLTpbY4zrGF3gSu3-35" target="eY5dnLTpbY4zrGF3gSu3-4">
           <mxGeometry relative="1" as="geometry">
             <Array as="points">
-              <mxPoint x="810" y="1040" />
+              <mxPoint x="810" y="960" />
               <mxPoint x="810" y="340" />
             </Array>
           </mxGeometry>
