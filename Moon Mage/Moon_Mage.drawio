@@ -709,7 +709,7 @@
             <mxPoint x="400" y="1300" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="DKlUDa0g7rmCu-vv5rfz-188" value="Spell cost bubbles text" style="" parent="0" />
+        <mxCell id="DKlUDa0g7rmCu-vv5rfz-188" value="Spell cost bubbles text" style="locked=1;" parent="0" />
         <mxCell id="rESuhYQJdn2nmY16vAaY-74" value="●○○" style="text;align=center;verticalAlign=middle;rounded=0;fontFamily=Helvetica;fontSize=13;fontColor=default;labelBackgroundColor=none;spacing=0;spacingTop=0;spacingBottom=-5;fillColor=none;" parent="DKlUDa0g7rmCu-vv5rfz-188" vertex="1">
           <mxGeometry x="140" y="330" width="40" height="20" as="geometry" />
         </mxCell>
@@ -968,6 +968,178 @@
           <mxGeometry x="1020" y="180" width="130" height="20" as="geometry" />
         </mxCell>
         <mxCell id="-dR2T00Uhgw3VuPTZwKf-566" value="Transparency" style="locked=1;" parent="0" visible="0" />
+        <mxCell id="6rpQLIKWk_AHX--m7qB0-55" value="Spell name text" style="" parent="0" />
+        <mxCell id="6rpQLIKWk_AHX--m7qB0-58" value="Tangled Fate" style="rounded=1;strokeWidth=1;strokeColor=#667788;textShadow=0;labelBackgroundColor=none;whiteSpace=wrap;fontSize=18;fontFamily=Georgia;fillColor=#EBCD00;fontColor=#000000;shadow=1;glass=0;align=center;verticalAlign=middle;fontStyle=1;resizable=1;gradientColor=#B3D56A;gradientDirection=east;" vertex="1" parent="6rpQLIKWk_AHX--m7qB0-55">
+          <mxGeometry x="620" y="140" width="160" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="6rpQLIKWk_AHX--m7qB0-62" value="Tezirah&#39;s Veil" style="rounded=1;strokeWidth=1;strokeColor=#667788;textShadow=0;labelBackgroundColor=none;whiteSpace=wrap;fontSize=18;fontFamily=Georgia;fillColor=#AAC8EB;fontColor=#000000;shadow=1;glass=0;align=center;verticalAlign=middle;fontStyle=1;resizable=1;gradientColor=#EBCD00;gradientDirection=east;" vertex="1" parent="6rpQLIKWk_AHX--m7qB0-55">
+          <mxGeometry x="1020" y="140" width="160" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="6rpQLIKWk_AHX--m7qB0-64" value="Mental Blast" style="rounded=1;strokeWidth=1;strokeColor=#667788;textShadow=0;labelBackgroundColor=none;whiteSpace=wrap;fontSize=18;fontFamily=Georgia;fillColor=#EBCD00;fontColor=#000000;shadow=1;glass=0;align=center;verticalAlign=middle;fontStyle=1;resizable=1;" vertex="1" parent="6rpQLIKWk_AHX--m7qB0-55">
+          <mxGeometry x="1220" y="1160" width="160" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="6rpQLIKWk_AHX--m7qB0-65" value="Saesordian Compass" style="rounded=1;strokeWidth=1;strokeColor=#667788;textShadow=0;labelBackgroundColor=none;whiteSpace=wrap;fontSize=17;fontFamily=Georgia;fillColor=#AAC8EB;fontColor=#000000;shadow=1;glass=0;align=center;verticalAlign=middle;fontStyle=1;resizable=1;" vertex="1" parent="6rpQLIKWk_AHX--m7qB0-55">
+          <mxGeometry x="1420" y="110" width="160" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="6rpQLIKWk_AHX--m7qB0-66" value="Read the Ripples" style="rounded=1;strokeWidth=1;strokeColor=#667788;textShadow=0;labelBackgroundColor=none;whiteSpace=wrap;fontSize=18;fontFamily=Georgia;fillColor=#B3D56A;fontColor=#000000;shadow=1;glass=0;align=center;verticalAlign=middle;fontStyle=1;resizable=1;gradientColor=none;gradientDirection=east;" vertex="1" parent="6rpQLIKWk_AHX--m7qB0-55">
+          <mxGeometry x="1420" y="580" width="160" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="6rpQLIKWk_AHX--m7qB0-67" value="Invocation of the Spheres" style="rounded=1;strokeWidth=1;strokeColor=#667788;textShadow=0;labelBackgroundColor=none;whiteSpace=wrap;fontSize=17;fontFamily=Georgia;fillColor=#AAC8EB;fontColor=#000000;shadow=1;glass=0;align=center;verticalAlign=middle;fontStyle=1;resizable=1;spacing=0;" vertex="1" parent="6rpQLIKWk_AHX--m7qB0-55">
+          <mxGeometry x="1420" y="500" width="160" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="6rpQLIKWk_AHX--m7qB0-68" value="Starlight Sphere" style="rounded=1;strokeWidth=1;strokeColor=#667788;textShadow=0;labelBackgroundColor=none;whiteSpace=wrap;fontSize=18;fontFamily=Georgia;fillColor=#E80538;fontColor=#FFFFFF;shadow=1;glass=0;align=center;verticalAlign=middle;fontStyle=1;resizable=1;gradientColor=none;gradientDirection=east;" vertex="1" parent="6rpQLIKWk_AHX--m7qB0-55">
+          <mxGeometry x="1220" y="480" width="160" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="6rpQLIKWk_AHX--m7qB0-69" value="Shadewatch Mirror" style="rounded=1;strokeWidth=1;strokeColor=#667788;textShadow=0;labelBackgroundColor=none;whiteSpace=wrap;fontSize=18;fontFamily=Georgia;fillColor=#B3D56A;fontColor=#000000;shadow=1;glass=0;align=center;verticalAlign=middle;fontStyle=1;resizable=1;" vertex="1" parent="6rpQLIKWk_AHX--m7qB0-55">
+          <mxGeometry x="1220" y="560" width="160" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="6rpQLIKWk_AHX--m7qB0-73" value="Shadows" style="rounded=1;strokeWidth=1;strokeColor=#667788;textShadow=0;labelBackgroundColor=none;whiteSpace=wrap;fontSize=18;fontFamily=Georgia;fillColor=#AAC8EB;fontColor=#000000;shadow=1;glass=0;align=center;verticalAlign=middle;fontStyle=0;resizable=1;" vertex="1" parent="6rpQLIKWk_AHX--m7qB0-55">
+          <mxGeometry x="20" y="310" width="160" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="6rpQLIKWk_AHX--m7qB0-78" value="Focus Moonbeam" style="rounded=1;strokeWidth=1;strokeColor=#667788;textShadow=0;labelBackgroundColor=none;whiteSpace=wrap;fontSize=18;fontFamily=Georgia;fillColor=#B3D56A;fontColor=#000000;shadow=1;glass=0;align=center;verticalAlign=middle;fontStyle=1;resizable=1;" vertex="1" parent="6rpQLIKWk_AHX--m7qB0-55">
+          <mxGeometry x="220" y="350" width="160" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="6rpQLIKWk_AHX--m7qB0-83" value="Dinazen Olkar" style="rounded=1;strokeWidth=1;strokeColor=#667788;textShadow=0;labelBackgroundColor=none;whiteSpace=wrap;fontSize=18;fontFamily=Georgia;fillColor=#E80538;fontColor=#FFFFFF;shadow=1;glass=0;align=center;verticalAlign=middle;fontStyle=0;resizable=1;gradientColor=none;gradientDirection=east;" vertex="1" parent="6rpQLIKWk_AHX--m7qB0-55">
+          <mxGeometry x="420" y="240" width="160" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="6rpQLIKWk_AHX--m7qB0-87" value="Burn" style="rounded=1;strokeWidth=1;strokeColor=#667788;textShadow=0;labelBackgroundColor=none;whiteSpace=wrap;fontSize=18;fontFamily=Georgia;fillColor=#E80538;fontColor=#FFFFFF;shadow=1;glass=0;align=center;verticalAlign=middle;fontStyle=0;resizable=1;gradientColor=none;gradientDirection=east;" vertex="1" parent="6rpQLIKWk_AHX--m7qB0-55">
+          <mxGeometry x="620" y="350" width="160" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="6rpQLIKWk_AHX--m7qB0-90" value="Dazzle" style="rounded=1;strokeWidth=1;strokeColor=#667788;textShadow=0;labelBackgroundColor=none;whiteSpace=wrap;fontSize=18;fontFamily=Georgia;fillColor=#EBCD00;fontColor=#000000;shadow=1;glass=0;align=center;verticalAlign=middle;fontStyle=0;resizable=1;" vertex="1" parent="6rpQLIKWk_AHX--m7qB0-55">
+          <mxGeometry x="420" y="310" width="160" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="6rpQLIKWk_AHX--m7qB0-92" value="Refractive Field" style="rounded=1;strokeWidth=1;strokeColor=#667788;textShadow=0;labelBackgroundColor=none;whiteSpace=wrap;fontSize=18;fontFamily=Georgia;fillColor=#B3D56A;fontColor=#000000;shadow=1;glass=0;align=center;verticalAlign=middle;fontStyle=1;resizable=1;" vertex="1" parent="6rpQLIKWk_AHX--m7qB0-55">
+          <mxGeometry x="620" y="270" width="160" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="6rpQLIKWk_AHX--m7qB0-93" value="Shadow Web" style="rounded=1;strokeWidth=1;strokeColor=#667788;textShadow=0;labelBackgroundColor=none;whiteSpace=wrap;fontSize=18;fontFamily=Georgia;fillColor=#EBCD00;fontColor=#000000;shadow=1;glass=0;align=center;verticalAlign=middle;fontStyle=1;resizable=1;" vertex="1" parent="6rpQLIKWk_AHX--m7qB0-55">
+          <mxGeometry x="1020" y="240" width="160" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="6rpQLIKWk_AHX--m7qB0-94" value="Shift Moonbeam" style="rounded=1;strokeWidth=1;strokeColor=#667788;textShadow=0;labelBackgroundColor=none;whiteSpace=wrap;fontSize=18;fontFamily=Georgia;fillColor=#B3D56A;fontColor=#000000;shadow=1;glass=0;align=center;verticalAlign=middle;fontStyle=1;resizable=1;" vertex="1" parent="6rpQLIKWk_AHX--m7qB0-55">
+          <mxGeometry x="820" y="380" width="160" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="6rpQLIKWk_AHX--m7qB0-97" value="Moonblade" style="rounded=1;strokeWidth=1;strokeColor=#667788;textShadow=0;labelBackgroundColor=none;whiteSpace=wrap;fontSize=18;fontFamily=Georgia;fillColor=#B3D56A;fontColor=#000000;shadow=1;glass=0;align=center;verticalAlign=middle;fontStyle=1;resizable=1;" vertex="1" parent="6rpQLIKWk_AHX--m7qB0-55">
+          <mxGeometry x="1020" y="310" width="160" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="6rpQLIKWk_AHX--m7qB0-98" value="Steps of Vuan" style="rounded=1;strokeWidth=1;strokeColor=#667788;textShadow=0;labelBackgroundColor=none;whiteSpace=wrap;fontSize=18;fontFamily=Georgia;fillColor=#B3D56A;fontColor=#000000;shadow=1;glass=0;align=center;verticalAlign=middle;fontStyle=1;resizable=1;" vertex="1" parent="6rpQLIKWk_AHX--m7qB0-55">
+          <mxGeometry x="820" y="270" width="160" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="6rpQLIKWk_AHX--m7qB0-99" value="Iyqaromos Fire-Lens" style="rounded=1;whiteSpace=wrap;fillColor=#D5D0CA;labelBackgroundColor=none;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;container=0;fontFamily=Georgia;fontSize=18;strokeColor=#667788;shadow=0;glass=0;strokeWidth=1;align=center;fontStyle=1;verticalAlign=middle;fontColor=#000000;textShadow=0;" vertex="1" parent="6rpQLIKWk_AHX--m7qB0-55">
+          <mxGeometry x="1220" y="350" width="160" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="6rpQLIKWk_AHX--m7qB0-100" value="Shape Moonblade" style="rounded=1;whiteSpace=wrap;fillColor=#D5D0CA;labelBackgroundColor=none;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;container=0;fontFamily=Georgia;fontSize=18;strokeColor=#667788;shadow=0;glass=0;strokeWidth=1;align=center;fontStyle=1;verticalAlign=middle;fontColor=#000000;textShadow=0;" vertex="1" parent="6rpQLIKWk_AHX--m7qB0-55">
+          <mxGeometry x="1420" y="310" width="160" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="6rpQLIKWk_AHX--m7qB0-101" value="Partial Displacement" style="rounded=1;strokeWidth=1;strokeColor=#667788;textShadow=0;labelBackgroundColor=none;whiteSpace=wrap;fontSize=18;fontFamily=Georgia;fillColor=#E80538;fontColor=#FFFFFF;shadow=1;glass=0;align=center;verticalAlign=middle;fontStyle=0;resizable=1;gradientColor=none;gradientDirection=east;" vertex="1" parent="6rpQLIKWk_AHX--m7qB0-55">
+          <mxGeometry x="420" y="680" width="160" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="6rpQLIKWk_AHX--m7qB0-104" value="Teleport" style="rounded=1;strokeWidth=1;strokeColor=#667788;textShadow=0;labelBackgroundColor=none;whiteSpace=wrap;fontSize=18;fontFamily=Georgia;fillColor=#B3D56A;fontColor=#000000;shadow=1;glass=0;align=center;verticalAlign=middle;fontStyle=1;resizable=1;" vertex="1" parent="6rpQLIKWk_AHX--m7qB0-55">
+          <mxGeometry x="620" y="680" width="160" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="6rpQLIKWk_AHX--m7qB0-106" value="Whole Displacement" style="rounded=1;whiteSpace=wrap;fillColor=#147A6D;labelBackgroundColor=none;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;container=0;fontFamily=Georgia;fontSize=17;strokeColor=#667788;shadow=1;glass=0;strokeWidth=1;align=center;fontStyle=1;verticalAlign=middle;fontColor=#FFFFFF;textShadow=0;" vertex="1" parent="6rpQLIKWk_AHX--m7qB0-55">
+          <mxGeometry x="420" y="740" width="160" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="6rpQLIKWk_AHX--m7qB0-108" value="Braun&#39;s Conjecture" style="rounded=1;strokeWidth=1;strokeColor=#667788;textShadow=0;labelBackgroundColor=none;whiteSpace=wrap;fontSize=18;fontFamily=Georgia;fillColor=#B3D56A;fontColor=#000000;shadow=1;glass=0;align=center;verticalAlign=middle;fontStyle=1;resizable=1;" vertex="1" parent="6rpQLIKWk_AHX--m7qB0-55">
+          <mxGeometry x="1020" y="680" width="160" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="6rpQLIKWk_AHX--m7qB0-114" value="Moongate" style="rounded=1;strokeWidth=1;strokeColor=#667788;textShadow=0;labelBackgroundColor=none;whiteSpace=wrap;fontSize=18;fontFamily=Georgia;fillColor=#B3D56A;fontColor=#000000;shadow=1;glass=0;align=center;verticalAlign=middle;fontStyle=1;resizable=1;" vertex="1" parent="6rpQLIKWk_AHX--m7qB0-55">
+          <mxGeometry x="820" y="680" width="160" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="6rpQLIKWk_AHX--m7qB0-115" value="Contingency" style="rounded=1;strokeWidth=1;strokeColor=#667788;textShadow=0;labelBackgroundColor=none;whiteSpace=wrap;fontSize=18;fontFamily=Georgia;fillColor=#B3D56A;fontColor=#000000;shadow=1;glass=0;align=center;verticalAlign=middle;fontStyle=1;resizable=1;" vertex="1" parent="6rpQLIKWk_AHX--m7qB0-55">
+          <mxGeometry x="820" y="740" width="160" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="6rpQLIKWk_AHX--m7qB0-116" value="Shadowling" style="rounded=1;strokeWidth=1;strokeColor=#667788;textShadow=0;labelBackgroundColor=none;whiteSpace=wrap;fontSize=18;fontFamily=Georgia;fillColor=#B3D56A;fontColor=#000000;shadow=1;glass=0;align=center;verticalAlign=middle;fontStyle=1;resizable=1;" vertex="1" parent="6rpQLIKWk_AHX--m7qB0-55">
+          <mxGeometry x="1020" y="740" width="160" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="6rpQLIKWk_AHX--m7qB0-117" value="Shadow Servant" style="rounded=1;strokeWidth=1;strokeColor=#667788;textShadow=0;labelBackgroundColor=none;whiteSpace=wrap;fontSize=18;fontFamily=Georgia;fillColor=#B3D56A;fontColor=#000000;shadow=1;glass=0;align=center;verticalAlign=middle;fontStyle=1;resizable=1;" vertex="1" parent="6rpQLIKWk_AHX--m7qB0-55">
+          <mxGeometry x="1220" y="740" width="160" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="6rpQLIKWk_AHX--m7qB0-118" value="Esoteric" style="text;align=center;verticalAlign=middle;resizable=0;points=[];autosize=0;strokeColor=none;fillColor=none;fontFamily=Helvetica;fontSize=18;fontColor=#667788;labelBackgroundColor=none;textShadow=1;" vertex="1" parent="6rpQLIKWk_AHX--m7qB0-55">
+          <mxGeometry x="1640" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="6rpQLIKWk_AHX--m7qB0-119" value="Riftal Summons" style="rounded=1;strokeWidth=1;strokeColor=#667788;textShadow=0;labelBackgroundColor=none;whiteSpace=wrap;fontSize=18;fontFamily=Georgia;fillColor=#B3D56A;fontColor=#000000;shadow=1;glass=0;align=center;verticalAlign=middle;fontStyle=1;resizable=1;" vertex="1" parent="6rpQLIKWk_AHX--m7qB0-55">
+          <mxGeometry x="1620" y="710" width="160" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="6rpQLIKWk_AHX--m7qB0-120" value="Ripplegate Theory" style="rounded=1;whiteSpace=wrap;fillColor=#D5D0CA;labelBackgroundColor=none;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;container=0;fontFamily=Georgia;fontSize=18;strokeColor=#667788;shadow=0;glass=0;strokeWidth=1;align=center;fontStyle=1;verticalAlign=middle;fontColor=#000000;textShadow=0;" vertex="1" parent="6rpQLIKWk_AHX--m7qB0-55">
+          <mxGeometry x="1220" y="680" width="160" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="6rpQLIKWk_AHX--m7qB0-124" value="Clear Vision" style="rounded=1;strokeWidth=1;strokeColor=#667788;textShadow=0;labelBackgroundColor=none;whiteSpace=wrap;fontSize=18;fontFamily=Georgia;fillColor=#AAC8EB;fontColor=#000000;shadow=1;glass=0;align=center;verticalAlign=middle;fontStyle=0;resizable=1;" vertex="1" parent="6rpQLIKWk_AHX--m7qB0-55">
+          <mxGeometry x="220" y="900" width="160" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="6rpQLIKWk_AHX--m7qB0-127" value="Artificer&#39;s Eye" style="rounded=1;strokeWidth=1;strokeColor=#667788;textShadow=0;labelBackgroundColor=none;whiteSpace=wrap;fontSize=18;fontFamily=Georgia;fillColor=#AAC8EB;fontColor=#000000;shadow=1;glass=0;align=center;verticalAlign=middle;fontStyle=0;resizable=1;" vertex="1" parent="6rpQLIKWk_AHX--m7qB0-55">
+          <mxGeometry x="420" y="900" width="160" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="6rpQLIKWk_AHX--m7qB0-131" value="Aura Sight" style="rounded=1;strokeWidth=1;strokeColor=#667788;textShadow=0;labelBackgroundColor=none;whiteSpace=wrap;fontSize=18;fontFamily=Georgia;fillColor=#AAC8EB;fontColor=#000000;shadow=1;glass=0;align=center;verticalAlign=middle;fontStyle=0;resizable=1;" vertex="1" parent="6rpQLIKWk_AHX--m7qB0-55">
+          <mxGeometry x="420" y="960" width="160" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="6rpQLIKWk_AHX--m7qB0-133" value="Tenebrous Sense" style="rounded=1;strokeWidth=1;strokeColor=#667788;textShadow=0;labelBackgroundColor=none;whiteSpace=wrap;fontSize=18;fontFamily=Georgia;fillColor=#AAC8EB;fontColor=#000000;shadow=1;glass=0;align=center;verticalAlign=middle;fontStyle=0;resizable=1;" vertex="1" parent="6rpQLIKWk_AHX--m7qB0-55">
+          <mxGeometry x="620" y="900" width="160" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="6rpQLIKWk_AHX--m7qB0-137" value="Piercing Gaze" style="rounded=1;strokeWidth=1;strokeColor=#667788;textShadow=0;labelBackgroundColor=none;whiteSpace=wrap;fontSize=18;fontFamily=Georgia;fillColor=#B3D56A;fontColor=#000000;shadow=1;glass=0;align=center;verticalAlign=middle;fontStyle=0;resizable=1;" vertex="1" parent="6rpQLIKWk_AHX--m7qB0-55">
+          <mxGeometry x="420" y="840" width="160" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="6rpQLIKWk_AHX--m7qB0-140" value="Distant Gaze" style="rounded=1;strokeWidth=1;strokeColor=#667788;textShadow=0;labelBackgroundColor=none;whiteSpace=wrap;fontSize=18;fontFamily=Georgia;fillColor=#B3D56A;fontColor=#000000;shadow=1;glass=0;align=center;verticalAlign=middle;fontStyle=1;resizable=1;" vertex="1" parent="6rpQLIKWk_AHX--m7qB0-55">
+          <mxGeometry x="620" y="840" width="160" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="6rpQLIKWk_AHX--m7qB0-141" value="Destiny Cipher" style="rounded=1;strokeWidth=1;strokeColor=#667788;textShadow=0;labelBackgroundColor=none;whiteSpace=wrap;fontSize=18;fontFamily=Georgia;fillColor=#B3D56A;fontColor=#000000;shadow=1;glass=0;align=center;verticalAlign=middle;fontStyle=1;resizable=1;" vertex="1" parent="6rpQLIKWk_AHX--m7qB0-55">
+          <mxGeometry x="620" y="990" width="160" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="6rpQLIKWk_AHX--m7qB0-142" value="Unleash" style="rounded=1;strokeWidth=1;strokeColor=#667788;textShadow=0;labelBackgroundColor=none;whiteSpace=wrap;fontSize=18;fontFamily=Georgia;fillColor=#B3D56A;fontColor=#000000;shadow=1;glass=0;align=center;verticalAlign=middle;fontStyle=0;resizable=1;" vertex="1" parent="6rpQLIKWk_AHX--m7qB0-55">
+          <mxGeometry x="1020" y="900" width="160" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="6rpQLIKWk_AHX--m7qB0-143" value="Machinist&#39;s Touch" style="rounded=1;strokeWidth=1;strokeColor=#667788;textShadow=0;labelBackgroundColor=none;whiteSpace=wrap;fontSize=18;fontFamily=Georgia;fillColor=#AAC8EB;fontColor=#000000;shadow=1;glass=0;align=center;verticalAlign=middle;fontStyle=0;resizable=1;" vertex="1" parent="6rpQLIKWk_AHX--m7qB0-55">
+          <mxGeometry x="820" y="870" width="160" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="6rpQLIKWk_AHX--m7qB0-146" value="Seer&#39;s Sense" style="rounded=1;strokeWidth=1;strokeColor=#667788;textShadow=0;labelBackgroundColor=none;whiteSpace=wrap;fontSize=18;fontFamily=Georgia;fillColor=#AAC8EB;fontColor=#000000;shadow=1;glass=0;align=center;verticalAlign=middle;fontStyle=1;resizable=1;gradientColor=#B3D56A;gradientDirection=east;" vertex="1" parent="6rpQLIKWk_AHX--m7qB0-55">
+          <mxGeometry x="820" y="970" width="160" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="6rpQLIKWk_AHX--m7qB0-150" value="Calm" style="rounded=1;strokeWidth=1;strokeColor=#667788;textShadow=0;labelBackgroundColor=none;whiteSpace=wrap;fontSize=18;fontFamily=Georgia;fillColor=#EBCD00;fontColor=#000000;shadow=1;glass=0;align=center;verticalAlign=middle;fontStyle=0;resizable=1;" vertex="1" parent="6rpQLIKWk_AHX--m7qB0-55">
+          <mxGeometry x="220" y="1190" width="160" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="6rpQLIKWk_AHX--m7qB0-153" value="Telekinetic Throw" style="rounded=1;strokeWidth=1;strokeColor=#667788;textShadow=0;labelBackgroundColor=none;whiteSpace=wrap;fontSize=18;fontFamily=Georgia;fillColor=#E80538;fontColor=#FFFFFF;shadow=1;glass=0;align=center;verticalAlign=middle;fontStyle=0;resizable=1;gradientColor=none;gradientDirection=east;" vertex="1" parent="6rpQLIKWk_AHX--m7qB0-55">
+          <mxGeometry x="220" y="1130" width="160" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="6rpQLIKWk_AHX--m7qB0-156" value="Psychic Shield" style="rounded=1;whiteSpace=wrap;fillColor=#147A6D;labelBackgroundColor=none;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;container=0;fontFamily=Georgia;fontSize=18;strokeColor=#667788;shadow=1;glass=0;strokeWidth=1;align=center;fontStyle=0;verticalAlign=middle;fontColor=#FFFFFF;textShadow=0;" vertex="1" parent="6rpQLIKWk_AHX--m7qB0-55">
+          <mxGeometry x="620" y="1190" width="160" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="6rpQLIKWk_AHX--m7qB0-158" value="Sleep" style="rounded=1;strokeWidth=1;strokeColor=#667788;textShadow=0;labelBackgroundColor=none;whiteSpace=wrap;fontSize=18;fontFamily=Georgia;fillColor=#EBCD00;fontColor=#000000;shadow=1;glass=0;align=center;verticalAlign=middle;fontStyle=0;resizable=1;" vertex="1" parent="6rpQLIKWk_AHX--m7qB0-55">
+          <mxGeometry x="410" y="1220" width="160" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="6rpQLIKWk_AHX--m7qB0-160" value="Rend" style="rounded=1;strokeWidth=1;strokeColor=#667788;textShadow=0;labelBackgroundColor=none;whiteSpace=wrap;fontSize=18;fontFamily=Georgia;fillColor=#EBCD00;fontColor=#000000;shadow=1;glass=0;align=center;verticalAlign=middle;fontStyle=0;resizable=1;gradientColor=#B3D56A;gradientDirection=east;" vertex="1" parent="6rpQLIKWk_AHX--m7qB0-55">
+          <mxGeometry x="620" y="1130" width="160" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="6rpQLIKWk_AHX--m7qB0-162" value="Telekinetic Storm" style="rounded=1;strokeWidth=1;strokeColor=#667788;textShadow=0;labelBackgroundColor=none;whiteSpace=wrap;fontSize=18;fontFamily=Georgia;fillColor=#E80538;fontColor=#FFFFFF;shadow=1;glass=0;align=center;verticalAlign=middle;fontStyle=0;resizable=1;gradientColor=none;gradientDirection=east;" vertex="1" parent="6rpQLIKWk_AHX--m7qB0-55">
+          <mxGeometry x="820" y="1090" width="160" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="6rpQLIKWk_AHX--m7qB0-164" value="Thoughtcast" style="rounded=1;strokeWidth=1;strokeColor=#667788;textShadow=0;labelBackgroundColor=none;whiteSpace=wrap;fontSize=18;fontFamily=Georgia;fillColor=#B3D56A;fontColor=#000000;shadow=1;glass=0;align=center;verticalAlign=middle;fontStyle=0;resizable=1;" vertex="1" parent="6rpQLIKWk_AHX--m7qB0-55">
+          <mxGeometry x="1020" y="1190" width="160" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="6rpQLIKWk_AHX--m7qB0-165" value="Mind Shout" style="rounded=1;strokeWidth=1;strokeColor=#667788;textShadow=0;labelBackgroundColor=none;whiteSpace=wrap;fontSize=18;fontFamily=Georgia;fillColor=#EBCD00;fontColor=#000000;shadow=1;glass=0;align=center;verticalAlign=middle;fontStyle=1;resizable=1;" vertex="1" parent="6rpQLIKWk_AHX--m7qB0-55">
+          <mxGeometry x="1420" y="1160" width="160" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="6rpQLIKWk_AHX--m7qB0-166" value="Telekinetic Shield" style="rounded=1;whiteSpace=wrap;fillColor=#147A6D;labelBackgroundColor=none;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;container=0;fontFamily=Georgia;fontSize=18;strokeColor=#667788;shadow=1;glass=0;strokeWidth=1;align=center;fontStyle=0;verticalAlign=middle;fontColor=#FFFFFF;textShadow=0;" vertex="1" parent="6rpQLIKWk_AHX--m7qB0-55">
+          <mxGeometry x="1220" y="1090" width="160" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="6rpQLIKWk_AHX--m7qB0-168" value="Shear" style="rounded=1;whiteSpace=wrap;fillColor=#147A6D;labelBackgroundColor=none;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;container=0;fontFamily=Georgia;fontSize=18;strokeColor=#667788;shadow=1;glass=0;strokeWidth=1;align=center;fontStyle=0;verticalAlign=middle;fontColor=#FFFFFF;textShadow=0;" vertex="1" parent="6rpQLIKWk_AHX--m7qB0-55">
+          <mxGeometry x="1020" y="1130" width="160" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="6rpQLIKWk_AHX--m7qB0-170" value="Sovereign Destiny" style="rounded=1;strokeWidth=1;strokeColor=#667788;textShadow=0;labelBackgroundColor=none;whiteSpace=wrap;fontSize=18;fontFamily=Georgia;fillColor=#EBCD00;fontColor=#000000;shadow=1;glass=0;align=center;verticalAlign=middle;fontStyle=1;resizable=1;" vertex="1" parent="6rpQLIKWk_AHX--m7qB0-55">
+          <mxGeometry x="820" y="80" width="160" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="6rpQLIKWk_AHX--m7qB0-171" value="Cage of Light" style="rounded=1;whiteSpace=wrap;fillColor=#147A6D;labelBackgroundColor=none;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;container=0;fontFamily=Georgia;fontSize=18;strokeColor=#667788;shadow=1;glass=0;strokeWidth=1;align=center;fontStyle=0;verticalAlign=middle;fontColor=#FFFFFF;textShadow=0;" vertex="1" parent="6rpQLIKWk_AHX--m7qB0-55">
+          <mxGeometry x="1020" y="380" width="160" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="6rpQLIKWk_AHX--m7qB0-176" value="Locate" style="rounded=1;strokeWidth=1;strokeColor=#667788;textShadow=0;labelBackgroundColor=none;whiteSpace=wrap;fontSize=18;fontFamily=Georgia;fillColor=#B3D56A;fontColor=#000000;shadow=1;glass=0;align=center;verticalAlign=middle;fontStyle=1;resizable=1;" vertex="1" parent="6rpQLIKWk_AHX--m7qB0-55">
+          <mxGeometry x="1020" y="840" width="160" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="6rpQLIKWk_AHX--m7qB0-177" value="Empower Moonblade" style="rounded=1;whiteSpace=wrap;fillColor=#D5D0CA;labelBackgroundColor=none;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;container=0;fontFamily=Georgia;fontSize=18;strokeColor=#667788;shadow=0;glass=0;strokeWidth=1;align=center;fontStyle=1;verticalAlign=middle;fontColor=#000000;textShadow=0;" vertex="1" parent="6rpQLIKWk_AHX--m7qB0-55">
+          <mxGeometry x="1420" y="1090" width="160" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="6rpQLIKWk_AHX--m7qB0-179" value="Hypnotize" style="rounded=1;whiteSpace=wrap;fillColor=#D5D0CA;labelBackgroundColor=none;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;container=0;fontFamily=Georgia;fontSize=18;strokeColor=#667788;shadow=0;glass=0;strokeWidth=1;align=center;fontStyle=0;verticalAlign=middle;fontColor=#000000;textShadow=0;" vertex="1" parent="6rpQLIKWk_AHX--m7qB0-55">
+          <mxGeometry x="1020" y="1250" width="160" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="6rpQLIKWk_AHX--m7qB0-180" value="Sever Thread" style="rounded=1;strokeWidth=1;strokeColor=#667788;textShadow=0;labelBackgroundColor=none;whiteSpace=wrap;fontSize=18;fontFamily=Georgia;fillColor=#EBCD00;fontColor=#000000;shadow=1;glass=0;align=center;verticalAlign=middle;fontStyle=1;resizable=1;" vertex="1" parent="6rpQLIKWk_AHX--m7qB0-55">
+          <mxGeometry x="420" y="80" width="160" height="40" as="geometry" />
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
