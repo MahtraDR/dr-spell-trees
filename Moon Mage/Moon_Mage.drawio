@@ -1053,9 +1053,6 @@
         <mxCell id="6rpQLIKWk_AHX--m7qB0-117" value="Shadow Servant" style="rounded=1;strokeWidth=1;strokeColor=#667788;textShadow=0;labelBackgroundColor=none;whiteSpace=wrap;fontSize=18;fontFamily=Georgia;fillColor=#B3D56A;fontColor=#000000;shadow=1;glass=0;align=center;verticalAlign=middle;fontStyle=1;resizable=1;" vertex="1" parent="6rpQLIKWk_AHX--m7qB0-55">
           <mxGeometry x="1220" y="740" width="160" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="6rpQLIKWk_AHX--m7qB0-118" value="Esoteric" style="text;align=center;verticalAlign=middle;resizable=0;points=[];autosize=0;strokeColor=none;fillColor=none;fontFamily=Helvetica;fontSize=18;fontColor=#667788;labelBackgroundColor=none;textShadow=1;" vertex="1" parent="6rpQLIKWk_AHX--m7qB0-55">
-          <mxGeometry x="1640" width="120" height="40" as="geometry" />
-        </mxCell>
         <mxCell id="6rpQLIKWk_AHX--m7qB0-119" value="Riftal Summons" style="rounded=1;strokeWidth=1;strokeColor=#667788;textShadow=0;labelBackgroundColor=none;whiteSpace=wrap;fontSize=18;fontFamily=Georgia;fillColor=#B3D56A;fontColor=#000000;shadow=1;glass=0;align=center;verticalAlign=middle;fontStyle=1;resizable=1;" vertex="1" parent="6rpQLIKWk_AHX--m7qB0-55">
           <mxGeometry x="1620" y="710" width="160" height="40" as="geometry" />
         </mxCell>
