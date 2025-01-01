@@ -40,7 +40,7 @@
         <mxCell id="ByqBd_FR368xJn7YFOeK-137" value="Teleologic Sorcery" style="text;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=1;fontSize=16;fontFamily=Georgia;fontColor=#667788;strokeColor=none;" parent="DKlUDa0g7rmCu-vv5rfz-316" vertex="1">
           <mxGeometry x="420" y="150" width="140" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="DKlUDa0g7rmCu-vv5rfz-14" value="Shapes and Lines" style="locked=1;" parent="0" />
+        <mxCell id="DKlUDa0g7rmCu-vv5rfz-14" value="Shapes and Lines" style="" parent="0" />
         <mxCell id="A4h3zCrJcsYcp54G7Gio-6" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;strokeColor=#667788;strokeWidth=2;align=center;verticalAlign=middle;fontFamily=Helvetica;fontSize=11;fontColor=default;labelBackgroundColor=default;endArrow=classic;curved=0;dashed=1;" parent="DKlUDa0g7rmCu-vv5rfz-14" source="DKlUDa0g7rmCu-vv5rfz-31" target="A4h3zCrJcsYcp54G7Gio-2" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
@@ -443,7 +443,7 @@
         <mxCell id="eY5dnLTpbY4zrGF3gSu3-119" style="edgeStyle=orthogonalEdgeStyle;shape=connector;curved=0;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;strokeColor=#667788;strokeWidth=2;align=center;verticalAlign=middle;fontFamily=Helvetica;fontSize=11;fontColor=default;labelBackgroundColor=default;endArrow=none;endFill=0;" parent="DKlUDa0g7rmCu-vv5rfz-14" source="eY5dnLTpbY4zrGF3gSu3-40" target="eY5dnLTpbY4zrGF3gSu3-1" edge="1">
           <mxGeometry relative="1" as="geometry">
             <Array as="points">
-              <mxPoint x="1400" y="1080" />
+              <mxPoint x="1400" y="1090" />
               <mxPoint x="1400" y="700" />
             </Array>
           </mxGeometry>
@@ -451,7 +451,7 @@
         <mxCell id="Pr3LXegyoYwMrFUZYJ9y-5" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;strokeColor=#667788;strokeWidth=2;align=center;verticalAlign=middle;fontFamily=Helvetica;fontSize=11;fontColor=default;labelBackgroundColor=default;endArrow=none;endFill=0;curved=0;" edge="1" parent="DKlUDa0g7rmCu-vv5rfz-14" source="eY5dnLTpbY4zrGF3gSu3-40" target="eY5dnLTpbY4zrGF3gSu3-28">
           <mxGeometry relative="1" as="geometry">
             <Array as="points">
-              <mxPoint x="1400" y="1080" />
+              <mxPoint x="1400" y="1090" />
               <mxPoint x="1400" y="830" />
             </Array>
           </mxGeometry>
