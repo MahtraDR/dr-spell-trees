@@ -968,7 +968,7 @@
           <mxGeometry x="1020" y="180" width="130" height="20" as="geometry" />
         </mxCell>
         <mxCell id="-dR2T00Uhgw3VuPTZwKf-566" value="Transparency" style="locked=1;" parent="0" visible="0" />
-        <mxCell id="6rpQLIKWk_AHX--m7qB0-55" value="Spell name text" style="" parent="0" />
+        <mxCell id="6rpQLIKWk_AHX--m7qB0-55" value="Spell name text" style="locked=1;" visible="0" parent="0" />
         <mxCell id="6rpQLIKWk_AHX--m7qB0-58" value="Tangled Fate" style="rounded=1;strokeWidth=1;strokeColor=#667788;textShadow=0;labelBackgroundColor=none;whiteSpace=wrap;fontSize=18;fontFamily=Georgia;fillColor=#EBCD00;fontColor=#000000;shadow=1;glass=0;align=center;verticalAlign=middle;fontStyle=1;resizable=1;gradientColor=#B3D56A;gradientDirection=east;" vertex="1" parent="6rpQLIKWk_AHX--m7qB0-55">
           <mxGeometry x="620" y="140" width="160" height="40" as="geometry" />
         </mxCell>
