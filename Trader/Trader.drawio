@@ -16,7 +16,7 @@
         <mxCell id="SK7J9j3kNQgWI85fVgM1-25" value="" style="rounded=1;fontFamily=Atkinson Hyperlegible;fontSize=11;fontColor=#667788;labelBackgroundColor=none;fillColor=#FCF4C4;strokeColor=#667788;opacity=30;glass=0;shadow=0;align=center;verticalAlign=middle;gradientColor=none;strokeWidth=2;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DAtkinson%2BHyperlegible;" vertex="1" parent="DKlUDa0g7rmCu-vv5rfz-316">
           <mxGeometry x="10" y="400" width="990" height="260" as="geometry" />
         </mxCell>
-        <mxCell id="DKlUDa0g7rmCu-vv5rfz-14" value="Shapes and Lines" style="locked=1;" parent="0" />
+        <mxCell id="DKlUDa0g7rmCu-vv5rfz-14" value="Shapes and Lines" style="" parent="0" />
         <mxCell id="SK7J9j3kNQgWI85fVgM1-28" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;strokeWidth=2;curved=0;endArrow=none;endFill=0;strokeColor=#667788;" edge="1" parent="DKlUDa0g7rmCu-vv5rfz-14" source="eY5dnLTpbY4zrGF3gSu3-44" target="SK7J9j3kNQgWI85fVgM1-4">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
@@ -129,8 +129,8 @@
         <mxCell id="SK7J9j3kNQgWI85fVgM1-48" style="edgeStyle=orthogonalEdgeStyle;shape=connector;curved=0;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;strokeColor=#667788;strokeWidth=2;align=center;verticalAlign=middle;fontFamily=Helvetica;fontSize=11;fontColor=default;labelBackgroundColor=default;endArrow=none;endFill=0;" edge="1" parent="DKlUDa0g7rmCu-vv5rfz-14" source="SK7J9j3kNQgWI85fVgM1-20" target="SK7J9j3kNQgWI85fVgM1-23">
           <mxGeometry relative="1" as="geometry">
             <Array as="points">
-              <mxPoint x="600" y="440" />
-              <mxPoint x="600" y="500" />
+              <mxPoint x="710" y="440" />
+              <mxPoint x="710" y="440" />
             </Array>
           </mxGeometry>
         </mxCell>
@@ -169,7 +169,7 @@
           <mxGeometry x="620" y="540" width="160" height="40" as="geometry" />
         </mxCell>
         <mxCell id="SK7J9j3kNQgWI85fVgM1-23" value="Resumption" style="rounded=1;strokeWidth=1;strokeColor=#667788;textShadow=0;labelBackgroundColor=none;whiteSpace=wrap;fontSize=18;fontFamily=Atkinson Hyperlegible;fillColor=#D5D0CA;fontColor=#000000;shadow=0;glass=0;align=center;verticalAlign=middle;fontStyle=1;resizable=1;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DAtkinson%2BHyperlegible;" vertex="1" parent="DKlUDa0g7rmCu-vv5rfz-14">
-          <mxGeometry x="820" y="480" width="160" height="40" as="geometry" />
+          <mxGeometry x="820" y="420" width="160" height="40" as="geometry" />
         </mxCell>
         <mxCell id="SK7J9j3kNQgWI85fVgM1-31" style="edgeStyle=orthogonalEdgeStyle;shape=connector;curved=0;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;strokeColor=#667788;strokeWidth=2;align=center;verticalAlign=middle;fontFamily=Helvetica;fontSize=11;fontColor=default;labelBackgroundColor=default;endArrow=none;endFill=0;" edge="1" parent="DKlUDa0g7rmCu-vv5rfz-14" source="SK7J9j3kNQgWI85fVgM1-1" target="SK7J9j3kNQgWI85fVgM1-5">
           <mxGeometry relative="1" as="geometry" />
@@ -276,7 +276,7 @@
         </mxCell>
         <mxCell id="DKlUDa0g7rmCu-vv5rfz-188" value="Spell cost bubbles text" style="" parent="0" />
         <mxCell id="6rpQLIKWk_AHX--m7qB0-6" value="●○○○" style="text;align=center;verticalAlign=middle;rounded=0;fontFamily=Helvetica;fontSize=13;fontColor=default;labelBackgroundColor=none;spacing=0;spacingTop=0;spacingBottom=-5;fillColor=none;" parent="DKlUDa0g7rmCu-vv5rfz-188" vertex="1">
-          <mxGeometry x="940" y="500" width="40" height="20" as="geometry" />
+          <mxGeometry x="940" y="440" width="40" height="20" as="geometry" />
         </mxCell>
         <mxCell id="SK7J9j3kNQgWI85fVgM1-59" value="●●●●" style="text;align=center;verticalAlign=middle;rounded=0;fontFamily=Helvetica;fontSize=13;fontColor=default;labelBackgroundColor=none;spacing=0;spacingTop=0;spacingBottom=-5;fillColor=none;" vertex="1" parent="DKlUDa0g7rmCu-vv5rfz-188">
           <mxGeometry x="1340" y="280" width="40" height="20" as="geometry" />
@@ -357,7 +357,7 @@
         <mxCell id="SK7J9j3kNQgWI85fVgM1-55" value="Circle 40" style="text;align=right;verticalAlign=bottom;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontFamily=Atkinson Hyperlegible;fontSize=13;fontColor=#667788;labelBackgroundColor=none;fontStyle=3;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DAtkinson%2BHyperlegible;" vertex="1" parent="DKlUDa0g7rmCu-vv5rfz-245">
           <mxGeometry x="1100" y="230" width="80" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="DKlUDa0g7rmCu-vv5rfz-268" value="Spell Pre-requisites text" style="locked=1;" parent="0" />
+        <mxCell id="DKlUDa0g7rmCu-vv5rfz-268" value="Spell Pre-requisites text" style="" parent="0" />
         <mxCell id="rESuhYQJdn2nmY16vAaY-67" value="Requires two of MEG, TURI&#xa;or LGV" style="text;align=left;verticalAlign=top;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontFamily=Atkinson Hyperlegible;fontSize=13;fontColor=#667788;labelBackgroundColor=none;spacing=0;spacingBottom=0;spacingTop=-4;fontStyle=2;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DAtkinson%2BHyperlegible;" parent="DKlUDa0g7rmCu-vv5rfz-268" vertex="1">
           <mxGeometry x="620" y="580" width="180" height="30" as="geometry" />
         </mxCell>
@@ -368,7 +368,7 @@
           <mxGeometry x="110" y="480" width="70" height="30" as="geometry" />
         </mxCell>
         <mxCell id="SK7J9j3kNQgWI85fVgM1-58" value="Requires all other &#xa;Noematics spells" style="text;align=left;verticalAlign=top;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontFamily=Atkinson Hyperlegible;fontSize=13;fontColor=#667788;labelBackgroundColor=none;spacing=0;spacingBottom=0;spacingTop=-4;fontStyle=2;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DAtkinson%2BHyperlegible;" vertex="1" parent="DKlUDa0g7rmCu-vv5rfz-268">
-          <mxGeometry x="820" y="520" width="120" height="30" as="geometry" />
+          <mxGeometry x="820" y="460" width="120" height="30" as="geometry" />
         </mxCell>
         <mxCell id="-dR2T00Uhgw3VuPTZwKf-566" value="Transparency" style="locked=1;" parent="0" />
       </root>
