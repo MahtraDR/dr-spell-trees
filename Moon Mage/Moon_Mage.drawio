@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36" version="26.0.3">
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36" version="26.0.4">
   <diagram name="Page-1" id="PuFN-wMOv0jWiG4jprAx">
     <mxGraphModel dx="1420" dy="824" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1800" pageHeight="1120" background="none" math="0" shadow="0">
       <root>
@@ -34,29 +34,29 @@
         <mxCell id="ByqBd_FR368xJn7YFOeK-137" value="Teleologic&#xa;Sorcery" style="text;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=1;fontSize=16;fontFamily=Atkinson Hyperlegible;fontColor=#667788;strokeColor=none;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DAtkinson%2BHyperlegible;" parent="DKlUDa0g7rmCu-vv5rfz-316" vertex="1">
           <mxGeometry x="400" y="160" width="140" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="A3KFj84B027qKpNExyRx-4" value="Second spellbook borders" style="locked=1;" parent="0" />
+        <mxCell id="A3KFj84B027qKpNExyRx-4" value="Second spellbook borders" style="" parent="0" />
         <mxCell id="A3KFj84B027qKpNExyRx-18" value="" style="rounded=1;fontFamily=Atkinson Hyperlegible;fontSize=11;fontColor=default;labelBackgroundColor=none;fillColor=#E80538;strokeColor=#E80538;opacity=30;glass=0;shadow=0;align=center;verticalAlign=middle;gradientColor=none;strokeWidth=2;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DAtkinson%2BHyperlegible;" parent="A3KFj84B027qKpNExyRx-4" vertex="1">
           <mxGeometry x="1210" y="220" width="180" height="100" as="geometry" />
         </mxCell>
         <mxCell id="A3KFj84B027qKpNExyRx-9" value="" style="rounded=1;fontFamily=Atkinson Hyperlegible;fontSize=11;fontColor=default;labelBackgroundColor=none;fillColor=#E80538;strokeColor=#E80538;opacity=30;glass=0;shadow=0;align=center;verticalAlign=middle;gradientColor=none;strokeWidth=2;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DAtkinson%2BHyperlegible;" parent="A3KFj84B027qKpNExyRx-4" vertex="1">
           <mxGeometry x="1210" y="620" width="380" height="100" as="geometry" />
         </mxCell>
-        <mxCell id="A3KFj84B027qKpNExyRx-12" value="Stellar Magic" style="text;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=1;fontSize=16;fontFamily=Atkinson Hyperlegible;fontColor=#000000;strokeColor=none;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DAtkinson%2BHyperlegible;" parent="A3KFj84B027qKpNExyRx-4" vertex="1">
+        <mxCell id="A3KFj84B027qKpNExyRx-12" value="Stellar Magic" style="text;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=1;fontSize=16;fontFamily=Atkinson Hyperlegible;fontColor=#FFFFFF;strokeColor=none;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DAtkinson%2BHyperlegible;" parent="A3KFj84B027qKpNExyRx-4" vertex="1">
           <mxGeometry x="1220" y="680" width="140" height="40" as="geometry" />
         </mxCell>
         <mxCell id="A3KFj84B027qKpNExyRx-15" value="" style="rounded=1;fontFamily=Atkinson Hyperlegible;fontSize=11;fontColor=default;labelBackgroundColor=none;fillColor=#E80538;strokeColor=#E80538;opacity=30;glass=0;shadow=0;align=center;verticalAlign=middle;gradientColor=none;strokeWidth=2;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DAtkinson%2BHyperlegible;" parent="A3KFj84B027qKpNExyRx-4" vertex="1">
           <mxGeometry x="1410" y="460" width="180" height="100" as="geometry" />
         </mxCell>
-        <mxCell id="A3KFj84B027qKpNExyRx-16" value="Stellar Magic" style="text;align=center;verticalAlign=bottom;whiteSpace=wrap;rounded=0;fontStyle=1;fontSize=16;fontFamily=Atkinson Hyperlegible;fontColor=#000000;strokeColor=none;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DAtkinson%2BHyperlegible;" parent="A3KFj84B027qKpNExyRx-4" vertex="1">
+        <mxCell id="A3KFj84B027qKpNExyRx-16" value="Stellar Magic" style="text;align=center;verticalAlign=bottom;whiteSpace=wrap;rounded=0;fontStyle=1;fontSize=16;fontFamily=Atkinson Hyperlegible;fontColor=#FFFFFF;strokeColor=none;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DAtkinson%2BHyperlegible;" parent="A3KFj84B027qKpNExyRx-4" vertex="1">
           <mxGeometry x="1430" y="520" width="140" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="A3KFj84B027qKpNExyRx-17" value="Stellar Magic" style="text;align=center;verticalAlign=bottom;whiteSpace=wrap;rounded=0;fontStyle=1;fontSize=16;fontFamily=Atkinson Hyperlegible;fontColor=#000000;strokeColor=none;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DAtkinson%2BHyperlegible;" parent="A3KFj84B027qKpNExyRx-4" vertex="1">
+        <mxCell id="A3KFj84B027qKpNExyRx-17" value="Stellar Magic" style="text;align=center;verticalAlign=bottom;whiteSpace=wrap;rounded=0;fontStyle=1;fontSize=16;fontFamily=Atkinson Hyperlegible;fontColor=#FFFFFF;strokeColor=none;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DAtkinson%2BHyperlegible;" parent="A3KFj84B027qKpNExyRx-4" vertex="1">
           <mxGeometry x="1230" y="280" width="140" height="40" as="geometry" />
         </mxCell>
         <mxCell id="A3KFj84B027qKpNExyRx-20" value="" style="rounded=1;fontFamily=Atkinson Hyperlegible;fontSize=11;fontColor=default;labelBackgroundColor=none;fillColor=#E80538;strokeColor=#E80538;opacity=30;glass=0;shadow=0;align=center;verticalAlign=middle;gradientColor=none;strokeWidth=2;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DAtkinson%2BHyperlegible;" parent="A3KFj84B027qKpNExyRx-4" vertex="1">
           <mxGeometry x="1410" y="260" width="180" height="100" as="geometry" />
         </mxCell>
-        <mxCell id="A3KFj84B027qKpNExyRx-21" value="Psychic Projection" style="text;align=center;verticalAlign=bottom;whiteSpace=wrap;rounded=0;fontStyle=1;fontSize=16;fontFamily=Atkinson Hyperlegible;fontColor=#000000;strokeColor=none;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DAtkinson%2BHyperlegible;" parent="A3KFj84B027qKpNExyRx-4" vertex="1">
+        <mxCell id="A3KFj84B027qKpNExyRx-21" value="Psychic Projection" style="text;align=center;verticalAlign=bottom;whiteSpace=wrap;rounded=0;fontStyle=1;fontSize=16;fontFamily=Atkinson Hyperlegible;fontColor=#FFFFFF;strokeColor=none;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DAtkinson%2BHyperlegible;" parent="A3KFj84B027qKpNExyRx-4" vertex="1">
           <mxGeometry x="1430" y="320" width="140" height="40" as="geometry" />
         </mxCell>
         <mxCell id="DKlUDa0g7rmCu-vv5rfz-14" value="Shapes and Lines" style="locked=1;" parent="0" />
