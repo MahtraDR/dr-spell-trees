@@ -952,7 +952,7 @@
         <mxCell id="A3KFj84B027qKpNExyRx-12" value="Stellar Magic" style="text;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=1;fontSize=16;fontFamily=Atkinson Hyperlegible;fontColor=#667788;strokeColor=none;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DAtkinson%2BHyperlegible;" parent="DKlUDa0g7rmCu-vv5rfz-245" vertex="1">
           <mxGeometry x="1220" y="680" width="140" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="DKlUDa0g7rmCu-vv5rfz-268" value="Spell Pre-requisites text" style="" parent="0" />
+        <mxCell id="DKlUDa0g7rmCu-vv5rfz-268" value="Spell Pre-requisites text" style="locked=1;" parent="0" />
         <mxCell id="rESuhYQJdn2nmY16vAaY-67" value="Requires SET or TF" style="text;align=left;verticalAlign=top;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontFamily=Atkinson Hyperlegible;fontSize=13;fontColor=#667788;labelBackgroundColor=none;spacing=0;spacingBottom=0;spacingTop=-4;fontStyle=2;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DAtkinson%2BHyperlegible;" parent="DKlUDa0g7rmCu-vv5rfz-268" vertex="1">
           <mxGeometry x="820" y="120" width="130" height="20" as="geometry" />
         </mxCell>
