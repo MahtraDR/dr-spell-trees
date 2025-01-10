@@ -34,7 +34,7 @@
         <mxCell id="ByqBd_FR368xJn7YFOeK-137" value="Teleologic&#xa;Sorcery" style="text;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=1;fontSize=16;fontFamily=Atkinson Hyperlegible;fontColor=#667788;strokeColor=none;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DAtkinson%2BHyperlegible;" parent="DKlUDa0g7rmCu-vv5rfz-316" vertex="1">
           <mxGeometry x="400" y="160" width="140" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="A3KFj84B027qKpNExyRx-4" value="Second spellbook borders" style="" parent="0" />
+        <mxCell id="A3KFj84B027qKpNExyRx-4" value="Second spellbook borders" style="locked=1;" parent="0" />
         <mxCell id="A3KFj84B027qKpNExyRx-18" value="" style="rounded=1;fontFamily=Atkinson Hyperlegible;fontSize=11;fontColor=default;labelBackgroundColor=none;fillColor=#E80538;strokeColor=#E80538;opacity=30;glass=0;shadow=0;align=center;verticalAlign=middle;gradientColor=none;strokeWidth=2;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DAtkinson%2BHyperlegible;" parent="A3KFj84B027qKpNExyRx-4" vertex="1">
           <mxGeometry x="1210" y="220" width="180" height="100" as="geometry" />
         </mxCell>
@@ -897,7 +897,7 @@
         <mxCell id="A3KFj84B027qKpNExyRx-148" value="●●○" style="text;align=center;verticalAlign=middle;rounded=0;fontFamily=Helvetica;fontSize=13;fontColor=default;labelBackgroundColor=none;spacing=0;spacingTop=0;spacingBottom=-5;fillColor=none;" parent="DKlUDa0g7rmCu-vv5rfz-188" vertex="1">
           <mxGeometry x="740" y="290" width="40" height="20" as="geometry" />
         </mxCell>
-        <mxCell id="DKlUDa0g7rmCu-vv5rfz-245" value="Circle Pre-requisites text" style="" parent="0" />
+        <mxCell id="DKlUDa0g7rmCu-vv5rfz-245" value="Circle Pre-requisites text" style="locked=1;" parent="0" />
         <mxCell id="rESuhYQJdn2nmY16vAaY-30" value="Circle 15" style="text;align=right;verticalAlign=bottom;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontFamily=Atkinson Hyperlegible;fontSize=13;fontColor=#667788;labelBackgroundColor=none;fontStyle=3;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DAtkinson%2BHyperlegible;" parent="DKlUDa0g7rmCu-vv5rfz-245" vertex="1">
           <mxGeometry x="510" y="50" width="70" height="30" as="geometry" />
         </mxCell>
@@ -952,7 +952,7 @@
         <mxCell id="A3KFj84B027qKpNExyRx-12" value="Stellar Magic" style="text;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=1;fontSize=16;fontFamily=Atkinson Hyperlegible;fontColor=#000000;strokeColor=none;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DAtkinson%2BHyperlegible;" parent="DKlUDa0g7rmCu-vv5rfz-245" vertex="1">
           <mxGeometry x="1220" y="680" width="140" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="DKlUDa0g7rmCu-vv5rfz-268" value="Spell Pre-requisites text" style="" parent="0" />
+        <mxCell id="DKlUDa0g7rmCu-vv5rfz-268" value="Spell Pre-requisites text" style="locked=1;" parent="0" />
         <mxCell id="rESuhYQJdn2nmY16vAaY-67" value="Requires SET or TF" style="text;align=left;verticalAlign=top;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontFamily=Atkinson Hyperlegible;fontSize=13;fontColor=#667788;labelBackgroundColor=none;spacing=0;spacingBottom=0;spacingTop=-4;fontStyle=2;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DAtkinson%2BHyperlegible;" parent="DKlUDa0g7rmCu-vv5rfz-268" vertex="1">
           <mxGeometry x="820" y="120" width="130" height="20" as="geometry" />
         </mxCell>
