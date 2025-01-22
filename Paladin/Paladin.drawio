@@ -1,12 +1,8 @@
 <mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36" version="26.0.6">
   <diagram name="Page-1" id="PuFN-wMOv0jWiG4jprAx">
-    <mxGraphModel dx="1626" dy="896" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1420" pageHeight="760" background="none" math="0" shadow="0">
+    <mxGraphModel dx="2276" dy="1254" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1420" pageHeight="760" background="none" math="0" shadow="0">
       <root>
         <mxCell id="0" />
-        <mxCell id="c8G9SyGkx4S9yWxRyEpl-4" value="Untitled Layer" style="locked=1;" parent="0" />
-        <mxCell id="c8G9SyGkx4S9yWxRyEpl-3" value="" style="rounded=1;fontFamily=Helvetica;fontSize=11;fontColor=default;labelBackgroundColor=none;fillColor=#FCF4C4;strokeColor=#667788;opacity=30;glass=0;shadow=0;align=center;verticalAlign=middle;gradientColor=none;strokeWidth=2;" vertex="1" parent="c8G9SyGkx4S9yWxRyEpl-4">
-          <mxGeometry x="1200" y="560" width="200" height="120" as="geometry" />
-        </mxCell>
         <mxCell id="DKlUDa0g7rmCu-vv5rfz-316" value="Spellbook borders" style="locked=1;" parent="0" />
         <mxCell id="DKlUDa0g7rmCu-vv5rfz-317" value="" style="rounded=1;fontFamily=Helvetica;fontSize=11;fontColor=default;labelBackgroundColor=none;fillColor=#FCF4C4;strokeColor=#667788;opacity=30;glass=0;shadow=0;align=center;verticalAlign=middle;gradientColor=none;strokeWidth=2;" parent="DKlUDa0g7rmCu-vv5rfz-316" vertex="1">
           <mxGeometry x="10" y="40" width="1180" height="140" as="geometry" />
@@ -25,6 +21,9 @@
         </mxCell>
         <mxCell id="4LNg5v-IOajOxHjOTWhF-4" value="Sacrifice" style="text;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=1;fontSize=16;fontFamily=Georgia;fontColor=#667788;strokeColor=none;" parent="DKlUDa0g7rmCu-vv5rfz-316" vertex="1">
           <mxGeometry x="10" y="140" width="140" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="c8G9SyGkx4S9yWxRyEpl-3" value="" style="rounded=1;fontFamily=Helvetica;fontSize=11;fontColor=default;labelBackgroundColor=none;fillColor=#FCF4C4;strokeColor=default;opacity=30;glass=0;shadow=0;align=center;verticalAlign=middle;gradientColor=none;strokeWidth=2;" vertex="1" parent="DKlUDa0g7rmCu-vv5rfz-316">
+          <mxGeometry x="1200" y="560" width="200" height="120" as="geometry" />
         </mxCell>
         <mxCell id="DKlUDa0g7rmCu-vv5rfz-14" value="Shapes and Lines" style="locked=1;" parent="0" />
         <mxCell id="bMIZUlVMKYhtr8G9Qs2D-41" style="edgeStyle=orthogonalEdgeStyle;shape=connector;curved=0;rounded=1;jumpStyle=arc;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;strokeColor=#667788;strokeWidth=2;align=center;verticalAlign=middle;fontFamily=Helvetica;fontSize=11;fontColor=default;labelBackgroundColor=default;endArrow=classic;endFill=1;dashed=1;" parent="DKlUDa0g7rmCu-vv5rfz-14" source="bMIZUlVMKYhtr8G9Qs2D-16" target="bMIZUlVMKYhtr8G9Qs2D-17" edge="1">
