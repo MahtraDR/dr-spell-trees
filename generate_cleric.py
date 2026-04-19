@@ -27,7 +27,7 @@ SPELLS = [
 
     # Holy Defense
     ("Visage", "Holy Defense", "Intro", 1, "Warding", None, "Standard"),
-    ("Protection from Evil", "Holy Defense", "Basic", 1, "Warding", None, "Standard"),
+    ("Protection from Evil", "Holy Defense", "Basic", 0, "Warding", None, "Standard"),
     ("Soul Shield", "Holy Defense", "Basic", 1, "Warding", None, "Standard"),
     ("Starry Waters", "Holy Defense", "Basic", 3, "Augmentation", None, "Standard"),
     ("Benediction", "Holy Defense", "Intermediate", 3, "Augmentation", None, "Standard"),
@@ -67,7 +67,7 @@ SPELLS = [
     ("Soul Bonding", "Spirit Manipulation", "Basic", 1, "Debilitation", None, "Battle"),
     ("Soul Sickness", "Spirit Manipulation", "Basic", 2, "Debilitation", None, "Battle"),
     ("Vigil", "Spirit Manipulation", "Basic", 1, "Utility", None, "Standard"),
-    ("Bitter Feast", "Spirit Manipulation", "Basic", None, "Utility", None, "Metamagic"),
+    ("Bitter Feast", "Spirit Manipulation", "Basic", 1, "Utility", None, "Metamagic"),
     ("Chill Spirit", "Spirit Manipulation", "Intermediate", 2, "Targeted", None, "Battle"),
     ("Eylhaar's Feast", "Spirit Manipulation", "Intermediate", 2, "Utility", None, "Battle"),
     ("Mass Rejuvenation", "Spirit Manipulation", "Intermediate", 1, "Utility", None, "Standard"),
