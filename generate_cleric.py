@@ -448,19 +448,32 @@ def build_drawio():
     # --- Spellbook borders ---
     borders_layer = SubElement(xml_root, "mxCell", id="spellbook-borders", value="Spellbook borders", style="locked=1;", parent="0")
     band_colors = ["#FCF4C4", "#667788"]
-    for i, (book_name, by, bh, _) in enumerate(band_info):
+    band_right_x = 1610  # 10px right of Esoteric divider at x=1600
+    for i, (book_name, by, bh, spells_in_book) in enumerate(band_info):
+        # Compute tight band from actual spell positions (20px padding)
+        book_spells_pos = [(spell_pos[s[0]][1]) for s in spells_in_book if s[0] in spell_pos]
+        if book_spells_pos:
+            min_spell_y = min(book_spells_pos)
+            max_spell_y = max(book_spells_pos) + BOX_H
+            band_top = min_spell_y - 20
+            band_bottom = max_spell_y + 20
+        else:
+            band_top = by
+            band_bottom = by + bh
+        band_height = band_bottom - band_top
+
         fill = band_colors[i % 2]
         bid = next_id()
         c = SubElement(xml_root, "mxCell", id=bid, value="",
                        style=f"rounded=1;fontFamily=Helvetica;fontSize=11;fontColor=default;labelBackgroundColor=none;fillColor={fill};strokeColor=#667788;opacity=30;glass=0;shadow=0;align=center;verticalAlign=middle;gradientColor=none;strokeWidth=2;",
                        parent="spellbook-borders", vertex="1")
-        SubElement(c, "mxGeometry", x="10", y=str(by), width=str(PAGE_WIDTH - 240), height=str(bh), **{"as": "geometry"})
+        SubElement(c, "mxGeometry", x="10", y=str(band_top), width=str(band_right_x - 10), height=str(band_height), **{"as": "geometry"})
         # Spellbook label below the band
         blid = next_id()
         c = SubElement(xml_root, "mxCell", id=blid, value=book_name,
                        style=f"text;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=1;fontSize=16;fontFamily=Atkinson Hyperlegible;fontColor=#667788;strokeColor=none;{FONT_SOURCE}",
                        parent="spellbook-borders", vertex="1")
-        SubElement(c, "mxGeometry", x="10", y=str(by + bh), width="180", height="40", **{"as": "geometry"})
+        SubElement(c, "mxGeometry", x="10", y=str(band_bottom), width="180", height="40", **{"as": "geometry"})
 
     # --- Shapes and Lines ---
     shapes_layer = SubElement(xml_root, "mxCell", id="shapes-lines", value="Shapes and Lines", style="locked=1;", parent="0")
