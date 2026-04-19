@@ -430,7 +430,7 @@ def build_drawio():
     SubElement(geo, "mxPoint", x=str(PAGE_WIDTH - 20), y="40", **{"as": "targetPoint"})
 
     # Legend
-    legend_x, legend_y = PAGE_WIDTH - 220, page_height - 520
+    legend_x, legend_y = 1620, page_height - 520
     lid = next_id()
     c = SubElement(xml_root, "mxCell", id=lid, value="Legend",
                    style="rounded=1;fillColor=none;verticalAlign=top;labelBackgroundColor=none;container=0;fontStyle=1;fontColor=#667788;fontFamily=Georgia;strokeColor=#667788;shadow=1;glass=0;strokeWidth=1;textShadow=0;whiteSpace=wrap;",
@@ -483,12 +483,12 @@ def build_drawio():
                        style=f"rounded=1;fontFamily=Helvetica;fontSize=11;fontColor=default;labelBackgroundColor=none;fillColor={fill};strokeColor=#667788;opacity=30;glass=0;shadow=0;align=center;verticalAlign=middle;gradientColor=none;strokeWidth=2;",
                        parent="spellbook-borders", vertex="1")
         SubElement(c, "mxGeometry", x="10", y=str(band_top), width=str(band_right_x - 10), height=str(band_height), **{"as": "geometry"})
-        # Spellbook label below the band
+        # Spellbook label inside the band, bottom-left
         blid = next_id()
         c = SubElement(xml_root, "mxCell", id=blid, value=book_name,
                        style=f"text;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=1;fontSize=16;fontFamily=Atkinson Hyperlegible;fontColor=#667788;strokeColor=none;{FONT_SOURCE}",
                        parent="spellbook-borders", vertex="1")
-        SubElement(c, "mxGeometry", x="10", y=str(band_bottom), width="180", height="40", **{"as": "geometry"})
+        SubElement(c, "mxGeometry", x="10", y=str(band_bottom - 45), width="180", height="40", **{"as": "geometry"})
 
     # --- Shapes and Lines ---
     shapes_layer = SubElement(xml_root, "mxCell", id="shapes-lines", value="Shapes and Lines", style="locked=1;", parent="0")
@@ -763,7 +763,7 @@ def build_drawio():
         if waypoints:
             arr = SubElement(geo, "Array", **{"as": "points"})
             for wx, wy in waypoints:
-                SubElement(arr, "mxPoint", x=str(wx), y=str(wy))
+                SubElement(arr, "mxPoint", x=str(max(10, wx)), y=str(wy))
 
     # --- Slot cost dots ---
     dots_layer = SubElement(xml_root, "mxCell", id="spell-dots", value="Spell cost bubbles text", style="locked=1;", parent="0")

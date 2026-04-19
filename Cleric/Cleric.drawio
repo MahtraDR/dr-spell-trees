@@ -51,71 +51,71 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="cleric-11" value="Legend" style="rounded=1;fillColor=none;verticalAlign=top;labelBackgroundColor=none;container=0;fontStyle=1;fontColor=#667788;fontFamily=Georgia;strokeColor=#667788;shadow=1;glass=0;strokeWidth=1;textShadow=0;whiteSpace=wrap;" parent="1" vertex="1">
-          <mxGeometry x="1580" y="2150" width="200" height="500" as="geometry" />
+          <mxGeometry x="1620" y="2150" width="200" height="500" as="geometry" />
         </mxCell>
         <mxCell id="cleric-12" value="Special requirements in italics" style="text;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=1;fontFamily=Georgia;fontSize=15;fontColor=#667788;labelBackgroundColor=none;fontStyle=3;strokeColor=none;" parent="1" vertex="1">
-          <mxGeometry x="1600" y="2190" width="160" height="40" as="geometry" />
+          <mxGeometry x="1640" y="2190" width="160" height="40" as="geometry" />
         </mxCell>
         <mxCell id="cleric-13" value="Augmentation" style="rounded=1;whiteSpace=wrap;fillColor=#AAC8EB;labelBackgroundColor=none;fontFamily=Georgia;fontSize=18;strokeColor=#667788;shadow=1;glass=0;strokeWidth=1;align=center;fontStyle=1;verticalAlign=middle;fontColor=#000000;textShadow=0;" parent="1" vertex="1">
-          <mxGeometry x="1600" y="2240" width="160" height="40" as="geometry" />
+          <mxGeometry x="1640" y="2240" width="160" height="40" as="geometry" />
         </mxCell>
         <mxCell id="cleric-14" value="Warding" style="rounded=1;whiteSpace=wrap;fillColor=#147A6D;labelBackgroundColor=none;fontFamily=Georgia;fontSize=18;strokeColor=#667788;shadow=1;glass=0;strokeWidth=1;align=center;fontStyle=1;verticalAlign=middle;fontColor=#FFFFFF;textShadow=0;" parent="1" vertex="1">
-          <mxGeometry x="1600" y="2290" width="160" height="40" as="geometry" />
+          <mxGeometry x="1640" y="2290" width="160" height="40" as="geometry" />
         </mxCell>
         <mxCell id="cleric-15" value="Utility" style="rounded=1;whiteSpace=wrap;fillColor=#B3D56A;labelBackgroundColor=none;fontFamily=Georgia;fontSize=18;strokeColor=#667788;shadow=1;glass=0;strokeWidth=1;align=center;fontStyle=1;verticalAlign=middle;fontColor=#000000;textShadow=0;" parent="1" vertex="1">
-          <mxGeometry x="1600" y="2340" width="160" height="40" as="geometry" />
+          <mxGeometry x="1640" y="2340" width="160" height="40" as="geometry" />
         </mxCell>
         <mxCell id="cleric-16" value="Targeted Magic" style="rounded=1;whiteSpace=wrap;fillColor=#E80538;labelBackgroundColor=none;fontFamily=Georgia;fontSize=18;strokeColor=#667788;shadow=1;glass=0;strokeWidth=1;align=center;fontStyle=1;verticalAlign=middle;fontColor=#FFFFFF;textShadow=0;" parent="1" vertex="1">
-          <mxGeometry x="1600" y="2390" width="160" height="40" as="geometry" />
+          <mxGeometry x="1640" y="2390" width="160" height="40" as="geometry" />
         </mxCell>
         <mxCell id="cleric-17" value="Debilitation" style="rounded=1;whiteSpace=wrap;fillColor=#EBCD00;labelBackgroundColor=none;fontFamily=Georgia;fontSize=18;strokeColor=#667788;shadow=1;glass=0;strokeWidth=1;align=center;fontStyle=1;verticalAlign=middle;fontColor=#000000;textShadow=0;" parent="1" vertex="1">
-          <mxGeometry x="1600" y="2440" width="160" height="40" as="geometry" />
+          <mxGeometry x="1640" y="2440" width="160" height="40" as="geometry" />
         </mxCell>
         <mxCell id="cleric-18" value="Metamagic" style="rounded=1;whiteSpace=wrap;fillColor=#D5D0CA;labelBackgroundColor=none;fontFamily=Georgia;fontSize=18;strokeColor=#667788;shadow=0;glass=0;strokeWidth=1;align=center;fontStyle=1;verticalAlign=middle;fontColor=#000000;textShadow=0;" parent="1" vertex="1">
-          <mxGeometry x="1600" y="2490" width="160" height="40" as="geometry" />
+          <mxGeometry x="1640" y="2490" width="160" height="40" as="geometry" />
         </mxCell>
         <mxCell id="cleric-19" value="Signature spells in bold" style="text;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=1;fontFamily=Georgia;fontSize=15;fontColor=#667788;labelBackgroundColor=none;fontStyle=1;strokeColor=none;" parent="1" vertex="1">
-          <mxGeometry x="1600" y="2540" width="160" height="40" as="geometry" />
+          <mxGeometry x="1640" y="2540" width="160" height="40" as="geometry" />
         </mxCell>
         <mxCell id="cleric-20" value="●○○○&#10;Spell slot cost" style="text;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=1;fontFamily=Georgia;fontSize=15;fontColor=#667788;labelBackgroundColor=none;fontStyle=1;strokeColor=none;" parent="1" vertex="1">
-          <mxGeometry x="1600" y="2590" width="160" height="40" as="geometry" />
+          <mxGeometry x="1640" y="2590" width="160" height="40" as="geometry" />
         </mxCell>
         <mxCell id="spellbook-borders" value="Spellbook borders" style="locked=1;" parent="0" />
         <mxCell id="cleric-21" value="" style="rounded=1;fontFamily=Helvetica;fontSize=11;fontColor=default;labelBackgroundColor=none;fillColor=#FCF4C4;strokeColor=#667788;opacity=30;glass=0;shadow=0;align=center;verticalAlign=middle;gradientColor=none;strokeWidth=2;" parent="spellbook-borders" vertex="1">
           <mxGeometry x="10" y="45" width="1580" height="440" as="geometry" />
         </mxCell>
         <mxCell id="cleric-22" value="Holy Defense" style="text;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=1;fontSize=16;fontFamily=Atkinson Hyperlegible;fontColor=#667788;strokeColor=none;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DAtkinson%2BHyperlegible;" parent="spellbook-borders" vertex="1">
-          <mxGeometry x="10" y="485" width="180" height="40" as="geometry" />
+          <mxGeometry x="10" y="440" width="180" height="40" as="geometry" />
         </mxCell>
         <mxCell id="cleric-23" value="" style="rounded=1;fontFamily=Helvetica;fontSize=11;fontColor=default;labelBackgroundColor=none;fillColor=#667788;strokeColor=#667788;opacity=30;glass=0;shadow=0;align=center;verticalAlign=middle;gradientColor=none;strokeWidth=2;" parent="spellbook-borders" vertex="1">
           <mxGeometry x="10" y="575" width="1580" height="440" as="geometry" />
         </mxCell>
         <mxCell id="cleric-24" value="Holy Evocations" style="text;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=1;fontSize=16;fontFamily=Atkinson Hyperlegible;fontColor=#667788;strokeColor=none;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DAtkinson%2BHyperlegible;" parent="spellbook-borders" vertex="1">
-          <mxGeometry x="10" y="1015" width="180" height="40" as="geometry" />
+          <mxGeometry x="10" y="970" width="180" height="40" as="geometry" />
         </mxCell>
         <mxCell id="cleric-25" value="" style="rounded=1;fontFamily=Helvetica;fontSize=11;fontColor=default;labelBackgroundColor=none;fillColor=#FCF4C4;strokeColor=#667788;opacity=30;glass=0;shadow=0;align=center;verticalAlign=middle;gradientColor=none;strokeWidth=2;" parent="spellbook-borders" vertex="1">
           <mxGeometry x="10" y="1105" width="1580" height="380" as="geometry" />
         </mxCell>
         <mxCell id="cleric-26" value="Conviction" style="text;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=1;fontSize=16;fontFamily=Atkinson Hyperlegible;fontColor=#667788;strokeColor=none;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DAtkinson%2BHyperlegible;" parent="spellbook-borders" vertex="1">
-          <mxGeometry x="10" y="1485" width="180" height="40" as="geometry" />
+          <mxGeometry x="10" y="1440" width="180" height="40" as="geometry" />
         </mxCell>
         <mxCell id="cleric-27" value="" style="rounded=1;fontFamily=Helvetica;fontSize=11;fontColor=default;labelBackgroundColor=none;fillColor=#667788;strokeColor=#667788;opacity=30;glass=0;shadow=0;align=center;verticalAlign=middle;gradientColor=none;strokeWidth=2;" parent="spellbook-borders" vertex="1">
           <mxGeometry x="10" y="1575" width="1580" height="560" as="geometry" />
         </mxCell>
         <mxCell id="cleric-28" value="Spirit Manipulation" style="text;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=1;fontSize=16;fontFamily=Atkinson Hyperlegible;fontColor=#667788;strokeColor=none;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DAtkinson%2BHyperlegible;" parent="spellbook-borders" vertex="1">
-          <mxGeometry x="10" y="2135" width="180" height="40" as="geometry" />
+          <mxGeometry x="10" y="2090" width="180" height="40" as="geometry" />
         </mxCell>
         <mxCell id="cleric-29" value="" style="rounded=1;fontFamily=Helvetica;fontSize=11;fontColor=default;labelBackgroundColor=none;fillColor=#FCF4C4;strokeColor=#667788;opacity=30;glass=0;shadow=0;align=center;verticalAlign=middle;gradientColor=none;strokeWidth=2;" parent="spellbook-borders" vertex="1">
           <mxGeometry x="10" y="2225" width="1580" height="80" as="geometry" />
         </mxCell>
         <mxCell id="cleric-30" value="Divine Intervention" style="text;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=1;fontSize=16;fontFamily=Atkinson Hyperlegible;fontColor=#667788;strokeColor=none;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DAtkinson%2BHyperlegible;" parent="spellbook-borders" vertex="1">
-          <mxGeometry x="10" y="2305" width="180" height="40" as="geometry" />
+          <mxGeometry x="10" y="2260" width="180" height="40" as="geometry" />
         </mxCell>
         <mxCell id="cleric-31" value="" style="rounded=1;fontFamily=Helvetica;fontSize=11;fontColor=default;labelBackgroundColor=none;fillColor=#667788;strokeColor=#667788;opacity=30;glass=0;shadow=0;align=center;verticalAlign=middle;gradientColor=none;strokeWidth=2;" parent="spellbook-borders" vertex="1">
           <mxGeometry x="10" y="2395" width="1580" height="80" as="geometry" />
         </mxCell>
         <mxCell id="cleric-32" value="Antinomic Sorcery" style="text;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=1;fontSize=16;fontFamily=Atkinson Hyperlegible;fontColor=#667788;strokeColor=none;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DAtkinson%2BHyperlegible;" parent="spellbook-borders" vertex="1">
-          <mxGeometry x="10" y="2475" width="180" height="40" as="geometry" />
+          <mxGeometry x="10" y="2430" width="180" height="40" as="geometry" />
         </mxCell>
         <mxCell id="shapes-lines" value="Shapes and Lines" style="locked=1;" parent="0" />
         <mxCell id="cleric-33" value="Visage" style="rounded=1;strokeWidth=1;strokeColor=#667788;textShadow=0;labelBackgroundColor=none;whiteSpace=wrap;fontSize=18;fontFamily=Atkinson Hyperlegible;fillColor=#147A6D;fontColor=#FFFFFF;shadow=1;glass=0;align=center;verticalAlign=middle;fontStyle=1;resizable=1;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DAtkinson%2BHyperlegible;" parent="shapes-lines" vertex="1">
@@ -469,7 +469,7 @@
           <mxGeometry relative="1" as="geometry">
             <Array as="points">
               <mxPoint x="120" y="1130" />
-              <mxPoint x="-10" y="1130" />
+              <mxPoint x="10" y="1130" />
             </Array>
           </mxGeometry>
         </mxCell>
