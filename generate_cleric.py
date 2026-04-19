@@ -221,7 +221,7 @@ BOX_W, BOX_H = 160, 40
 ROW_SPACING = 60
 BAND_PAD_TOP = 15
 BAND_PAD_BOTTOM = 15
-BAND_GAP = 80
+BAND_GAP = 40
 PAGE_WIDTH = 1800
 FONT_SOURCE = "fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DAtkinson%2BHyperlegible;"
 
@@ -429,41 +429,13 @@ def build_drawio():
     SubElement(geo, "mxPoint", x="10", y="40", **{"as": "sourcePoint"})
     SubElement(geo, "mxPoint", x=str(PAGE_WIDTH - 20), y="40", **{"as": "targetPoint"})
 
-    # Legend
-    legend_x, legend_y = 1620, page_height - 520
-    lid = next_id()
-    c = SubElement(xml_root, "mxCell", id=lid, value="Legend",
-                   style="rounded=1;fillColor=none;verticalAlign=top;labelBackgroundColor=none;container=0;fontStyle=1;fontColor=#667788;fontFamily=Georgia;strokeColor=#667788;shadow=1;glass=0;strokeWidth=1;textShadow=0;whiteSpace=wrap;",
-                   parent="1", vertex="1")
-    SubElement(c, "mxGeometry", x=str(legend_x), y=str(legend_y), width="200", height="500", **{"as": "geometry"})
-    legend_items = [
-        ("Special requirements in italics", "text;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=1;fontFamily=Georgia;fontSize=15;fontColor=#667788;labelBackgroundColor=none;fontStyle=3;strokeColor=none;", None),
-        ("Augmentation", None, "#AAC8EB"),
-        ("Warding", None, "#147A6D"),
-        ("Utility", None, "#B3D56A"),
-        ("Targeted Magic", None, "#E80538"),
-        ("Debilitation", None, "#EBCD00"),
-        ("Metamagic", None, "#D5D0CA"),
-        ("Signature spells in bold", "text;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=1;fontFamily=Georgia;fontSize=15;fontColor=#667788;labelBackgroundColor=none;fontStyle=1;strokeColor=none;", None),
-        ("\u25CF\u25CB\u25CB\u25CB\nSpell slot cost", "text;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=1;fontFamily=Georgia;fontSize=15;fontColor=#667788;labelBackgroundColor=none;fontStyle=1;strokeColor=none;", None),
-    ]
-    ly = legend_y + 40
-    for lbl, custom_style, fill in legend_items:
-        iid = next_id()
-        if fill:
-            fc = "#FFFFFF" if fill in ("#147A6D", "#E80538") else "#000000"
-            sv = "0" if fill == "#D5D0CA" else "1"
-            sty = f"rounded=1;whiteSpace=wrap;fillColor={fill};labelBackgroundColor=none;fontFamily=Georgia;fontSize=18;strokeColor=#667788;shadow={sv};glass=0;strokeWidth=1;align=center;fontStyle=1;verticalAlign=middle;fontColor={fc};textShadow=0;"
-        else:
-            sty = custom_style
-        c = SubElement(xml_root, "mxCell", id=iid, value=lbl, style=sty, parent="1", vertex="1")
-        SubElement(c, "mxGeometry", x=str(legend_x + 20), y=str(ly), width="160", height="40", **{"as": "geometry"})
-        ly += 50
+    # Legend will be placed after band borders are computed
 
     # --- Spellbook borders ---
     borders_layer = SubElement(xml_root, "mxCell", id="spellbook-borders", value="Spellbook borders", style="locked=1;", parent="0")
     band_colors = ["#FCF4C4", "#667788"]
-    band_right_x = 1590  # left of Esoteric divider at x=1600
+    band_right_x = 1590
+    lowest_band_bottom = 0
     for i, (book_name, by, bh, spells_in_book) in enumerate(band_info):
         # Compute tight band from actual spell positions (20px padding)
         book_spells_pos = [(spell_pos[s[0]][1]) for s in spells_in_book if s[0] in spell_pos]
@@ -489,6 +461,40 @@ def build_drawio():
                        style=f"text;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=1;fontSize=16;fontFamily=Atkinson Hyperlegible;fontColor=#667788;strokeColor=none;{FONT_SOURCE}",
                        parent="spellbook-borders", vertex="1")
         SubElement(c, "mxGeometry", x="10", y=str(band_bottom - 45), width="180", height="40", **{"as": "geometry"})
+        lowest_band_bottom = max(lowest_band_bottom, band_bottom)
+
+    # --- Legend (anchored to bottom-most band) ---
+    legend_height = 500
+    legend_x = 1620
+    legend_y = lowest_band_bottom - legend_height
+    lid = next_id()
+    c = SubElement(xml_root, "mxCell", id=lid, value="Legend",
+                   style="rounded=1;fillColor=none;verticalAlign=top;labelBackgroundColor=none;container=0;fontStyle=1;fontColor=#667788;fontFamily=Georgia;strokeColor=#667788;shadow=1;glass=0;strokeWidth=1;textShadow=0;whiteSpace=wrap;",
+                   parent="1", vertex="1")
+    SubElement(c, "mxGeometry", x=str(legend_x), y=str(legend_y), width="200", height=str(legend_height), **{"as": "geometry"})
+    legend_items = [
+        ("Special requirements in italics", "text;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=1;fontFamily=Georgia;fontSize=15;fontColor=#667788;labelBackgroundColor=none;fontStyle=3;strokeColor=none;", None),
+        ("Augmentation", None, "#AAC8EB"),
+        ("Warding", None, "#147A6D"),
+        ("Utility", None, "#B3D56A"),
+        ("Targeted Magic", None, "#E80538"),
+        ("Debilitation", None, "#EBCD00"),
+        ("Metamagic", None, "#D5D0CA"),
+        ("Signature spells in bold", "text;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=1;fontFamily=Georgia;fontSize=15;fontColor=#667788;labelBackgroundColor=none;fontStyle=1;strokeColor=none;", None),
+        ("\u25CF\u25CB\u25CB\u25CB\nSpell slot cost", "text;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=1;fontFamily=Georgia;fontSize=15;fontColor=#667788;labelBackgroundColor=none;fontStyle=1;strokeColor=none;", None),
+    ]
+    ly = legend_y + 40
+    for lbl, custom_style, fill_color in legend_items:
+        iid = next_id()
+        if fill_color:
+            fc = "#FFFFFF" if fill_color in ("#147A6D", "#E80538") else "#000000"
+            sv = "0" if fill_color == "#D5D0CA" else "1"
+            sty = f"rounded=1;whiteSpace=wrap;fillColor={fill_color};labelBackgroundColor=none;fontFamily=Georgia;fontSize=18;strokeColor=#667788;shadow={sv};glass=0;strokeWidth=1;align=center;fontStyle=1;verticalAlign=middle;fontColor={fc};textShadow=0;"
+        else:
+            sty = custom_style
+        c = SubElement(xml_root, "mxCell", id=iid, value=lbl, style=sty, parent="1", vertex="1")
+        SubElement(c, "mxGeometry", x=str(legend_x + 20), y=str(ly), width="160", height="40", **{"as": "geometry"})
+        ly += 50
 
     # --- Shapes and Lines ---
     shapes_layer = SubElement(xml_root, "mxCell", id="shapes-lines", value="Shapes and Lines", style="locked=1;", parent="0")
