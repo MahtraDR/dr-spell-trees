@@ -612,194 +612,188 @@
         <mxCell id="cleric-138" value="●●○○" style="text;align=center;verticalAlign=middle;rounded=0;fontFamily=Georgia;fontSize=13;fontColor=default;labelBackgroundColor=none;spacing=0;spacingTop=0;spacingBottom=-5;fillColor=none;" parent="spell-dots" vertex="1">
           <mxGeometry x="1340" y="2485" width="50" height="20" as="geometry" />
         </mxCell>
-        <mxCell id="cleric-139" value="●●○○" style="text;align=center;verticalAlign=middle;rounded=0;fontFamily=Georgia;fontSize=13;fontColor=default;labelBackgroundColor=none;spacing=0;spacingTop=0;spacingBottom=-5;fillColor=none;" parent="spell-dots" vertex="1">
-          <mxGeometry x="540" y="2605" width="50" height="20" as="geometry" />
-        </mxCell>
-        <mxCell id="cleric-140" value="●○○○" style="text;align=center;verticalAlign=middle;rounded=0;fontFamily=Georgia;fontSize=13;fontColor=#FFFFFF;labelBackgroundColor=none;spacing=0;spacingTop=0;spacingBottom=-5;fillColor=none;" parent="spell-dots" vertex="1">
+        <mxCell id="cleric-139" value="●○○○" style="text;align=center;verticalAlign=middle;rounded=0;fontFamily=Georgia;fontSize=13;fontColor=#FFFFFF;labelBackgroundColor=none;spacing=0;spacingTop=0;spacingBottom=-5;fillColor=none;" parent="spell-dots" vertex="1">
           <mxGeometry x="160" y="85" width="50" height="20" as="geometry" />
         </mxCell>
-        <mxCell id="cleric-141" value="●○○○" style="text;align=center;verticalAlign=middle;rounded=0;fontFamily=Georgia;fontSize=13;fontColor=#FFFFFF;labelBackgroundColor=none;spacing=0;spacingTop=0;spacingBottom=-5;fillColor=none;" parent="spell-dots" vertex="1">
+        <mxCell id="cleric-140" value="●○○○" style="text;align=center;verticalAlign=middle;rounded=0;fontFamily=Georgia;fontSize=13;fontColor=#FFFFFF;labelBackgroundColor=none;spacing=0;spacingTop=0;spacingBottom=-5;fillColor=none;" parent="spell-dots" vertex="1">
           <mxGeometry x="540" y="85" width="50" height="20" as="geometry" />
         </mxCell>
-        <mxCell id="cleric-142" value="●○○○" style="text;align=center;verticalAlign=middle;rounded=0;fontFamily=Georgia;fontSize=13;fontColor=#FFFFFF;labelBackgroundColor=none;spacing=0;spacingTop=0;spacingBottom=-5;fillColor=none;" parent="spell-dots" vertex="1">
+        <mxCell id="cleric-141" value="●○○○" style="text;align=center;verticalAlign=middle;rounded=0;fontFamily=Georgia;fontSize=13;fontColor=#FFFFFF;labelBackgroundColor=none;spacing=0;spacingTop=0;spacingBottom=-5;fillColor=none;" parent="spell-dots" vertex="1">
           <mxGeometry x="740" y="85" width="50" height="20" as="geometry" />
         </mxCell>
-        <mxCell id="cleric-143" value="●●●○" style="text;align=center;verticalAlign=middle;rounded=0;fontFamily=Georgia;fontSize=13;fontColor=default;labelBackgroundColor=none;spacing=0;spacingTop=0;spacingBottom=-5;fillColor=none;" parent="spell-dots" vertex="1">
+        <mxCell id="cleric-142" value="●●●○" style="text;align=center;verticalAlign=middle;rounded=0;fontFamily=Georgia;fontSize=13;fontColor=default;labelBackgroundColor=none;spacing=0;spacingTop=0;spacingBottom=-5;fillColor=none;" parent="spell-dots" vertex="1">
           <mxGeometry x="540" y="205" width="50" height="20" as="geometry" />
         </mxCell>
-        <mxCell id="cleric-144" value="●●●○" style="text;align=center;verticalAlign=middle;rounded=0;fontFamily=Georgia;fontSize=13;fontColor=default;labelBackgroundColor=none;spacing=0;spacingTop=0;spacingBottom=-5;fillColor=none;" parent="spell-dots" vertex="1">
+        <mxCell id="cleric-143" value="●●●○" style="text;align=center;verticalAlign=middle;rounded=0;fontFamily=Georgia;fontSize=13;fontColor=default;labelBackgroundColor=none;spacing=0;spacingTop=0;spacingBottom=-5;fillColor=none;" parent="spell-dots" vertex="1">
           <mxGeometry x="940" y="205" width="50" height="20" as="geometry" />
         </mxCell>
-        <mxCell id="cleric-145" value="●●○○" style="text;align=center;verticalAlign=middle;rounded=0;fontFamily=Georgia;fontSize=13;fontColor=#FFFFFF;labelBackgroundColor=none;spacing=0;spacingTop=0;spacingBottom=-5;fillColor=none;" parent="spell-dots" vertex="1">
+        <mxCell id="cleric-144" value="●●○○" style="text;align=center;verticalAlign=middle;rounded=0;fontFamily=Georgia;fontSize=13;fontColor=#FFFFFF;labelBackgroundColor=none;spacing=0;spacingTop=0;spacingBottom=-5;fillColor=none;" parent="spell-dots" vertex="1">
           <mxGeometry x="940" y="145" width="50" height="20" as="geometry" />
         </mxCell>
-        <mxCell id="cleric-146" value="●●●○" style="text;align=center;verticalAlign=middle;rounded=0;fontFamily=Georgia;fontSize=13;fontColor=default;labelBackgroundColor=none;spacing=0;spacingTop=0;spacingBottom=-5;fillColor=none;" parent="spell-dots" vertex="1">
+        <mxCell id="cleric-145" value="●●●○" style="text;align=center;verticalAlign=middle;rounded=0;fontFamily=Georgia;fontSize=13;fontColor=default;labelBackgroundColor=none;spacing=0;spacingTop=0;spacingBottom=-5;fillColor=none;" parent="spell-dots" vertex="1">
           <mxGeometry x="940" y="325" width="50" height="20" as="geometry" />
         </mxCell>
-        <mxCell id="cleric-147" value="●●●○" style="text;align=center;verticalAlign=middle;rounded=0;fontFamily=Georgia;fontSize=13;fontColor=default;labelBackgroundColor=none;spacing=0;spacingTop=0;spacingBottom=-5;fillColor=none;" parent="spell-dots" vertex="1">
+        <mxCell id="cleric-146" value="●●●○" style="text;align=center;verticalAlign=middle;rounded=0;fontFamily=Georgia;fontSize=13;fontColor=default;labelBackgroundColor=none;spacing=0;spacingTop=0;spacingBottom=-5;fillColor=none;" parent="spell-dots" vertex="1">
           <mxGeometry x="1340" y="265" width="50" height="20" as="geometry" />
         </mxCell>
-        <mxCell id="cleric-148" value="●●○○" style="text;align=center;verticalAlign=middle;rounded=0;fontFamily=Georgia;fontSize=13;fontColor=#FFFFFF;labelBackgroundColor=none;spacing=0;spacingTop=0;spacingBottom=-5;fillColor=none;" parent="spell-dots" vertex="1">
+        <mxCell id="cleric-147" value="●●○○" style="text;align=center;verticalAlign=middle;rounded=0;fontFamily=Georgia;fontSize=13;fontColor=#FFFFFF;labelBackgroundColor=none;spacing=0;spacingTop=0;spacingBottom=-5;fillColor=none;" parent="spell-dots" vertex="1">
           <mxGeometry x="1340" y="385" width="50" height="20" as="geometry" />
         </mxCell>
-        <mxCell id="cleric-149" value="●○○○" style="text;align=center;verticalAlign=middle;rounded=0;fontFamily=Georgia;fontSize=13;fontColor=default;labelBackgroundColor=none;spacing=0;spacingTop=0;spacingBottom=-5;fillColor=none;" parent="spell-dots" vertex="1">
+        <mxCell id="cleric-148" value="●○○○" style="text;align=center;verticalAlign=middle;rounded=0;fontFamily=Georgia;fontSize=13;fontColor=default;labelBackgroundColor=none;spacing=0;spacingTop=0;spacingBottom=-5;fillColor=none;" parent="spell-dots" vertex="1">
           <mxGeometry x="160" y="595" width="50" height="20" as="geometry" />
         </mxCell>
-        <mxCell id="cleric-150" value="●●●○" style="text;align=center;verticalAlign=middle;rounded=0;fontFamily=Georgia;fontSize=13;fontColor=#FFFFFF;labelBackgroundColor=none;spacing=0;spacingTop=0;spacingBottom=-5;fillColor=none;" parent="spell-dots" vertex="1">
+        <mxCell id="cleric-149" value="●●●○" style="text;align=center;verticalAlign=middle;rounded=0;fontFamily=Georgia;fontSize=13;fontColor=#FFFFFF;labelBackgroundColor=none;spacing=0;spacingTop=0;spacingBottom=-5;fillColor=none;" parent="spell-dots" vertex="1">
           <mxGeometry x="540" y="595" width="50" height="20" as="geometry" />
         </mxCell>
-        <mxCell id="cleric-151" value="●○○○" style="text;align=center;verticalAlign=middle;rounded=0;fontFamily=Georgia;fontSize=13;fontColor=#FFFFFF;labelBackgroundColor=none;spacing=0;spacingTop=0;spacingBottom=-5;fillColor=none;" parent="spell-dots" vertex="1">
+        <mxCell id="cleric-150" value="●○○○" style="text;align=center;verticalAlign=middle;rounded=0;fontFamily=Georgia;fontSize=13;fontColor=#FFFFFF;labelBackgroundColor=none;spacing=0;spacingTop=0;spacingBottom=-5;fillColor=none;" parent="spell-dots" vertex="1">
           <mxGeometry x="540" y="775" width="50" height="20" as="geometry" />
         </mxCell>
-        <mxCell id="cleric-152" value="●●○○" style="text;align=center;verticalAlign=middle;rounded=0;fontFamily=Georgia;fontSize=13;fontColor=#FFFFFF;labelBackgroundColor=none;spacing=0;spacingTop=0;spacingBottom=-5;fillColor=none;" parent="spell-dots" vertex="1">
+        <mxCell id="cleric-151" value="●●○○" style="text;align=center;verticalAlign=middle;rounded=0;fontFamily=Georgia;fontSize=13;fontColor=#FFFFFF;labelBackgroundColor=none;spacing=0;spacingTop=0;spacingBottom=-5;fillColor=none;" parent="spell-dots" vertex="1">
           <mxGeometry x="740" y="595" width="50" height="20" as="geometry" />
         </mxCell>
-        <mxCell id="cleric-153" value="●○○○" style="text;align=center;verticalAlign=middle;rounded=0;fontFamily=Georgia;fontSize=13;fontColor=#FFFFFF;labelBackgroundColor=none;spacing=0;spacingTop=0;spacingBottom=-5;fillColor=none;" parent="spell-dots" vertex="1">
+        <mxCell id="cleric-152" value="●○○○" style="text;align=center;verticalAlign=middle;rounded=0;fontFamily=Georgia;fontSize=13;fontColor=#FFFFFF;labelBackgroundColor=none;spacing=0;spacingTop=0;spacingBottom=-5;fillColor=none;" parent="spell-dots" vertex="1">
           <mxGeometry x="540" y="835" width="50" height="20" as="geometry" />
         </mxCell>
-        <mxCell id="cleric-154" value="●●○○" style="text;align=center;verticalAlign=middle;rounded=0;fontFamily=Georgia;fontSize=13;fontColor=default;labelBackgroundColor=none;spacing=0;spacingTop=0;spacingBottom=-5;fillColor=none;" parent="spell-dots" vertex="1">
+        <mxCell id="cleric-153" value="●●○○" style="text;align=center;verticalAlign=middle;rounded=0;fontFamily=Georgia;fontSize=13;fontColor=default;labelBackgroundColor=none;spacing=0;spacingTop=0;spacingBottom=-5;fillColor=none;" parent="spell-dots" vertex="1">
           <mxGeometry x="940" y="955" width="50" height="20" as="geometry" />
         </mxCell>
-        <mxCell id="cleric-155" value="●○○○" style="text;align=center;verticalAlign=middle;rounded=0;fontFamily=Georgia;fontSize=13;fontColor=#FFFFFF;labelBackgroundColor=none;spacing=0;spacingTop=0;spacingBottom=-5;fillColor=none;" parent="spell-dots" vertex="1">
+        <mxCell id="cleric-154" value="●○○○" style="text;align=center;verticalAlign=middle;rounded=0;fontFamily=Georgia;fontSize=13;fontColor=#FFFFFF;labelBackgroundColor=none;spacing=0;spacingTop=0;spacingBottom=-5;fillColor=none;" parent="spell-dots" vertex="1">
           <mxGeometry x="940" y="895" width="50" height="20" as="geometry" />
         </mxCell>
-        <mxCell id="cleric-156" value="●●●○" style="text;align=center;verticalAlign=middle;rounded=0;fontFamily=Georgia;fontSize=13;fontColor=#FFFFFF;labelBackgroundColor=none;spacing=0;spacingTop=0;spacingBottom=-5;fillColor=none;" parent="spell-dots" vertex="1">
+        <mxCell id="cleric-155" value="●●●○" style="text;align=center;verticalAlign=middle;rounded=0;fontFamily=Georgia;fontSize=13;fontColor=#FFFFFF;labelBackgroundColor=none;spacing=0;spacingTop=0;spacingBottom=-5;fillColor=none;" parent="spell-dots" vertex="1">
           <mxGeometry x="940" y="595" width="50" height="20" as="geometry" />
         </mxCell>
-        <mxCell id="cleric-157" value="●●○○" style="text;align=center;verticalAlign=middle;rounded=0;fontFamily=Georgia;fontSize=13;fontColor=default;labelBackgroundColor=none;spacing=0;spacingTop=0;spacingBottom=-5;fillColor=none;" parent="spell-dots" vertex="1">
+        <mxCell id="cleric-156" value="●●○○" style="text;align=center;verticalAlign=middle;rounded=0;fontFamily=Georgia;fontSize=13;fontColor=default;labelBackgroundColor=none;spacing=0;spacingTop=0;spacingBottom=-5;fillColor=none;" parent="spell-dots" vertex="1">
           <mxGeometry x="940" y="1015" width="50" height="20" as="geometry" />
         </mxCell>
-        <mxCell id="cleric-158" value="●○○○" style="text;align=center;verticalAlign=middle;rounded=0;fontFamily=Georgia;fontSize=13;fontColor=default;labelBackgroundColor=none;spacing=0;spacingTop=0;spacingBottom=-5;fillColor=none;" parent="spell-dots" vertex="1">
+        <mxCell id="cleric-157" value="●○○○" style="text;align=center;verticalAlign=middle;rounded=0;fontFamily=Georgia;fontSize=13;fontColor=default;labelBackgroundColor=none;spacing=0;spacingTop=0;spacingBottom=-5;fillColor=none;" parent="spell-dots" vertex="1">
           <mxGeometry x="940" y="715" width="50" height="20" as="geometry" />
         </mxCell>
-        <mxCell id="cleric-159" value="●●○○" style="text;align=center;verticalAlign=middle;rounded=0;fontFamily=Georgia;fontSize=13;fontColor=default;labelBackgroundColor=none;spacing=0;spacingTop=0;spacingBottom=-5;fillColor=none;" parent="spell-dots" vertex="1">
+        <mxCell id="cleric-158" value="●●○○" style="text;align=center;verticalAlign=middle;rounded=0;fontFamily=Georgia;fontSize=13;fontColor=default;labelBackgroundColor=none;spacing=0;spacingTop=0;spacingBottom=-5;fillColor=none;" parent="spell-dots" vertex="1">
           <mxGeometry x="1340" y="955" width="50" height="20" as="geometry" />
         </mxCell>
-        <mxCell id="cleric-160" value="●●○○" style="text;align=center;verticalAlign=middle;rounded=0;fontFamily=Georgia;fontSize=13;fontColor=default;labelBackgroundColor=none;spacing=0;spacingTop=0;spacingBottom=-5;fillColor=none;" parent="spell-dots" vertex="1">
+        <mxCell id="cleric-159" value="●●○○" style="text;align=center;verticalAlign=middle;rounded=0;fontFamily=Georgia;fontSize=13;fontColor=default;labelBackgroundColor=none;spacing=0;spacingTop=0;spacingBottom=-5;fillColor=none;" parent="spell-dots" vertex="1">
           <mxGeometry x="1340" y="655" width="50" height="20" as="geometry" />
         </mxCell>
-        <mxCell id="cleric-161" value="●○○○" style="text;align=center;verticalAlign=middle;rounded=0;fontFamily=Georgia;fontSize=13;fontColor=default;labelBackgroundColor=none;spacing=0;spacingTop=0;spacingBottom=-5;fillColor=none;" parent="spell-dots" vertex="1">
+        <mxCell id="cleric-160" value="●○○○" style="text;align=center;verticalAlign=middle;rounded=0;fontFamily=Georgia;fontSize=13;fontColor=default;labelBackgroundColor=none;spacing=0;spacingTop=0;spacingBottom=-5;fillColor=none;" parent="spell-dots" vertex="1">
           <mxGeometry x="540" y="1225" width="50" height="20" as="geometry" />
         </mxCell>
-        <mxCell id="cleric-162" value="●●○○" style="text;align=center;verticalAlign=middle;rounded=0;fontFamily=Georgia;fontSize=13;fontColor=default;labelBackgroundColor=none;spacing=0;spacingTop=0;spacingBottom=-5;fillColor=none;" parent="spell-dots" vertex="1">
+        <mxCell id="cleric-161" value="●●○○" style="text;align=center;verticalAlign=middle;rounded=0;fontFamily=Georgia;fontSize=13;fontColor=default;labelBackgroundColor=none;spacing=0;spacingTop=0;spacingBottom=-5;fillColor=none;" parent="spell-dots" vertex="1">
           <mxGeometry x="740" y="1225" width="50" height="20" as="geometry" />
         </mxCell>
-        <mxCell id="cleric-163" value="●●○○" style="text;align=center;verticalAlign=middle;rounded=0;fontFamily=Georgia;fontSize=13;fontColor=default;labelBackgroundColor=none;spacing=0;spacingTop=0;spacingBottom=-5;fillColor=none;" parent="spell-dots" vertex="1">
+        <mxCell id="cleric-162" value="●●○○" style="text;align=center;verticalAlign=middle;rounded=0;fontFamily=Georgia;fontSize=13;fontColor=default;labelBackgroundColor=none;spacing=0;spacingTop=0;spacingBottom=-5;fillColor=none;" parent="spell-dots" vertex="1">
           <mxGeometry x="540" y="1405" width="50" height="20" as="geometry" />
         </mxCell>
-        <mxCell id="cleric-164" value="●●○○" style="text;align=center;verticalAlign=middle;rounded=0;fontFamily=Georgia;fontSize=13;fontColor=default;labelBackgroundColor=none;spacing=0;spacingTop=0;spacingBottom=-5;fillColor=none;" parent="spell-dots" vertex="1">
+        <mxCell id="cleric-163" value="●●○○" style="text;align=center;verticalAlign=middle;rounded=0;fontFamily=Georgia;fontSize=13;fontColor=default;labelBackgroundColor=none;spacing=0;spacingTop=0;spacingBottom=-5;fillColor=none;" parent="spell-dots" vertex="1">
           <mxGeometry x="940" y="1225" width="50" height="20" as="geometry" />
         </mxCell>
-        <mxCell id="cleric-165" value="●●○○" style="text;align=center;verticalAlign=middle;rounded=0;fontFamily=Georgia;fontSize=13;fontColor=default;labelBackgroundColor=none;spacing=0;spacingTop=0;spacingBottom=-5;fillColor=none;" parent="spell-dots" vertex="1">
+        <mxCell id="cleric-164" value="●●○○" style="text;align=center;verticalAlign=middle;rounded=0;fontFamily=Georgia;fontSize=13;fontColor=default;labelBackgroundColor=none;spacing=0;spacingTop=0;spacingBottom=-5;fillColor=none;" parent="spell-dots" vertex="1">
           <mxGeometry x="940" y="1405" width="50" height="20" as="geometry" />
         </mxCell>
-        <mxCell id="cleric-166" value="●●●○" style="text;align=center;verticalAlign=middle;rounded=0;fontFamily=Georgia;fontSize=13;fontColor=default;labelBackgroundColor=none;spacing=0;spacingTop=0;spacingBottom=-5;fillColor=none;" parent="spell-dots" vertex="1">
+        <mxCell id="cleric-165" value="●●●○" style="text;align=center;verticalAlign=middle;rounded=0;fontFamily=Georgia;fontSize=13;fontColor=default;labelBackgroundColor=none;spacing=0;spacingTop=0;spacingBottom=-5;fillColor=none;" parent="spell-dots" vertex="1">
           <mxGeometry x="1340" y="1285" width="50" height="20" as="geometry" />
         </mxCell>
-        <mxCell id="cleric-167" value="●●●○" style="text;align=center;verticalAlign=middle;rounded=0;fontFamily=Georgia;fontSize=13;fontColor=default;labelBackgroundColor=none;spacing=0;spacingTop=0;spacingBottom=-5;fillColor=none;" parent="spell-dots" vertex="1">
+        <mxCell id="cleric-166" value="●●●○" style="text;align=center;verticalAlign=middle;rounded=0;fontFamily=Georgia;fontSize=13;fontColor=default;labelBackgroundColor=none;spacing=0;spacingTop=0;spacingBottom=-5;fillColor=none;" parent="spell-dots" vertex="1">
           <mxGeometry x="1340" y="1465" width="50" height="20" as="geometry" />
         </mxCell>
-        <mxCell id="cleric-168" value="●●●●" style="text;align=center;verticalAlign=middle;rounded=0;fontFamily=Georgia;fontSize=13;fontColor=default;labelBackgroundColor=none;spacing=0;spacingTop=0;spacingBottom=-5;fillColor=none;" parent="spell-dots" vertex="1">
+        <mxCell id="cleric-167" value="●●●●" style="text;align=center;verticalAlign=middle;rounded=0;fontFamily=Georgia;fontSize=13;fontColor=default;labelBackgroundColor=none;spacing=0;spacingTop=0;spacingBottom=-5;fillColor=none;" parent="spell-dots" vertex="1">
           <mxGeometry x="1340" y="1345" width="50" height="20" as="geometry" />
         </mxCell>
-        <mxCell id="cleric-169" value="●○○○" style="text;align=center;verticalAlign=middle;rounded=0;fontFamily=Georgia;fontSize=13;fontColor=default;labelBackgroundColor=none;spacing=0;spacingTop=0;spacingBottom=-5;fillColor=none;" parent="spell-dots" vertex="1">
+        <mxCell id="cleric-168" value="●○○○" style="text;align=center;verticalAlign=middle;rounded=0;fontFamily=Georgia;fontSize=13;fontColor=default;labelBackgroundColor=none;spacing=0;spacingTop=0;spacingBottom=-5;fillColor=none;" parent="spell-dots" vertex="1">
           <mxGeometry x="160" y="1675" width="50" height="20" as="geometry" />
         </mxCell>
-        <mxCell id="cleric-170" value="●●○○" style="text;align=center;verticalAlign=middle;rounded=0;fontFamily=Georgia;fontSize=13;fontColor=default;labelBackgroundColor=none;spacing=0;spacingTop=0;spacingBottom=-5;fillColor=none;" parent="spell-dots" vertex="1">
+        <mxCell id="cleric-169" value="●●○○" style="text;align=center;verticalAlign=middle;rounded=0;fontFamily=Georgia;fontSize=13;fontColor=default;labelBackgroundColor=none;spacing=0;spacingTop=0;spacingBottom=-5;fillColor=none;" parent="spell-dots" vertex="1">
           <mxGeometry x="540" y="1675" width="50" height="20" as="geometry" />
         </mxCell>
-        <mxCell id="cleric-171" value="●○○○" style="text;align=center;verticalAlign=middle;rounded=0;fontFamily=Georgia;fontSize=13;fontColor=default;labelBackgroundColor=none;spacing=0;spacingTop=0;spacingBottom=-5;fillColor=none;" parent="spell-dots" vertex="1">
+        <mxCell id="cleric-170" value="●○○○" style="text;align=center;verticalAlign=middle;rounded=0;fontFamily=Georgia;fontSize=13;fontColor=default;labelBackgroundColor=none;spacing=0;spacingTop=0;spacingBottom=-5;fillColor=none;" parent="spell-dots" vertex="1">
           <mxGeometry x="540" y="1855" width="50" height="20" as="geometry" />
         </mxCell>
-        <mxCell id="cleric-172" value="●○○○" style="text;align=center;verticalAlign=middle;rounded=0;fontFamily=Georgia;fontSize=13;fontColor=default;labelBackgroundColor=none;spacing=0;spacingTop=0;spacingBottom=-5;fillColor=none;" parent="spell-dots" vertex="1">
+        <mxCell id="cleric-171" value="●○○○" style="text;align=center;verticalAlign=middle;rounded=0;fontFamily=Georgia;fontSize=13;fontColor=default;labelBackgroundColor=none;spacing=0;spacingTop=0;spacingBottom=-5;fillColor=none;" parent="spell-dots" vertex="1">
           <mxGeometry x="740" y="1855" width="50" height="20" as="geometry" />
         </mxCell>
-        <mxCell id="cleric-173" value="●●○○" style="text;align=center;verticalAlign=middle;rounded=0;fontFamily=Georgia;fontSize=13;fontColor=default;labelBackgroundColor=none;spacing=0;spacingTop=0;spacingBottom=-5;fillColor=none;" parent="spell-dots" vertex="1">
+        <mxCell id="cleric-172" value="●●○○" style="text;align=center;verticalAlign=middle;rounded=0;fontFamily=Georgia;fontSize=13;fontColor=default;labelBackgroundColor=none;spacing=0;spacingTop=0;spacingBottom=-5;fillColor=none;" parent="spell-dots" vertex="1">
           <mxGeometry x="540" y="2035" width="50" height="20" as="geometry" />
         </mxCell>
-        <mxCell id="cleric-174" value="●○○○" style="text;align=center;verticalAlign=middle;rounded=0;fontFamily=Georgia;fontSize=13;fontColor=default;labelBackgroundColor=none;spacing=0;spacingTop=0;spacingBottom=-5;fillColor=none;" parent="spell-dots" vertex="1">
+        <mxCell id="cleric-173" value="●○○○" style="text;align=center;verticalAlign=middle;rounded=0;fontFamily=Georgia;fontSize=13;fontColor=default;labelBackgroundColor=none;spacing=0;spacingTop=0;spacingBottom=-5;fillColor=none;" parent="spell-dots" vertex="1">
           <mxGeometry x="160" y="1855" width="50" height="20" as="geometry" />
         </mxCell>
-        <mxCell id="cleric-175" value="●●○○" style="text;align=center;verticalAlign=middle;rounded=0;fontFamily=Georgia;fontSize=13;fontColor=default;labelBackgroundColor=none;spacing=0;spacingTop=0;spacingBottom=-5;fillColor=none;" parent="spell-dots" vertex="1">
-          <mxGeometry x="1140" y="1675" width="50" height="20" as="geometry" />
-        </mxCell>
-        <mxCell id="cleric-176" value="●●○○" style="text;align=center;verticalAlign=middle;rounded=0;fontFamily=Georgia;fontSize=13;fontColor=#FFFFFF;labelBackgroundColor=none;spacing=0;spacingTop=0;spacingBottom=-5;fillColor=none;" parent="spell-dots" vertex="1">
+        <mxCell id="cleric-174" value="●●○○" style="text;align=center;verticalAlign=middle;rounded=0;fontFamily=Georgia;fontSize=13;fontColor=#FFFFFF;labelBackgroundColor=none;spacing=0;spacingTop=0;spacingBottom=-5;fillColor=none;" parent="spell-dots" vertex="1">
           <mxGeometry x="940" y="2095" width="50" height="20" as="geometry" />
         </mxCell>
-        <mxCell id="cleric-177" value="●●○○" style="text;align=center;verticalAlign=middle;rounded=0;fontFamily=Georgia;fontSize=13;fontColor=default;labelBackgroundColor=none;spacing=0;spacingTop=0;spacingBottom=-5;fillColor=none;" parent="spell-dots" vertex="1">
+        <mxCell id="cleric-175" value="●●○○" style="text;align=center;verticalAlign=middle;rounded=0;fontFamily=Georgia;fontSize=13;fontColor=default;labelBackgroundColor=none;spacing=0;spacingTop=0;spacingBottom=-5;fillColor=none;" parent="spell-dots" vertex="1">
           <mxGeometry x="940" y="1675" width="50" height="20" as="geometry" />
         </mxCell>
-        <mxCell id="cleric-178" value="●○○○" style="text;align=center;verticalAlign=middle;rounded=0;fontFamily=Georgia;fontSize=13;fontColor=default;labelBackgroundColor=none;spacing=0;spacingTop=0;spacingBottom=-5;fillColor=none;" parent="spell-dots" vertex="1">
+        <mxCell id="cleric-176" value="●○○○" style="text;align=center;verticalAlign=middle;rounded=0;fontFamily=Georgia;fontSize=13;fontColor=default;labelBackgroundColor=none;spacing=0;spacingTop=0;spacingBottom=-5;fillColor=none;" parent="spell-dots" vertex="1">
           <mxGeometry x="940" y="1975" width="50" height="20" as="geometry" />
         </mxCell>
-        <mxCell id="cleric-179" value="●●●○" style="text;align=center;verticalAlign=middle;rounded=0;fontFamily=Georgia;fontSize=13;fontColor=default;labelBackgroundColor=none;spacing=0;spacingTop=0;spacingBottom=-5;fillColor=none;" parent="spell-dots" vertex="1">
+        <mxCell id="cleric-177" value="●●●○" style="text;align=center;verticalAlign=middle;rounded=0;fontFamily=Georgia;fontSize=13;fontColor=default;labelBackgroundColor=none;spacing=0;spacingTop=0;spacingBottom=-5;fillColor=none;" parent="spell-dots" vertex="1">
           <mxGeometry x="940" y="1795" width="50" height="20" as="geometry" />
         </mxCell>
-        <mxCell id="cleric-180" value="●●○○" style="text;align=center;verticalAlign=middle;rounded=0;fontFamily=Georgia;fontSize=13;fontColor=#FFFFFF;labelBackgroundColor=none;spacing=0;spacingTop=0;spacingBottom=-5;fillColor=none;" parent="spell-dots" vertex="1">
+        <mxCell id="cleric-178" value="●●○○" style="text;align=center;verticalAlign=middle;rounded=0;fontFamily=Georgia;fontSize=13;fontColor=#FFFFFF;labelBackgroundColor=none;spacing=0;spacingTop=0;spacingBottom=-5;fillColor=none;" parent="spell-dots" vertex="1">
           <mxGeometry x="940" y="1915" width="50" height="20" as="geometry" />
         </mxCell>
         <mxCell id="circle-prereqs" value="Circle Pre-requisites text" style="locked=1;" parent="0" />
-        <mxCell id="cleric-181" value="Circle 5" style="text;align=right;verticalAlign=bottom;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontFamily=Georgia;fontSize=13;fontColor=#667788;labelBackgroundColor=none;fontStyle=3" parent="circle-prereqs" vertex="1">
+        <mxCell id="cleric-179" value="Circle 5" style="text;align=right;verticalAlign=bottom;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontFamily=Georgia;fontSize=13;fontColor=#667788;labelBackgroundColor=none;fontStyle=3" parent="circle-prereqs" vertex="1">
           <mxGeometry x="510" y="1175" width="80" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="cleric-182" value="Circle 10" style="text;align=right;verticalAlign=bottom;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontFamily=Georgia;fontSize=13;fontColor=#667788;labelBackgroundColor=none;fontStyle=3" parent="circle-prereqs" vertex="1">
+        <mxCell id="cleric-180" value="Circle 10" style="text;align=right;verticalAlign=bottom;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontFamily=Georgia;fontSize=13;fontColor=#667788;labelBackgroundColor=none;fontStyle=3" parent="circle-prereqs" vertex="1">
           <mxGeometry x="510" y="2315" width="80" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="cleric-183" value="Circle 10" style="text;align=right;verticalAlign=bottom;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontFamily=Georgia;fontSize=13;fontColor=#667788;labelBackgroundColor=none;fontStyle=3" parent="circle-prereqs" vertex="1">
+        <mxCell id="cleric-181" value="Circle 10" style="text;align=right;verticalAlign=bottom;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontFamily=Georgia;fontSize=13;fontColor=#667788;labelBackgroundColor=none;fontStyle=3" parent="circle-prereqs" vertex="1">
           <mxGeometry x="910" y="275" width="80" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="cleric-184" value="Circle 10" style="text;align=right;verticalAlign=bottom;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontFamily=Georgia;fontSize=13;fontColor=#667788;labelBackgroundColor=none;fontStyle=3" parent="circle-prereqs" vertex="1">
+        <mxCell id="cleric-182" value="Circle 10" style="text;align=right;verticalAlign=bottom;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontFamily=Georgia;fontSize=13;fontColor=#667788;labelBackgroundColor=none;fontStyle=3" parent="circle-prereqs" vertex="1">
           <mxGeometry x="910" y="1925" width="80" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="cleric-185" value="Circle 15" style="text;align=right;verticalAlign=bottom;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontFamily=Georgia;fontSize=13;fontColor=#667788;labelBackgroundColor=none;fontStyle=3" parent="circle-prereqs" vertex="1">
+        <mxCell id="cleric-183" value="Circle 15" style="text;align=right;verticalAlign=bottom;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontFamily=Georgia;fontSize=13;fontColor=#667788;labelBackgroundColor=none;fontStyle=3" parent="circle-prereqs" vertex="1">
           <mxGeometry x="710" y="35" width="80" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="cleric-186" value="Circle 15" style="text;align=right;verticalAlign=bottom;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontFamily=Georgia;fontSize=13;fontColor=#667788;labelBackgroundColor=none;fontStyle=3" parent="circle-prereqs" vertex="1">
+        <mxCell id="cleric-184" value="Circle 15" style="text;align=right;verticalAlign=bottom;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontFamily=Georgia;fontSize=13;fontColor=#667788;labelBackgroundColor=none;fontStyle=3" parent="circle-prereqs" vertex="1">
           <mxGeometry x="910" y="1625" width="80" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="cleric-187" value="Circle 20" style="text;align=right;verticalAlign=bottom;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontFamily=Georgia;fontSize=13;fontColor=#667788;labelBackgroundColor=none;fontStyle=3" parent="circle-prereqs" vertex="1">
+        <mxCell id="cleric-185" value="Circle 20" style="text;align=right;verticalAlign=bottom;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontFamily=Georgia;fontSize=13;fontColor=#667788;labelBackgroundColor=none;fontStyle=3" parent="circle-prereqs" vertex="1">
           <mxGeometry x="510" y="2765" width="80" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="cleric-188" value="Circle 20" style="text;align=right;verticalAlign=bottom;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontFamily=Georgia;fontSize=13;fontColor=#667788;labelBackgroundColor=none;fontStyle=3" parent="circle-prereqs" vertex="1">
+        <mxCell id="cleric-186" value="Circle 20" style="text;align=right;verticalAlign=bottom;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontFamily=Georgia;fontSize=13;fontColor=#667788;labelBackgroundColor=none;fontStyle=3" parent="circle-prereqs" vertex="1">
           <mxGeometry x="1310" y="215" width="80" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="cleric-189" value="Circle 20" style="text;align=right;verticalAlign=bottom;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontFamily=Georgia;fontSize=13;fontColor=#667788;labelBackgroundColor=none;fontStyle=3" parent="circle-prereqs" vertex="1">
+        <mxCell id="cleric-187" value="Circle 20" style="text;align=right;verticalAlign=bottom;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontFamily=Georgia;fontSize=13;fontColor=#667788;labelBackgroundColor=none;fontStyle=3" parent="circle-prereqs" vertex="1">
           <mxGeometry x="910" y="1355" width="80" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="cleric-190" value="Circle 25" style="text;align=right;verticalAlign=bottom;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontFamily=Georgia;fontSize=13;fontColor=#667788;labelBackgroundColor=none;fontStyle=3" parent="circle-prereqs" vertex="1">
+        <mxCell id="cleric-188" value="Circle 25" style="text;align=right;verticalAlign=bottom;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontFamily=Georgia;fontSize=13;fontColor=#667788;labelBackgroundColor=none;fontStyle=3" parent="circle-prereqs" vertex="1">
           <mxGeometry x="1310" y="335" width="80" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="cleric-191" value="Circle 30" style="text;align=right;verticalAlign=bottom;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontFamily=Georgia;fontSize=13;fontColor=#667788;labelBackgroundColor=none;fontStyle=3" parent="circle-prereqs" vertex="1">
+        <mxCell id="cleric-189" value="Circle 30" style="text;align=right;verticalAlign=bottom;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontFamily=Georgia;fontSize=13;fontColor=#667788;labelBackgroundColor=none;fontStyle=3" parent="circle-prereqs" vertex="1">
           <mxGeometry x="910" y="155" width="80" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="cleric-192" value="Circle 30" style="text;align=right;verticalAlign=bottom;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontFamily=Georgia;fontSize=13;fontColor=#667788;labelBackgroundColor=none;fontStyle=3" parent="circle-prereqs" vertex="1">
+        <mxCell id="cleric-190" value="Circle 30" style="text;align=right;verticalAlign=bottom;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontFamily=Georgia;fontSize=13;fontColor=#667788;labelBackgroundColor=none;fontStyle=3" parent="circle-prereqs" vertex="1">
           <mxGeometry x="910" y="95" width="80" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="cleric-193" value="Circle 30" style="text;align=right;verticalAlign=bottom;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontFamily=Georgia;fontSize=13;fontColor=#667788;labelBackgroundColor=none;fontStyle=3" parent="circle-prereqs" vertex="1">
+        <mxCell id="cleric-191" value="Circle 30" style="text;align=right;verticalAlign=bottom;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontFamily=Georgia;fontSize=13;fontColor=#667788;labelBackgroundColor=none;fontStyle=3" parent="circle-prereqs" vertex="1">
           <mxGeometry x="910" y="2435" width="80" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="cleric-194" value="Circle 30" style="text;align=right;verticalAlign=bottom;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontFamily=Georgia;fontSize=13;fontColor=#667788;labelBackgroundColor=none;fontStyle=3" parent="circle-prereqs" vertex="1">
+        <mxCell id="cleric-192" value="Circle 30" style="text;align=right;verticalAlign=bottom;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontFamily=Georgia;fontSize=13;fontColor=#667788;labelBackgroundColor=none;fontStyle=3" parent="circle-prereqs" vertex="1">
           <mxGeometry x="1310" y="1415" width="80" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="cleric-195" value="Circle 30" style="text;align=right;verticalAlign=bottom;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontFamily=Georgia;fontSize=13;fontColor=#667788;labelBackgroundColor=none;fontStyle=3" parent="circle-prereqs" vertex="1">
+        <mxCell id="cleric-193" value="Circle 30" style="text;align=right;verticalAlign=bottom;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontFamily=Georgia;fontSize=13;fontColor=#667788;labelBackgroundColor=none;fontStyle=3" parent="circle-prereqs" vertex="1">
           <mxGeometry x="910" y="1745" width="80" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="cleric-196" value="Circle 40" style="text;align=right;verticalAlign=bottom;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontFamily=Georgia;fontSize=13;fontColor=#667788;labelBackgroundColor=none;fontStyle=3" parent="circle-prereqs" vertex="1">
+        <mxCell id="cleric-194" value="Circle 40" style="text;align=right;verticalAlign=bottom;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontFamily=Georgia;fontSize=13;fontColor=#667788;labelBackgroundColor=none;fontStyle=3" parent="circle-prereqs" vertex="1">
           <mxGeometry x="1310" y="2495" width="80" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="cleric-197" value="Circle 40" style="text;align=right;verticalAlign=bottom;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontFamily=Georgia;fontSize=13;fontColor=#667788;labelBackgroundColor=none;fontStyle=3" parent="circle-prereqs" vertex="1">
+        <mxCell id="cleric-195" value="Circle 40" style="text;align=right;verticalAlign=bottom;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontFamily=Georgia;fontSize=13;fontColor=#667788;labelBackgroundColor=none;fontStyle=3" parent="circle-prereqs" vertex="1">
           <mxGeometry x="910" y="545" width="80" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="cleric-198" value="Circle 45" style="text;align=right;verticalAlign=bottom;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontFamily=Georgia;fontSize=13;fontColor=#667788;labelBackgroundColor=none;fontStyle=3" parent="circle-prereqs" vertex="1">
+        <mxCell id="cleric-196" value="Circle 45" style="text;align=right;verticalAlign=bottom;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontFamily=Georgia;fontSize=13;fontColor=#667788;labelBackgroundColor=none;fontStyle=3" parent="circle-prereqs" vertex="1">
           <mxGeometry x="1310" y="1295" width="80" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="cleric-199" value="Circle 50" style="text;align=right;verticalAlign=bottom;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontFamily=Georgia;fontSize=13;fontColor=#667788;labelBackgroundColor=none;fontStyle=3" parent="circle-prereqs" vertex="1">
+        <mxCell id="cleric-197" value="Circle 50" style="text;align=right;verticalAlign=bottom;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontFamily=Georgia;fontSize=13;fontColor=#667788;labelBackgroundColor=none;fontStyle=3" parent="circle-prereqs" vertex="1">
           <mxGeometry x="1310" y="905" width="80" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="cleric-200" value="Circle 50" style="text;align=right;verticalAlign=bottom;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontFamily=Georgia;fontSize=13;fontColor=#667788;labelBackgroundColor=none;fontStyle=3" parent="circle-prereqs" vertex="1">
+        <mxCell id="cleric-198" value="Circle 50" style="text;align=right;verticalAlign=bottom;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontFamily=Georgia;fontSize=13;fontColor=#667788;labelBackgroundColor=none;fontStyle=3" parent="circle-prereqs" vertex="1">
           <mxGeometry x="1310" y="2435" width="80" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="cleric-201" value="Circle 70" style="text;align=right;verticalAlign=bottom;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontFamily=Georgia;fontSize=13;fontColor=#667788;labelBackgroundColor=none;fontStyle=3" parent="circle-prereqs" vertex="1">
+        <mxCell id="cleric-199" value="Circle 70" style="text;align=right;verticalAlign=bottom;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontFamily=Georgia;fontSize=13;fontColor=#667788;labelBackgroundColor=none;fontStyle=3" parent="circle-prereqs" vertex="1">
           <mxGeometry x="910" y="1175" width="80" height="30" as="geometry" />
         </mxCell>
         <mxCell id="transparency-layer" value="Transparency" style="locked=1;" parent="0" />

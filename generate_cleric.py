@@ -23,7 +23,7 @@ SPELLS = [
     ("Resurrection", "Divine Intervention", "Intermediate", 1, "Utility", None, "Cyclic"),
     ("Fire of Ushnish", "Divine Intervention", "Advanced", 2, "Targeted", None, "Battle"),
     ("Murrula's Flames", "Divine Intervention", "Advanced", 2, "Utility", None, "Ritual"),
-    ("Heavenly Fires", "Divine Intervention", "Basic", 2, "Targeted", None, "Metamagic"),
+    ("Heavenly Fires", "Divine Intervention", "Basic", None, "Targeted", None, "Metamagic"),
 
     # Holy Defense
     ("Visage", "Holy Defense", "Intro", 1, "Warding", None, "Standard"),
@@ -67,7 +67,7 @@ SPELLS = [
     ("Soul Bonding", "Spirit Manipulation", "Basic", 1, "Debilitation", None, "Battle"),
     ("Soul Sickness", "Spirit Manipulation", "Basic", 2, "Debilitation", None, "Battle"),
     ("Vigil", "Spirit Manipulation", "Basic", 1, "Utility", None, "Standard"),
-    ("Bitter Feast", "Spirit Manipulation", "Basic", 2, "Utility", None, "Metamagic"),
+    ("Bitter Feast", "Spirit Manipulation", "Basic", None, "Utility", None, "Metamagic"),
     ("Chill Spirit", "Spirit Manipulation", "Intermediate", 2, "Targeted", None, "Battle"),
     ("Eylhaar's Feast", "Spirit Manipulation", "Intermediate", 2, "Utility", None, "Battle"),
     ("Mass Rejuvenation", "Spirit Manipulation", "Intermediate", 1, "Utility", None, "Standard"),
