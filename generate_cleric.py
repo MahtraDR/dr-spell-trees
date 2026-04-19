@@ -281,27 +281,36 @@ def assign_chain_rows(book_name, spells_in_book):
     assigned = {}
     row = [0]  # mutable counter
 
+    above_row = [-1]  # grows negative (upward)
+    below_row = [0]   # grows positive (downward)
+
     def assign(name, cur_row):
         if name in assigned:
             return
         assigned[name] = cur_row
         kids = children.get(name, [])
-        # First child that is in a LATER tier stays on same row (left-to-right flow)
-        # Other children get new rows
         parent_tier = tier_rank.get(spell_tier.get(name, "Basic"), 1)
         same_row_used = False
+        remaining = []
         for kid in kids:
             kid_tier = tier_rank.get(spell_tier.get(kid, "Basic"), 1)
             if kid_tier >= parent_tier and not same_row_used:
                 assign(kid, cur_row)
                 same_row_used = True
             else:
-                row[0] += 1
-                assign(kid, row[0])
+                remaining.append(kid)
+        # Alternate remaining children above and below parent
+        for i, kid in enumerate(remaining):
+            if i % 2 == 0:
+                below_row[0] += 1
+                assign(kid, below_row[0])
+            else:
+                above_row[0] -= 1
+                assign(kid, above_row[0])
 
     for root in roots:
-        assign(root, row[0])
-        row[0] += 1
+        assign(root, 0)
+        below_row[0] += 1
 
     # Assign any remaining unassigned spells
     for s in spells_in_book:
@@ -313,6 +322,12 @@ def assign_chain_rows(book_name, spells_in_book):
     for spell_to_move, align_with in ROW_OVERRIDES.items():
         if spell_to_move in assigned and align_with in assigned:
             assigned[spell_to_move] = assigned[align_with]
+
+    # Normalize: shift all rows so minimum is 0
+    if assigned:
+        min_row = min(assigned.values())
+        assigned = {k: v - min_row for k, v in assigned.items()}
+        row[0] = int(max(assigned.values())) + 1
 
     return assigned, row[0]
 
@@ -448,7 +463,7 @@ def build_drawio():
     # --- Spellbook borders ---
     borders_layer = SubElement(xml_root, "mxCell", id="spellbook-borders", value="Spellbook borders", style="locked=1;", parent="0")
     band_colors = ["#FCF4C4", "#667788"]
-    band_right_x = 1610  # 10px right of Esoteric divider at x=1600
+    band_right_x = 1590  # left of Esoteric divider at x=1600
     for i, (book_name, by, bh, spells_in_book) in enumerate(band_info):
         # Compute tight band from actual spell positions (20px padding)
         book_spells_pos = [(spell_pos[s[0]][1]) for s in spells_in_book if s[0] in spell_pos]
