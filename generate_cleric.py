@@ -23,7 +23,7 @@ SPELLS = [
     ("Resurrection", "Divine Intervention", "Intermediate", 1, "Utility", None, "Cyclic"),
     ("Fire of Ushnish", "Divine Intervention", "Advanced", 2, "Targeted", None, "Battle"),
     ("Murrula's Flames", "Divine Intervention", "Advanced", 2, "Utility", None, "Ritual"),
-    ("Heavenly Fires", "Divine Intervention", "Basic", None, "Targeted", None, "Metamagic"),
+    ("Heavenly Fires", "Divine Intervention", "Intermediate", 1, "Targeted", None, "Metamagic"),
 
     # Holy Defense
     ("Visage", "Holy Defense", "Intro", 1, "Warding", None, "Standard"),
@@ -156,6 +156,7 @@ EDGES = [
     ("Sanctify Pattern", "Osrel Meraud", False),
     # Divine Intervention
     ("Auspice", "Aesrela Everild", False),
+    ("Aesrela Everild", "Heavenly Fires", False),
     ("Soul Bonding", "Resurrection", False),
     ("Vigil", "Resurrection", False),
     ("Resurrection", "Murrula's Flames", False),
@@ -204,11 +205,13 @@ CIRCLE_REQS = [
 # Manual row overrides: force specific spells to share a row with another spell
 ROW_OVERRIDES = {
     "Bitter Feast": "Eylhaar's Feast",
+    "Heavenly Fires": "Aesrela Everild",
 }
 
 # Manual x-position: spell placed 200px right of the named spell
 X_ALIGN_OVERRIDES = {
     "Bitter Feast": ("Eylhaar's Feast", 200),
+    "Heavenly Fires": ("Aesrela Everild", 200),
 }
 
 # Edges that should always use dashed+arrow style regardless of position
