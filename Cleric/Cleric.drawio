@@ -621,7 +621,7 @@
         <mxCell id="cleric-141" value="●○○○" style="text;align=center;verticalAlign=middle;rounded=0;fontFamily=Georgia;fontSize=13;fontColor=#FFFFFF;labelBackgroundColor=none;spacing=0;spacingTop=0;spacingBottom=-5;fillColor=none;" parent="spell-dots" vertex="1">
           <mxGeometry x="160" y="85" width="50" height="20" as="geometry" />
         </mxCell>
-        <mxCell id="cleric-142" value="○○○○" style="text;align=center;verticalAlign=middle;rounded=0;fontFamily=Georgia;fontSize=13;fontColor=#FFFFFF;labelBackgroundColor=none;spacing=0;spacingTop=0;spacingBottom=-5;fillColor=none;" parent="spell-dots" vertex="1">
+        <mxCell id="cleric-142" value="●○○○" style="text;align=center;verticalAlign=middle;rounded=0;fontFamily=Georgia;fontSize=13;fontColor=#FFFFFF;labelBackgroundColor=none;spacing=0;spacingTop=0;spacingBottom=-5;fillColor=none;" parent="spell-dots" vertex="1">
           <mxGeometry x="540" y="85" width="50" height="20" as="geometry" />
         </mxCell>
         <mxCell id="cleric-143" value="●○○○" style="text;align=center;verticalAlign=middle;rounded=0;fontFamily=Georgia;fontSize=13;fontColor=#FFFFFF;labelBackgroundColor=none;spacing=0;spacingTop=0;spacingBottom=-5;fillColor=none;" parent="spell-dots" vertex="1">

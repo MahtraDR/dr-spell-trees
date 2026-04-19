@@ -27,7 +27,7 @@ SPELLS = [
 
     # Holy Defense
     ("Visage", "Holy Defense", "Intro", 1, "Warding", None, "Standard"),
-    ("Protection from Evil", "Holy Defense", "Basic", 0, "Warding", None, "Standard"),
+    ("Protection from Evil", "Holy Defense", "Basic", 1, "Warding", None, "Standard"),
     ("Soul Shield", "Holy Defense", "Basic", 1, "Warding", None, "Standard"),
     ("Starry Waters", "Holy Defense", "Basic", 3, "Augmentation", None, "Standard"),
     ("Benediction", "Holy Defense", "Intermediate", 3, "Augmentation", None, "Standard"),
