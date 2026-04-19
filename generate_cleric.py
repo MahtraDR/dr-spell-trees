@@ -106,6 +106,98 @@ SPELLBOOK_ORDER = [
     "Antinomic Sorcery",
 ]
 
+# --- Prerequisites from individual wiki pages ---
+# (source_spell, target_spell, is_alternative)
+# is_alternative=True means "A OR B required" (dashed arrow)
+# is_alternative=False means "A required" (solid line, no arrow)
+EDGES = [
+    # Holy Defense internal
+    ("Visage", "Protection from Evil", False),
+    ("Visage", "Starry Waters", False),
+    ("Visage", "Sanyu Lyba", False),
+    ("Protection from Evil", "Soul Shield", False),
+    ("Protection from Evil", "Ghost Shroud", False),
+    # Holy Defense cross-book prereqs
+    ("Visage", "Shield of Light", False),
+    ("Divine Radiance", "Shield of Light", False),
+    ("Divine Radiance", "Halo", False),
+    ("Starry Waters", "Halo", False),
+    ("Bless", "Benediction", False),
+    ("Starry Waters", "Benediction", False),
+    # Holy Evocations
+    ("Bless", "Divine Radiance", False),
+    ("Bless", "Fists of Faenella", False),
+    ("Bless", "Horn of the Black Unicorn", False),
+    ("Bless", "Hand of Tenemlor", False),
+    ("Divine Radiance", "Phelim's Sanction", False),
+    ("Harm Evil", "Harm Horde", False),
+    ("Harm Evil", "Time of the Red Spiral", False),
+    ("Uncurse", "Curse of Zachriedek", False),
+    ("Uncurse", "Malediction", False),
+    # Holy Evocations OR prereqs
+    ("Protection from Evil", "Harm Evil", True),
+    ("Divine Radiance", "Harm Evil", True),
+    ("Fists of Faenella", "Fire of Ushnish", True),
+    ("Horn of the Black Unicorn", "Fire of Ushnish", True),
+    ("Malediction", "Hydra Hex", True),
+    ("Curse of Zachriedek", "Hydra Hex", True),
+    # Conviction
+    ("Bless", "Uncurse", False),
+    ("Bless", "Sanctify Pattern", False),
+    ("Uncurse", "Huldah's Pall", False),
+    ("Huldah's Pall", "Meraud's Cry", False),
+    ("Huldah's Pall", "Idon's Theft", False),
+    ("Huldah's Pall", "Spite of Dergati", False),
+    ("Sanctify Pattern", "Persistence of Mana", False),
+    ("Sanctify Pattern", "Osrel Meraud", False),
+    # Divine Intervention
+    ("Auspice", "Aesrela Everild", False),
+    ("Soul Bonding", "Resurrection", False),
+    ("Vigil", "Resurrection", False),
+    ("Resurrection", "Murrula's Flames", False),
+    # Spirit Manipulation
+    ("Centering", "Auspice", False),
+    ("Centering", "Rejuvenation", False),
+    ("Centering", "Soul Sickness", False),
+    ("Rejuvenation", "Vigil", False),
+    ("Rejuvenation", "Mass Rejuvenation", False),
+    ("Soul Sickness", "Chill Spirit", False),
+    ("Soul Sickness", "Soul Attrition", False),
+    ("Vigil", "Soul Attrition", False),
+    ("Auspice", "Eylhaar's Feast", False),
+    ("Eylhaar's Feast", "Bitter Feast", False),
+    # Spirit Manipulation OR prereqs
+    ("Vigil", "Soul Bonding", True),
+    ("Soul Sickness", "Soul Bonding", True),
+    ("Auspice", "Revelation", True),
+    ("Divine Radiance", "Revelation", True),
+]
+
+# Circle requirements: (spell_name, circle)
+CIRCLE_REQS = [
+    ("Uncurse", 5),
+    ("Glythtide's Gift", 10),
+    ("Shield of Light", 10),
+    ("Mass Rejuvenation", 10),
+    ("Soul Shield", 15),
+    ("Eylhaar's Feast", 15),
+    ("Aspects of the All-God", 20),
+    ("Halo", 20),
+    ("Persistence of Mana", 20),
+    ("Sanyu Lyba", 25),
+    ("Benediction", 30),
+    ("Ghost Shroud", 30),
+    ("Resurrection", 30),
+    ("Osrel Meraud", 30),
+    ("Revelation", 30),
+    ("Fire of Ushnish", 40),
+    ("Harm Horde", 40),
+    ("Spite of Dergati", 45),
+    ("Hydra Hex", 50),
+    ("Murrula's Flames", 50),
+    ("Meraud's Cry", 70),
+]
+
 BOX_W, BOX_H = 160, 40
 ROW_SPACING = 60
 BAND_PAD_TOP = 10
@@ -347,6 +439,64 @@ def build_drawio():
                                parent="spell-dots", vertex="1")
                 SubElement(c, "mxGeometry", x=str(dot_x), y=str(dot_y),
                            width="50", height="20", **{"as": "geometry"})
+
+    # --- Edges (prerequisite connections) ---
+    for src_name, tgt_name, is_alt in EDGES:
+        src_id = spell_cells.get(src_name)
+        tgt_id = spell_cells.get(tgt_name)
+        if not src_id or not tgt_id:
+            print(f"  WARNING: edge {src_name} -> {tgt_name}: missing cell id")
+            continue
+
+        eid = next_id()
+        if is_alt:
+            sty = ("edgeStyle=orthogonalEdgeStyle;shape=connector;curved=0;rounded=1;"
+                   "orthogonalLoop=1;jettySize=auto;html=1;"
+                   "exitX=1;exitY=0.5;exitDx=0;exitDy=0;"
+                   "entryX=0;entryY=0.5;entryDx=0;entryDy=0;"
+                   "strokeColor=#667788;strokeWidth=2;"
+                   "endArrow=classic;endFill=1;dashed=1;")
+        else:
+            sty = ("edgeStyle=orthogonalEdgeStyle;shape=connector;curved=0;rounded=1;"
+                   "orthogonalLoop=1;jettySize=auto;html=1;"
+                   "exitX=1;exitY=0.5;exitDx=0;exitDy=0;"
+                   "entryX=0;entryY=0.5;entryDx=0;entryDy=0;"
+                   "strokeColor=#667788;strokeWidth=2;"
+                   "endArrow=none;endFill=0;")
+
+        c = SubElement(xml_root, "mxCell", id=eid, style=sty,
+                       parent="shapes-lines", source=src_id, target=tgt_id, edge="1")
+        SubElement(c, "mxGeometry", relative="1", **{"as": "geometry"})
+
+    # --- Circle Pre-requisites text layer ---
+    circle_layer = SubElement(xml_root, "mxCell", id="circle-prereqs",
+                              value="Circle Pre-requisites text", style="locked=1;", parent="0")
+
+    for spell_name, circle in CIRCLE_REQS:
+        sid = spell_cells.get(spell_name)
+        if not sid:
+            continue
+        # Find the spell's position by searching band_info
+        for book_name, by, bh, spells_in_book in band_info:
+            tiers = defaultdict(list)
+            for s in spells_in_book:
+                tiers[s[2]].append(s)
+            for tier_name in TIER_ORDER:
+                tier_spells = tiers.get(tier_name, [])
+                for idx, spell in enumerate(tier_spells):
+                    if spell[0] == spell_name:
+                        col = idx % len(TIER_X[tier_name])
+                        row = idx // len(TIER_X[tier_name])
+                        sx = TIER_X[tier_name][col]
+                        sy = by + BAND_PAD_TOP + row * ROW_SPACING
+                        cid = next_id()
+                        c = SubElement(xml_root, "mxCell", id=cid,
+                                       value=f"Circle {circle}",
+                                       style="text;align=right;verticalAlign=bottom;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontFamily=Georgia;fontSize=13;fontColor=#667788;labelBackgroundColor=none;fontStyle=3",
+                                       parent="circle-prereqs", vertex="1")
+                        SubElement(c, "mxGeometry",
+                                   x=str(sx + 90), y=str(sy - 30),
+                                   width="80", height="30", **{"as": "geometry"})
 
     # --- Transparency layer ---
     SubElement(xml_root, "mxCell", id="transparency-layer", value="Transparency", style="locked=1;", parent="0")
