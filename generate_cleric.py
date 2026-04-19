@@ -434,7 +434,15 @@ def build_drawio():
                 SubElement(c, "mxGeometry", x=str(sx), y=str(sy),
                            width=str(BOX_W), height=str(BOX_H), **{"as": "geometry"})
 
-    # --- Edges with position-aware routing ---
+    # --- Edges with corridor-based routing ---
+    # Build band boundaries for corridor routing
+    band_bounds = {}
+    for book_name, by, bh, _, _ in band_info:
+        band_bounds[book_name] = (by, by + bh)
+
+    # Assign corridor x offsets for cross-book edges (left margin)
+    corridor_counter = 0
+
     for src_name, tgt_name, is_alt in EDGES:
         src_id = spell_cells.get(src_name)
         tgt_id = spell_cells.get(tgt_name)
@@ -444,25 +452,43 @@ def build_drawio():
 
         sx, sy = spell_pos[src_name]
         tx, ty = spell_pos[tgt_name]
-        same_book = spell_book[src_name] == spell_book[tgt_name]
+        src_bk = spell_book[src_name]
+        tgt_bk = spell_book[tgt_name]
+        same_book = src_bk == tgt_bk
 
-        # Choose exit/entry based on relative positions
+        waypoints = None
+
         if same_book and tx > sx:
-            # Same book, target to the right: exit right, enter left
             exit_style = "exitX=1;exitY=0.5;exitDx=0;exitDy=0;"
             entry_style = "entryX=0;entryY=0.5;entryDx=0;entryDy=0;"
         elif same_book:
-            # Same book, same or leftward column
-            exit_style = "exitX=0.5;exitY=1;exitDx=0;exitDy=0;"
-            entry_style = "entryX=0.5;entryY=0;entryDx=0;entryDy=0;"
-        elif ty > sy:
-            # Cross-book downward: exit bottom, enter top
-            exit_style = "exitX=0.5;exitY=1;exitDx=0;exitDy=0;"
-            entry_style = "entryX=0.5;entryY=0;entryDx=0;entryDy=0;"
+            if ty > sy:
+                exit_style = "exitX=0.5;exitY=1;exitDx=0;exitDy=0;"
+                entry_style = "entryX=0.5;entryY=0;entryDx=0;entryDy=0;"
+            else:
+                exit_style = "exitX=0.5;exitY=0;exitDx=0;exitDy=0;"
+                entry_style = "entryX=0.5;entryY=1;entryDx=0;entryDy=0;"
         else:
-            # Cross-book upward: exit top, enter bottom
-            exit_style = "exitX=0.5;exitY=0;exitDx=0;exitDy=0;"
-            entry_style = "entryX=0.5;entryY=1;entryDx=0;entryDy=0;"
+            # Cross-book: route through left margin corridor
+            corridor_counter += 1
+            corridor_x = -5 - (corridor_counter * 15)
+
+            if ty > sy:
+                # Going down
+                exit_style = "exitX=0;exitY=0.5;exitDx=0;exitDy=0;"
+                entry_style = "entryX=0;entryY=0.5;entryDx=0;entryDy=0;"
+                waypoints = [
+                    (corridor_x, sy + BOX_H // 2),
+                    (corridor_x, ty + BOX_H // 2),
+                ]
+            else:
+                # Going up
+                exit_style = "exitX=0;exitY=0.5;exitDx=0;exitDy=0;"
+                entry_style = "entryX=0;entryY=0.5;entryDx=0;entryDy=0;"
+                waypoints = [
+                    (corridor_x, sy + BOX_H // 2),
+                    (corridor_x, ty + BOX_H // 2),
+                ]
 
         eid = next_id()
         if is_alt:
@@ -480,7 +506,12 @@ def build_drawio():
 
         c = SubElement(xml_root, "mxCell", id=eid, style=sty,
                        parent="shapes-lines", source=src_id, target=tgt_id, edge="1")
-        SubElement(c, "mxGeometry", relative="1", **{"as": "geometry"})
+        geo = SubElement(c, "mxGeometry", relative="1", **{"as": "geometry"})
+
+        if waypoints:
+            arr = SubElement(geo, "Array", **{"as": "points"})
+            for wx, wy in waypoints:
+                SubElement(arr, "mxPoint", x=str(wx), y=str(wy))
 
     # --- Slot cost dots ---
     dots_layer = SubElement(xml_root, "mxCell", id="spell-dots", value="Spell cost bubbles text", style="locked=1;", parent="0")
