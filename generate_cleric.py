@@ -614,11 +614,10 @@ def build_drawio():
                     (tx - 10 if tx >= sx else tgt_cx, gap_y),
                 ]
         else:
-            # Skip-band: exit right, route through right margin, enter top/bottom
+            # Skip-band: route to right margin, enter top/bottom
             right_margin_counter += 1
             margin_x = PAGE_WIDTH - 250 + (right_margin_counter * 15)
 
-            exit_style = "exitX=1;exitY=0.5;exitDx=0;exitDy=0;"
             if ty > sy:
                 entry_style = "entryX=0.5;entryY=0;entryDx=0;entryDy=0;"
                 tgt_entry_y = ty
@@ -626,10 +625,17 @@ def build_drawio():
                 entry_style = "entryX=0.5;entryY=1;entryDx=0;entryDy=0;"
                 tgt_entry_y = ty + BOX_H
 
-            src_exit_y = sy + BOX_H // 2
-            tgt_cx = tx + BOX_W // 2
+            # Exit right, route through corridor to avoid same-row cells
+            exit_style = "exitX=1;exitY=0.5;exitDx=0;exitDy=0;"
+            # Find a clear y for the horizontal run to the margin
+            # Use the gap just below source band
+            src_band_top, src_band_bottom = band_bounds[src_bk]
+            clear_y = src_band_bottom + 15
+            corridor_x = sx + BOX_W + 20
             waypoints = [
-                (margin_x, src_exit_y),
+                (corridor_x, sy + BOX_H // 2),
+                (corridor_x, clear_y),
+                (margin_x, clear_y),
                 (margin_x, tgt_entry_y),
             ]
 
