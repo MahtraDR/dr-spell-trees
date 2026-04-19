@@ -238,41 +238,53 @@ def slot_dots(n, max_slots=4):
     return "\u25CF" * filled + "\u25CB" * empty
 
 
-def build_cross_book_sets():
-    """Find spells involved in cross-book edges."""
-    spell_book = {s[0]: s[1] for s in SPELLS}
-    connects_up = set()
-    connects_down = set()
-    book_idx = {b: i for i, b in enumerate(SPELLBOOK_ORDER)}
+def assign_chain_rows(book_name, spells_in_book):
+    """Assign y-rows to spells based on prerequisite chains.
+
+    Connected spells share the same row so horizontal edges
+    don't cross unrelated cells. Each branch fans out to a new row.
+    """
+    spell_names = {s[0] for s in spells_in_book}
+    # Build within-book adjacency from EDGES
+    children = defaultdict(list)
+    parents = defaultdict(list)
     for src, tgt, _ in EDGES:
-        sb, tb = spell_book.get(src), spell_book.get(tgt)
-        if sb and tb and sb != tb:
-            si, ti = book_idx.get(sb, 0), book_idx.get(tb, 0)
-            if si < ti:
-                connects_down.add(src)
-                connects_up.add(tgt)
+        if src in spell_names and tgt in spell_names:
+            children[src].append(tgt)
+            parents[tgt].append(src)
+
+    # Find roots (no within-book parents)
+    roots = [s[0] for s in spells_in_book if s[0] not in parents]
+    # Spells with only cross-book parents are also roots within this book
+    assigned = {}
+    row = [0]  # mutable counter
+
+    def assign(name, cur_row):
+        if name in assigned:
+            return
+        assigned[name] = cur_row
+        kids = children.get(name, [])
+        for i, kid in enumerate(kids):
+            if i == 0:
+                assign(kid, cur_row)
             else:
-                connects_up.add(src)
-                connects_down.add(tgt)
-    return connects_up, connects_down
+                row[0] += 1
+                assign(kid, row[0])
 
+    for root in roots:
+        assign(root, row[0])
+        row[0] += 1
 
-def sort_spells_in_tier(tier_spells, connects_up, connects_down):
-    """Sort spells within a tier so cross-book connected ones are at edges."""
-    def sort_key(spell):
-        name = spell[0]
-        if name in connects_up and name in connects_down:
-            return 1  # middle
-        if name in connects_up:
-            return 0  # top
-        if name in connects_down:
-            return 2  # bottom
-        return 1  # middle
-    return sorted(tier_spells, key=sort_key)
+    # Assign any remaining unassigned spells
+    for s in spells_in_book:
+        if s[0] not in assigned:
+            assigned[s[0]] = row[0]
+            row[0] += 1
+
+    return assigned, row[0]
 
 
 def build_drawio():
-    connects_up, connects_down = build_cross_book_sets()
     spell_book = {s[0]: s[1] for s in SPELLS}
     book_idx = {b: i for i, b in enumerate(SPELLBOOK_ORDER)}
 
@@ -280,42 +292,38 @@ def build_drawio():
     for spell in SPELLS:
         books[spell[1]].append(spell)
 
-    # Calculate band heights with sorted tiers
+    # Assign chain-based rows and compute positions
     band_info = []
     y_cursor = 50
+    spell_pos = {}
+
     for book_name in SPELLBOOK_ORDER:
         spells_in_book = books[book_name]
-        tiers = defaultdict(list)
-        for s in spells_in_book:
-            tiers[s[2]].append(s)
-        for t in tiers:
-            tiers[t] = sort_spells_in_tier(tiers[t], connects_up, connects_down)
-        max_rows = 0
-        for tier_name, tier_spells in tiers.items():
-            cols = len(TIER_X.get(tier_name, [1]))
-            rows = math.ceil(len(tier_spells) / cols)
-            max_rows = max(max_rows, rows)
-        band_h = max(max_rows * ROW_SPACING + BAND_PAD_TOP + BAND_PAD_BOTTOM, 80)
-        band_info.append((book_name, y_cursor, band_h, spells_in_book, tiers))
+        chain_rows, num_rows = assign_chain_rows(book_name, spells_in_book)
+        band_h = max(num_rows * ROW_SPACING + BAND_PAD_TOP + BAND_PAD_BOTTOM, 80)
+
+        # Place spells: x from tier, y from chain row
+        spell_tier = {s[0]: s[2] for s in spells_in_book}
+        # Track occupied positions to avoid overlaps
+        occupied = set()
+        for spell in spells_in_book:
+            name = spell[0]
+            tier = spell[2]
+            chain_row = chain_rows[name]
+            x_positions = TIER_X[tier]
+            sy = y_cursor + BAND_PAD_TOP + chain_row * ROW_SPACING
+            # Try first sub-column, fall back to second if occupied
+            sx = x_positions[0]
+            if (sx, sy) in occupied and len(x_positions) > 1:
+                sx = x_positions[1]
+            occupied.add((sx, sy))
+            spell_pos[name] = (sx, sy)
+
+        band_info.append((book_name, y_cursor, band_h, spells_in_book))
         y_cursor += band_h + BAND_GAP
 
     page_height = y_cursor + 100
     line_bottom = page_height - 20
-
-    # Spell position lookup: name -> (x, y)
-    spell_pos = {}
-    for book_name, by, bh, spells_in_book, tiers in band_info:
-        for tier_name in TIER_ORDER:
-            tier_spells = tiers.get(tier_name, [])
-            if not tier_spells:
-                continue
-            x_positions = TIER_X[tier_name]
-            for idx, spell in enumerate(tier_spells):
-                col = idx % len(x_positions)
-                row = idx // len(x_positions)
-                sx = x_positions[col]
-                sy = by + BAND_PAD_TOP + row * ROW_SPACING
-                spell_pos[spell[0]] = (sx, sy)
 
     # Build XML
     root = Element("mxfile", host="app.diagrams.net", version="26.0.4")
@@ -389,7 +397,7 @@ def build_drawio():
     # --- Spellbook borders ---
     borders_layer = SubElement(xml_root, "mxCell", id="spellbook-borders", value="Spellbook borders", style="locked=1;", parent="0")
     band_colors = ["#FCF4C4", "#667788"]
-    for i, (book_name, by, bh, _, _) in enumerate(band_info):
+    for i, (book_name, by, bh, _) in enumerate(band_info):
         fill = band_colors[i % 2]
         bid = next_id()
         c = SubElement(xml_root, "mxCell", id=bid, value="",
@@ -406,37 +414,32 @@ def build_drawio():
     shapes_layer = SubElement(xml_root, "mxCell", id="shapes-lines", value="Shapes and Lines", style="locked=1;", parent="0")
     spell_cells = {}
 
-    for book_name, by, bh, spells_in_book, tiers in band_info:
-        for tier_name in TIER_ORDER:
-            tier_spells = tiers.get(tier_name, [])
-            if not tier_spells:
-                continue
-            x_positions = TIER_X[tier_name]
-            for idx, spell in enumerate(tier_spells):
-                name = spell[0]
-                _, _, _, slots, ptype, stype, ctype = spell
-                sx, sy = spell_pos[name]
-                fill, font_color, shadow, gradient = get_fill_style(ptype, stype, ctype)
-                sid = next_id()
-                spell_cells[name] = sid
-                font_size = "18"
-                if len(name) > 20:
-                    font_size = "16"
-                if len(name) > 25:
-                    font_size = "14"
-                sty = (f"rounded=1;strokeWidth=1;strokeColor=#667788;textShadow=0;"
-                       f"labelBackgroundColor=none;whiteSpace=wrap;fontSize={font_size};"
-                       f"fontFamily=Atkinson Hyperlegible;fillColor={fill};"
-                       f"fontColor={font_color};shadow={shadow};glass=0;align=center;"
-                       f"verticalAlign=middle;fontStyle=1;resizable=1;{gradient}{FONT_SOURCE}")
-                c = SubElement(xml_root, "mxCell", id=sid, value=name, style=sty,
-                               parent="shapes-lines", vertex="1")
-                SubElement(c, "mxGeometry", x=str(sx), y=str(sy),
-                           width=str(BOX_W), height=str(BOX_H), **{"as": "geometry"})
+    for book_name, by, bh, spells_in_book in band_info:
+        for spell in spells_in_book:
+            name = spell[0]
+            _, _, _, slots, ptype, stype, ctype = spell
+            sx, sy = spell_pos[name]
+            fill, font_color, shadow, gradient = get_fill_style(ptype, stype, ctype)
+            sid = next_id()
+            spell_cells[name] = sid
+            font_size = "18"
+            if len(name) > 20:
+                font_size = "16"
+            if len(name) > 25:
+                font_size = "14"
+            sty = (f"rounded=1;strokeWidth=1;strokeColor=#667788;textShadow=0;"
+                   f"labelBackgroundColor=none;whiteSpace=wrap;fontSize={font_size};"
+                   f"fontFamily=Atkinson Hyperlegible;fillColor={fill};"
+                   f"fontColor={font_color};shadow={shadow};glass=0;align=center;"
+                   f"verticalAlign=middle;fontStyle=1;resizable=1;{gradient}{FONT_SOURCE}")
+            c = SubElement(xml_root, "mxCell", id=sid, value=name, style=sty,
+                           parent="shapes-lines", vertex="1")
+            SubElement(c, "mxGeometry", x=str(sx), y=str(sy),
+                       width=str(BOX_W), height=str(BOX_H), **{"as": "geometry"})
 
     # --- Edges with corridor-based routing ---
     band_bounds = {}
-    for book_name, by, bh, _, _ in band_info:
+    for book_name, by, bh, _ in band_info:
         band_bounds[book_name] = (by, by + bh)
 
     # Compute gap centers between adjacent bands
