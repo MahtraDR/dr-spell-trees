@@ -212,9 +212,7 @@ X_ALIGN_OVERRIDES = {
 }
 
 # Edges that should always use dashed+arrow style regardless of position
-ARROW_EDGES = {
-    ("Eylhaar's Feast", "Bitter Feast"),
-}
+ARROW_EDGES = set()
 
 BOX_W, BOX_H = 160, 40
 ROW_SPACING = 60
