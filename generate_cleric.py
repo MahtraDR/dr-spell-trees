@@ -1,5 +1,10 @@
 #!/usr/bin/env python3
-"""Generate Cleric spell tree drawio from wiki data."""
+"""Generate Cleric spell tree drawio from wiki data.
+
+Layout-aware: positions cross-book-connected spells at band edges
+and routes edges with appropriate exit/entry points to avoid
+crossing cells.
+"""
 
 import xml.etree.ElementTree as ET
 from xml.etree.ElementTree import Element, SubElement
@@ -45,7 +50,7 @@ SPELLS = [
     ("Hydra Hex", "Holy Evocations", "Advanced", 2, "Debilitation", None, "Cyclic"),
     ("Time of the Red Spiral", "Holy Evocations", "Advanced", 2, "Targeted", None, "Metamagic"),
 
-    # Conviction (wiki agent called this "Metamagic" but it's likely "Conviction")
+    # Conviction
     ("Uncurse", "Conviction", "Basic", 1, "Utility", None, "Battle"),
     ("Huldah's Pall", "Conviction", "Basic", 2, "Debilitation", None, "Battle"),
     ("Sanctify Pattern", "Conviction", "Basic", 2, "Augmentation", None, "Standard"),
@@ -97,19 +102,19 @@ TIER_LABELS = {
     "Esoteric": (1660, 120),
 }
 
+# Ordered so adjacent books with cross-connections are neighbors
 SPELLBOOK_ORDER = [
     "Holy Defense",
     "Holy Evocations",
+    "Conviction",
     "Spirit Manipulation",
     "Divine Intervention",
-    "Conviction",
     "Antinomic Sorcery",
 ]
 
 # --- Prerequisites from individual wiki pages ---
 # (source_spell, target_spell, is_alternative)
 # is_alternative=True means "A OR B required" (dashed arrow)
-# is_alternative=False means "A required" (solid line, no arrow)
 EDGES = [
     # Holy Defense internal
     ("Visage", "Protection from Evil", False),
@@ -117,14 +122,13 @@ EDGES = [
     ("Visage", "Sanyu Lyba", False),
     ("Protection from Evil", "Soul Shield", False),
     ("Protection from Evil", "Ghost Shroud", False),
-    # Holy Defense cross-book prereqs
     ("Visage", "Shield of Light", False),
     ("Divine Radiance", "Shield of Light", False),
     ("Divine Radiance", "Halo", False),
     ("Starry Waters", "Halo", False),
     ("Bless", "Benediction", False),
     ("Starry Waters", "Benediction", False),
-    # Holy Evocations
+    # Holy Evocations internal + cross-book
     ("Bless", "Divine Radiance", False),
     ("Bless", "Fists of Faenella", False),
     ("Bless", "Horn of the Black Unicorn", False),
@@ -134,7 +138,7 @@ EDGES = [
     ("Harm Evil", "Time of the Red Spiral", False),
     ("Uncurse", "Curse of Zachriedek", False),
     ("Uncurse", "Malediction", False),
-    # Holy Evocations OR prereqs
+    # OR prereqs
     ("Protection from Evil", "Harm Evil", True),
     ("Divine Radiance", "Harm Evil", True),
     ("Fists of Faenella", "Fire of Ushnish", True),
@@ -166,14 +170,13 @@ EDGES = [
     ("Vigil", "Soul Attrition", False),
     ("Auspice", "Eylhaar's Feast", False),
     ("Eylhaar's Feast", "Bitter Feast", False),
-    # Spirit Manipulation OR prereqs
+    # OR prereqs
     ("Vigil", "Soul Bonding", True),
     ("Soul Sickness", "Soul Bonding", True),
     ("Auspice", "Revelation", True),
     ("Divine Radiance", "Revelation", True),
 ]
 
-# Circle requirements: (spell_name, circle)
 CIRCLE_REQS = [
     ("Uncurse", 5),
     ("Glythtide's Gift", 10),
@@ -200,8 +203,8 @@ CIRCLE_REQS = [
 
 BOX_W, BOX_H = 160, 40
 ROW_SPACING = 60
-BAND_PAD_TOP = 10
-BAND_PAD_BOTTOM = 10
+BAND_PAD_TOP = 15
+BAND_PAD_BOTTOM = 15
 BAND_GAP = 50
 PAGE_WIDTH = 1800
 FONT_SOURCE = "fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DAtkinson%2BHyperlegible;"
@@ -220,12 +223,10 @@ def get_fill_style(primary_type, secondary_type, cast_type):
     else:
         fill, font = TYPE_COLORS.get(primary_type, ("#AAC8EB", "#000000"))
         shadow = "1"
-
     gradient = ""
     if secondary_type and cast_type != "Metamagic":
         grad_fill, _ = TYPE_COLORS.get(secondary_type, ("#AAC8EB", "#000000"))
         gradient = f"gradientColor={grad_fill};gradientDirection=east;"
-
     return fill, font, shadow, gradient
 
 
@@ -237,13 +238,49 @@ def slot_dots(n, max_slots=4):
     return "\u25CF" * filled + "\u25CB" * empty
 
 
+def build_cross_book_sets():
+    """Find spells involved in cross-book edges."""
+    spell_book = {s[0]: s[1] for s in SPELLS}
+    connects_up = set()
+    connects_down = set()
+    book_idx = {b: i for i, b in enumerate(SPELLBOOK_ORDER)}
+    for src, tgt, _ in EDGES:
+        sb, tb = spell_book.get(src), spell_book.get(tgt)
+        if sb and tb and sb != tb:
+            si, ti = book_idx.get(sb, 0), book_idx.get(tb, 0)
+            if si < ti:
+                connects_down.add(src)
+                connects_up.add(tgt)
+            else:
+                connects_up.add(src)
+                connects_down.add(tgt)
+    return connects_up, connects_down
+
+
+def sort_spells_in_tier(tier_spells, connects_up, connects_down):
+    """Sort spells within a tier so cross-book connected ones are at edges."""
+    def sort_key(spell):
+        name = spell[0]
+        if name in connects_up and name in connects_down:
+            return 1  # middle
+        if name in connects_up:
+            return 0  # top
+        if name in connects_down:
+            return 2  # bottom
+        return 1  # middle
+    return sorted(tier_spells, key=sort_key)
+
+
 def build_drawio():
-    # Group spells by spellbook
+    connects_up, connects_down = build_cross_book_sets()
+    spell_book = {s[0]: s[1] for s in SPELLS}
+    book_idx = {b: i for i, b in enumerate(SPELLBOOK_ORDER)}
+
     books = defaultdict(list)
     for spell in SPELLS:
         books[spell[1]].append(spell)
 
-    # Calculate band heights
+    # Calculate band heights with sorted tiers
     band_info = []
     y_cursor = 50
     for book_name in SPELLBOOK_ORDER:
@@ -251,19 +288,34 @@ def build_drawio():
         tiers = defaultdict(list)
         for s in spells_in_book:
             tiers[s[2]].append(s)
-
+        for t in tiers:
+            tiers[t] = sort_spells_in_tier(tiers[t], connects_up, connects_down)
         max_rows = 0
         for tier_name, tier_spells in tiers.items():
             cols = len(TIER_X.get(tier_name, [1]))
             rows = math.ceil(len(tier_spells) / cols)
             max_rows = max(max_rows, rows)
-
         band_h = max(max_rows * ROW_SPACING + BAND_PAD_TOP + BAND_PAD_BOTTOM, 80)
-        band_info.append((book_name, y_cursor, band_h, spells_in_book))
+        band_info.append((book_name, y_cursor, band_h, spells_in_book, tiers))
         y_cursor += band_h + BAND_GAP
 
-    page_height = y_cursor + 50
+    page_height = y_cursor + 100
     line_bottom = page_height - 20
+
+    # Spell position lookup: name -> (x, y)
+    spell_pos = {}
+    for book_name, by, bh, spells_in_book, tiers in band_info:
+        for tier_name in TIER_ORDER:
+            tier_spells = tiers.get(tier_name, [])
+            if not tier_spells:
+                continue
+            x_positions = TIER_X[tier_name]
+            for idx, spell in enumerate(tier_spells):
+                col = idx % len(x_positions)
+                row = idx // len(x_positions)
+                sx = x_positions[col]
+                sy = by + BAND_PAD_TOP + row * ROW_SPACING
+                spell_pos[spell[0]] = (sx, sy)
 
     # Build XML
     root = Element("mxfile", host="app.diagrams.net", version="26.0.4")
@@ -275,12 +327,10 @@ def build_drawio():
                        pageWidth=str(PAGE_WIDTH), pageHeight=str(page_height),
                        background="none", math="0", shadow="0")
     xml_root = SubElement(model, "root")
-    cell0 = SubElement(xml_root, "mxCell", id="0")
-    cell1 = SubElement(xml_root, "mxCell", id="1", style="locked=1;", parent="0")
+    SubElement(xml_root, "mxCell", id="0")
+    SubElement(xml_root, "mxCell", id="1", style="locked=1;", parent="0")
 
-    # --- Layer 1 (id=1): Tier labels, dividers, legend ---
-
-    # Tier labels
+    # --- Layer 1: Tier labels, dividers, legend ---
     for tier_name, (lx, lw) in TIER_LABELS.items():
         tid = next_id()
         c = SubElement(xml_root, "mxCell", id=tid, value=tier_name,
@@ -288,7 +338,6 @@ def build_drawio():
                        parent="1", vertex="1")
         SubElement(c, "mxGeometry", x=str(lx), width=str(lw), height="40", **{"as": "geometry"})
 
-    # Tier divider lines (vertical)
     for dx in TIER_DIVIDERS:
         did = next_id()
         c = SubElement(xml_root, "mxCell", id=did, value="",
@@ -298,7 +347,6 @@ def build_drawio():
         SubElement(geo, "mxPoint", x=str(dx), y="10", **{"as": "sourcePoint"})
         SubElement(geo, "mxPoint", x=str(dx), y=str(line_bottom), **{"as": "targetPoint"})
 
-    # Horizontal header line
     hid = next_id()
     c = SubElement(xml_root, "mxCell", id=hid, value="",
                    style="html=1;rounded=0;strokeWidth=2;endArrow=none;endFill=0;dashed=1;labelBackgroundColor=none;shadow=1;strokeColor=#667788;opacity=70;dashPattern=1 1;",
@@ -307,15 +355,13 @@ def build_drawio():
     SubElement(geo, "mxPoint", x="10", y="40", **{"as": "sourcePoint"})
     SubElement(geo, "mxPoint", x=str(PAGE_WIDTH - 20), y="40", **{"as": "targetPoint"})
 
-    # Legend box
+    # Legend
     legend_x, legend_y = PAGE_WIDTH - 220, page_height - 520
     lid = next_id()
     c = SubElement(xml_root, "mxCell", id=lid, value="Legend",
                    style="rounded=1;fillColor=none;verticalAlign=top;labelBackgroundColor=none;container=0;fontStyle=1;fontColor=#667788;fontFamily=Georgia;strokeColor=#667788;shadow=1;glass=0;strokeWidth=1;textShadow=0;whiteSpace=wrap;",
                    parent="1", vertex="1")
     SubElement(c, "mxGeometry", x=str(legend_x), y=str(legend_y), width="200", height="500", **{"as": "geometry"})
-
-    # Legend items
     legend_items = [
         ("Special requirements in italics", "text;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=1;fontFamily=Georgia;fontSize=15;fontColor=#667788;labelBackgroundColor=none;fontStyle=3;strokeColor=none;", None),
         ("Augmentation", None, "#AAC8EB"),
@@ -332,115 +378,63 @@ def build_drawio():
         iid = next_id()
         if fill:
             fc = "#FFFFFF" if fill in ("#147A6D", "#E80538") else "#000000"
-            shadow_val = "0" if fill == "#D5D0CA" else "1"
-            sty = f"rounded=1;whiteSpace=wrap;fillColor={fill};labelBackgroundColor=none;fontFamily=Georgia;fontSize=18;strokeColor=#667788;shadow={shadow_val};glass=0;strokeWidth=1;align=center;fontStyle=1;verticalAlign=middle;fontColor={fc};textShadow=0;"
+            sv = "0" if fill == "#D5D0CA" else "1"
+            sty = f"rounded=1;whiteSpace=wrap;fillColor={fill};labelBackgroundColor=none;fontFamily=Georgia;fontSize=18;strokeColor=#667788;shadow={sv};glass=0;strokeWidth=1;align=center;fontStyle=1;verticalAlign=middle;fontColor={fc};textShadow=0;"
         else:
             sty = custom_style
         c = SubElement(xml_root, "mxCell", id=iid, value=lbl, style=sty, parent="1", vertex="1")
         SubElement(c, "mxGeometry", x=str(legend_x + 20), y=str(ly), width="160", height="40", **{"as": "geometry"})
         ly += 50
 
-    # --- Spellbook borders layer ---
+    # --- Spellbook borders ---
     borders_layer = SubElement(xml_root, "mxCell", id="spellbook-borders", value="Spellbook borders", style="locked=1;", parent="0")
-
     band_colors = ["#FCF4C4", "#667788"]
-    for i, (book_name, by, bh, _) in enumerate(band_info):
+    for i, (book_name, by, bh, _, _) in enumerate(band_info):
         fill = band_colors[i % 2]
         bid = next_id()
         c = SubElement(xml_root, "mxCell", id=bid, value="",
                        style=f"rounded=1;fontFamily=Helvetica;fontSize=11;fontColor=default;labelBackgroundColor=none;fillColor={fill};strokeColor=#667788;opacity=30;glass=0;shadow=0;align=center;verticalAlign=middle;gradientColor=none;strokeWidth=2;",
                        parent="spellbook-borders", vertex="1")
         SubElement(c, "mxGeometry", x="10", y=str(by), width=str(PAGE_WIDTH - 240), height=str(bh), **{"as": "geometry"})
-
-        # Spellbook label
-        label_y = by + bh
         blid = next_id()
         c = SubElement(xml_root, "mxCell", id=blid, value=book_name,
                        style=f"text;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=1;fontSize=16;fontFamily=Atkinson Hyperlegible;fontColor=#667788;strokeColor=none;{FONT_SOURCE}",
                        parent="spellbook-borders", vertex="1")
-        SubElement(c, "mxGeometry", x="10", y=str(label_y), width="180", height="40", **{"as": "geometry"})
+        SubElement(c, "mxGeometry", x="10", y=str(by + bh), width="180", height="40", **{"as": "geometry"})
 
-    # --- Shapes and Lines layer ---
+    # --- Shapes and Lines ---
     shapes_layer = SubElement(xml_root, "mxCell", id="shapes-lines", value="Shapes and Lines", style="locked=1;", parent="0")
+    spell_cells = {}
 
-    spell_cells = {}  # name -> cell_id for edges later
-
-    for book_name, by, bh, spells_in_book in band_info:
-        tiers = defaultdict(list)
-        for s in spells_in_book:
-            tiers[s[2]].append(s)
-
+    for book_name, by, bh, spells_in_book, tiers in band_info:
         for tier_name in TIER_ORDER:
             tier_spells = tiers.get(tier_name, [])
             if not tier_spells:
                 continue
-
             x_positions = TIER_X[tier_name]
             for idx, spell in enumerate(tier_spells):
-                name, _, _, slots, ptype, stype, ctype = spell
-                col = idx % len(x_positions)
-                row = idx // len(x_positions)
-                sx = x_positions[col]
-                sy = by + BAND_PAD_TOP + row * ROW_SPACING
-
+                name = spell[0]
+                _, _, _, slots, ptype, stype, ctype = spell
+                sx, sy = spell_pos[name]
                 fill, font_color, shadow, gradient = get_fill_style(ptype, stype, ctype)
-
                 sid = next_id()
                 spell_cells[name] = sid
-
                 font_size = "18"
                 if len(name) > 20:
                     font_size = "16"
                 if len(name) > 25:
                     font_size = "14"
-
                 sty = (f"rounded=1;strokeWidth=1;strokeColor=#667788;textShadow=0;"
                        f"labelBackgroundColor=none;whiteSpace=wrap;fontSize={font_size};"
                        f"fontFamily=Atkinson Hyperlegible;fillColor={fill};"
                        f"fontColor={font_color};shadow={shadow};glass=0;align=center;"
                        f"verticalAlign=middle;fontStyle=1;resizable=1;{gradient}{FONT_SOURCE}")
-
                 c = SubElement(xml_root, "mxCell", id=sid, value=name, style=sty,
                                parent="shapes-lines", vertex="1")
                 SubElement(c, "mxGeometry", x=str(sx), y=str(sy),
                            width=str(BOX_W), height=str(BOX_H), **{"as": "geometry"})
 
-    # --- Spell cost bubbles layer ---
-    dots_layer = SubElement(xml_root, "mxCell", id="spell-dots", value="Spell cost bubbles text", style="locked=1;", parent="0")
-
-    for book_name, by, bh, spells_in_book in band_info:
-        tiers = defaultdict(list)
-        for s in spells_in_book:
-            tiers[s[2]].append(s)
-
-        for tier_name in TIER_ORDER:
-            tier_spells = tiers.get(tier_name, [])
-            for idx, spell in enumerate(tier_spells):
-                name, _, _, slots, ptype, stype, ctype = spell
-                dots = slot_dots(slots)
-                if dots is None:
-                    continue
-
-                col = idx % len(TIER_X[tier_name])
-                row = idx // len(TIER_X[tier_name])
-                sx = TIER_X[tier_name][col]
-                sy = by + BAND_PAD_TOP + row * ROW_SPACING
-
-                dot_x = sx + 120
-                dot_y = sy + 20
-
-                fc = "default"
-                if ptype in ("Warding", "Targeted") and ctype != "Metamagic":
-                    fc = "#FFFFFF"
-
-                did = next_id()
-                c = SubElement(xml_root, "mxCell", id=did, value=dots,
-                               style=f"text;align=center;verticalAlign=middle;rounded=0;fontFamily=Georgia;fontSize=13;fontColor={fc};labelBackgroundColor=none;spacing=0;spacingTop=0;spacingBottom=-5;fillColor=none;",
-                               parent="spell-dots", vertex="1")
-                SubElement(c, "mxGeometry", x=str(dot_x), y=str(dot_y),
-                           width="50", height="20", **{"as": "geometry"})
-
-    # --- Edges (prerequisite connections) ---
+    # --- Edges with position-aware routing ---
     for src_name, tgt_name, is_alt in EDGES:
         src_id = spell_cells.get(src_name)
         tgt_id = spell_cells.get(tgt_name)
@@ -448,56 +442,83 @@ def build_drawio():
             print(f"  WARNING: edge {src_name} -> {tgt_name}: missing cell id")
             continue
 
+        sx, sy = spell_pos[src_name]
+        tx, ty = spell_pos[tgt_name]
+        same_book = spell_book[src_name] == spell_book[tgt_name]
+
+        # Choose exit/entry based on relative positions
+        if same_book and tx > sx:
+            # Same book, target to the right: exit right, enter left
+            exit_style = "exitX=1;exitY=0.5;exitDx=0;exitDy=0;"
+            entry_style = "entryX=0;entryY=0.5;entryDx=0;entryDy=0;"
+        elif same_book:
+            # Same book, same or leftward column
+            exit_style = "exitX=0.5;exitY=1;exitDx=0;exitDy=0;"
+            entry_style = "entryX=0.5;entryY=0;entryDx=0;entryDy=0;"
+        elif ty > sy:
+            # Cross-book downward: exit bottom, enter top
+            exit_style = "exitX=0.5;exitY=1;exitDx=0;exitDy=0;"
+            entry_style = "entryX=0.5;entryY=0;entryDx=0;entryDy=0;"
+        else:
+            # Cross-book upward: exit top, enter bottom
+            exit_style = "exitX=0.5;exitY=0;exitDx=0;exitDy=0;"
+            entry_style = "entryX=0.5;entryY=1;entryDx=0;entryDy=0;"
+
         eid = next_id()
         if is_alt:
-            sty = ("edgeStyle=orthogonalEdgeStyle;shape=connector;curved=0;rounded=1;"
-                   "orthogonalLoop=1;jettySize=auto;html=1;"
-                   "strokeColor=#667788;strokeWidth=2;"
-                   "endArrow=classic;endFill=1;dashed=1;")
+            sty = (f"edgeStyle=orthogonalEdgeStyle;shape=connector;curved=0;rounded=1;"
+                   f"orthogonalLoop=1;jettySize=auto;html=1;"
+                   f"{exit_style}{entry_style}"
+                   f"strokeColor=#667788;strokeWidth=2;"
+                   f"endArrow=classic;endFill=1;dashed=1;")
         else:
-            sty = ("edgeStyle=orthogonalEdgeStyle;shape=connector;curved=0;rounded=1;"
-                   "orthogonalLoop=1;jettySize=auto;html=1;"
-                   "strokeColor=#667788;strokeWidth=2;"
-                   "endArrow=none;endFill=0;")
+            sty = (f"edgeStyle=orthogonalEdgeStyle;shape=connector;curved=0;rounded=1;"
+                   f"orthogonalLoop=1;jettySize=auto;html=1;"
+                   f"{exit_style}{entry_style}"
+                   f"strokeColor=#667788;strokeWidth=2;"
+                   f"endArrow=none;endFill=0;")
 
         c = SubElement(xml_root, "mxCell", id=eid, style=sty,
                        parent="shapes-lines", source=src_id, target=tgt_id, edge="1")
         SubElement(c, "mxGeometry", relative="1", **{"as": "geometry"})
 
-    # --- Circle Pre-requisites text layer ---
+    # --- Slot cost dots ---
+    dots_layer = SubElement(xml_root, "mxCell", id="spell-dots", value="Spell cost bubbles text", style="locked=1;", parent="0")
+    for spell in SPELLS:
+        name, _, _, slots, ptype, stype, ctype = spell
+        dots = slot_dots(slots)
+        if dots is None:
+            continue
+        sx, sy = spell_pos[name]
+        dot_x = sx + 120
+        dot_y = sy + 20
+        fc = "default"
+        if ptype in ("Warding", "Targeted") and ctype != "Metamagic":
+            fc = "#FFFFFF"
+        did = next_id()
+        c = SubElement(xml_root, "mxCell", id=did, value=dots,
+                       style=f"text;align=center;verticalAlign=middle;rounded=0;fontFamily=Georgia;fontSize=13;fontColor={fc};labelBackgroundColor=none;spacing=0;spacingTop=0;spacingBottom=-5;fillColor=none;",
+                       parent="spell-dots", vertex="1")
+        SubElement(c, "mxGeometry", x=str(dot_x), y=str(dot_y),
+                   width="50", height="20", **{"as": "geometry"})
+
+    # --- Circle prereq labels ---
     circle_layer = SubElement(xml_root, "mxCell", id="circle-prereqs",
                               value="Circle Pre-requisites text", style="locked=1;", parent="0")
-
     for spell_name, circle in CIRCLE_REQS:
-        sid = spell_cells.get(spell_name)
-        if not sid:
+        if spell_name not in spell_pos:
             continue
-        # Find the spell's position by searching band_info
-        for book_name, by, bh, spells_in_book in band_info:
-            tiers = defaultdict(list)
-            for s in spells_in_book:
-                tiers[s[2]].append(s)
-            for tier_name in TIER_ORDER:
-                tier_spells = tiers.get(tier_name, [])
-                for idx, spell in enumerate(tier_spells):
-                    if spell[0] == spell_name:
-                        col = idx % len(TIER_X[tier_name])
-                        row = idx // len(TIER_X[tier_name])
-                        sx = TIER_X[tier_name][col]
-                        sy = by + BAND_PAD_TOP + row * ROW_SPACING
-                        cid = next_id()
-                        c = SubElement(xml_root, "mxCell", id=cid,
-                                       value=f"Circle {circle}",
-                                       style="text;align=right;verticalAlign=bottom;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontFamily=Georgia;fontSize=13;fontColor=#667788;labelBackgroundColor=none;fontStyle=3",
-                                       parent="circle-prereqs", vertex="1")
-                        SubElement(c, "mxGeometry",
-                                   x=str(sx + 90), y=str(sy - 30),
-                                   width="80", height="30", **{"as": "geometry"})
+        sx, sy = spell_pos[spell_name]
+        cid = next_id()
+        c = SubElement(xml_root, "mxCell", id=cid, value=f"Circle {circle}",
+                       style="text;align=right;verticalAlign=bottom;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontFamily=Georgia;fontSize=13;fontColor=#667788;labelBackgroundColor=none;fontStyle=3",
+                       parent="circle-prereqs", vertex="1")
+        SubElement(c, "mxGeometry", x=str(sx + 90), y=str(sy - 30),
+                   width="80", height="30", **{"as": "geometry"})
 
-    # --- Transparency layer ---
+    # --- Transparency ---
     SubElement(xml_root, "mxCell", id="transparency-layer", value="Transparency", style="locked=1;", parent="0")
 
-    # Serialize
     tree = ET.ElementTree(root)
     ET.indent(tree, space="  ")
     return tree
@@ -508,7 +529,6 @@ if __name__ == "__main__":
     outpath = "/Users/grocha/repos/dr-spell-trees/Cleric/Cleric.drawio"
     tree.write(outpath, encoding="unicode", xml_declaration=True)
     print(f"Generated {outpath}")
-    # Count spells
     count = len(SPELLS)
     books = set(s[1] for s in SPELLS)
     print(f"{count} spells across {len(books)} spellbooks: {', '.join(sorted(books))}")
