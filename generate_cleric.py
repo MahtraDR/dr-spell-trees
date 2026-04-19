@@ -219,9 +219,9 @@ ARROW_EDGES = set()
 
 BOX_W, BOX_H = 160, 40
 ROW_SPACING = 60
-BAND_PAD_TOP = 15
-BAND_PAD_BOTTOM = 15
-BAND_GAP = 40
+BAND_PAD_TOP = 20
+BAND_PAD_BOTTOM = 20
+BAND_GAP = 20
 PAGE_WIDTH = 1800
 FONT_SOURCE = "fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DAtkinson%2BHyperlegible;"
 
@@ -442,8 +442,8 @@ def build_drawio():
         if book_spells_pos:
             min_spell_y = min(book_spells_pos)
             max_spell_y = max(book_spells_pos) + BOX_H
-            band_top = min_spell_y - 20
-            band_bottom = max_spell_y + 20
+            band_top = int((min_spell_y - 20) // 10 * 10)
+            band_bottom = int(-(-((max_spell_y + 20)) // 10) * 10)  # ceil to 10
         else:
             band_top = by
             band_bottom = by + bh
