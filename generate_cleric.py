@@ -435,13 +435,21 @@ def build_drawio():
                            width=str(BOX_W), height=str(BOX_H), **{"as": "geometry"})
 
     # --- Edges with corridor-based routing ---
-    # Build band boundaries for corridor routing
     band_bounds = {}
     for book_name, by, bh, _, _ in band_info:
         band_bounds[book_name] = (by, by + bh)
 
-    # Assign corridor x offsets for cross-book edges (left margin)
-    corridor_counter = 0
+    # Compute gap centers between adjacent bands
+    gap_centers = {}
+    for i in range(len(SPELLBOOK_ORDER) - 1):
+        b1 = SPELLBOOK_ORDER[i]
+        b2 = SPELLBOOK_ORDER[i + 1]
+        _, b1_bottom = band_bounds[b1]
+        b2_top, _ = band_bounds[b2]
+        gap_centers[(b1, b2)] = (b1_bottom + b2_top) // 2
+        gap_centers[(b2, b1)] = (b1_bottom + b2_top) // 2
+
+    right_margin_counter = 0
 
     for src_name, tgt_name, is_alt in EDGES:
         src_id = spell_cells.get(src_name)
@@ -455,40 +463,62 @@ def build_drawio():
         src_bk = spell_book[src_name]
         tgt_bk = spell_book[tgt_name]
         same_book = src_bk == tgt_bk
+        src_bi = book_idx[src_bk]
+        tgt_bi = book_idx[tgt_bk]
 
         waypoints = None
 
         if same_book and tx > sx:
+            # Same book, target to the right
             exit_style = "exitX=1;exitY=0.5;exitDx=0;exitDy=0;"
             entry_style = "entryX=0;entryY=0.5;entryDx=0;entryDy=0;"
         elif same_book:
+            # Same book, same or leftward column
             if ty > sy:
                 exit_style = "exitX=0.5;exitY=1;exitDx=0;exitDy=0;"
                 entry_style = "entryX=0.5;entryY=0;entryDx=0;entryDy=0;"
             else:
                 exit_style = "exitX=0.5;exitY=0;exitDx=0;exitDy=0;"
                 entry_style = "entryX=0.5;entryY=1;entryDx=0;entryDy=0;"
-        else:
-            # Cross-book: route through left margin corridor
-            corridor_counter += 1
-            corridor_x = -5 - (corridor_counter * 15)
+        elif abs(src_bi - tgt_bi) == 1:
+            # Adjacent bands: exit bottom/top, horizontal in gap, enter top/bottom
+            src_cx = sx + BOX_W // 2
+            tgt_cx = tx + BOX_W // 2
+            gap_y = gap_centers.get((src_bk, tgt_bk))
+            if gap_y is None:
+                gap_y = (sy + ty) // 2
 
             if ty > sy:
-                # Going down
-                exit_style = "exitX=0;exitY=0.5;exitDx=0;exitDy=0;"
-                entry_style = "entryX=0;entryY=0.5;entryDx=0;entryDy=0;"
-                waypoints = [
-                    (corridor_x, sy + BOX_H // 2),
-                    (corridor_x, ty + BOX_H // 2),
-                ]
+                exit_style = "exitX=0.5;exitY=1;exitDx=0;exitDy=0;"
+                entry_style = "entryX=0.5;entryY=0;entryDx=0;entryDy=0;"
             else:
-                # Going up
-                exit_style = "exitX=0;exitY=0.5;exitDx=0;exitDy=0;"
-                entry_style = "entryX=0;entryY=0.5;entryDx=0;entryDy=0;"
+                exit_style = "exitX=0.5;exitY=0;exitDx=0;exitDy=0;"
+                entry_style = "entryX=0.5;entryY=1;entryDx=0;entryDy=0;"
+
+            if src_cx != tgt_cx:
                 waypoints = [
-                    (corridor_x, sy + BOX_H // 2),
-                    (corridor_x, ty + BOX_H // 2),
+                    (src_cx, gap_y),
+                    (tgt_cx, gap_y),
                 ]
+        else:
+            # Skip-band: exit right, route through right margin, enter top/bottom
+            right_margin_counter += 1
+            margin_x = PAGE_WIDTH - 250 + (right_margin_counter * 15)
+
+            exit_style = "exitX=1;exitY=0.5;exitDx=0;exitDy=0;"
+            if ty > sy:
+                entry_style = "entryX=0.5;entryY=0;entryDx=0;entryDy=0;"
+                tgt_entry_y = ty
+            else:
+                entry_style = "entryX=0.5;entryY=1;entryDx=0;entryDy=0;"
+                tgt_entry_y = ty + BOX_H
+
+            src_exit_y = sy + BOX_H // 2
+            tgt_cx = tx + BOX_W // 2
+            waypoints = [
+                (margin_x, src_exit_y),
+                (margin_x, tgt_entry_y),
+            ]
 
         eid = next_id()
         if is_alt:
