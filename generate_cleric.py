@@ -536,15 +536,32 @@ def build_drawio():
                     break
 
             if blocked:
-                # Exit bottom, route under blocking cells, enter left
-                exit_style = "exitX=0.5;exitY=1;exitDx=0;exitDy=0;"
                 entry_style = "entryX=0;entryY=0.5;entryDx=0;entryDy=0;"
-                # Add waypoint to route between the rows
-                mid_y = max(sy, ty) + BOX_H + 10
-                waypoints = [
-                    (sx + BOX_W // 2, mid_y),
-                    (tx - 10, mid_y),
-                ]
+                tgt_cy = ty + BOX_H // 2
+                src_cx = sx + BOX_W // 2
+
+                if ty > sy:
+                    # Target below source: L-shape down to target center, then right
+                    exit_style = "exitX=0.5;exitY=1;exitDx=0;exitDy=0;"
+                    waypoints = [
+                        (src_cx, tgt_cy),
+                        (tx - 10, tgt_cy),
+                    ]
+                elif ty == sy:
+                    # Same row: route below both cells
+                    exit_style = "exitX=0.5;exitY=1;exitDx=0;exitDy=0;"
+                    mid_y = sy + BOX_H + 20
+                    waypoints = [
+                        (src_cx, mid_y),
+                        (tx - 10, mid_y),
+                    ]
+                else:
+                    # Target above source: L-shape up to target center, then right
+                    exit_style = "exitX=0.5;exitY=0;exitDx=0;exitDy=0;"
+                    waypoints = [
+                        (src_cx, tgt_cy),
+                        (tx - 10, tgt_cy),
+                    ]
             else:
                 exit_style = "exitX=1;exitY=0.5;exitDx=0;exitDy=0;"
                 entry_style = "entryX=0;entryY=0.5;entryDx=0;entryDy=0;"
