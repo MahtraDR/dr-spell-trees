@@ -442,16 +442,18 @@ def build_drawio():
     for book_name, by, bh, _ in band_info:
         band_bounds[book_name] = (by, by + bh)
 
-    # Compute gap centers between adjacent bands
-    gap_centers = {}
+    # Compute gap regions between adjacent bands
+    gap_regions = {}
     for i in range(len(SPELLBOOK_ORDER) - 1):
         b1 = SPELLBOOK_ORDER[i]
         b2 = SPELLBOOK_ORDER[i + 1]
         _, b1_bottom = band_bounds[b1]
         b2_top, _ = band_bounds[b2]
-        gap_centers[(b1, b2)] = (b1_bottom + b2_top) // 2
-        gap_centers[(b2, b1)] = (b1_bottom + b2_top) // 2
+        gap_regions[(b1, b2)] = (b1_bottom, b2_top)
+        gap_regions[(b2, b1)] = (b1_bottom, b2_top)
 
+    # Track gap usage to stagger parallel edges in the same gap
+    gap_usage = defaultdict(int)
     right_margin_counter = 0
 
     for src_name, tgt_name, is_alt in EDGES:
@@ -487,9 +489,11 @@ def build_drawio():
             # Adjacent bands: exit bottom/top, horizontal in gap, enter top/bottom
             src_cx = sx + BOX_W // 2
             tgt_cx = tx + BOX_W // 2
-            gap_y = gap_centers.get((src_bk, tgt_bk))
-            if gap_y is None:
-                gap_y = (sy + ty) // 2
+            gap_key = (min(src_bk, tgt_bk), max(src_bk, tgt_bk))
+            gap_bottom, gap_top = gap_regions.get((src_bk, tgt_bk), (sy, ty))
+            offset = gap_usage[gap_key] * 8
+            gap_usage[gap_key] += 1
+            gap_y = (gap_bottom + gap_top) // 2 + offset
 
             if ty > sy:
                 exit_style = "exitX=0.5;exitY=1;exitDx=0;exitDy=0;"
