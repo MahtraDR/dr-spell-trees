@@ -474,9 +474,28 @@ def build_drawio():
         waypoints = None
 
         if same_book and tx > sx:
-            # Same book, target to the right
-            exit_style = "exitX=1;exitY=0.5;exitDx=0;exitDy=0;"
-            entry_style = "entryX=0;entryY=0.5;entryDx=0;entryDy=0;"
+            # Same book, target to the right -- check if any cell blocks the path
+            blocked = False
+            for other_name, (ox, oy) in spell_pos.items():
+                if other_name == src_name or other_name == tgt_name:
+                    continue
+                if spell_book.get(other_name) != src_bk:
+                    continue
+                # Check if other cell is between source and target horizontally
+                # and overlaps vertically with the edge y-level
+                edge_y = sy + BOX_H // 2
+                if (ox > sx and ox < tx and
+                    oy <= edge_y <= oy + BOX_H):
+                    blocked = True
+                    break
+
+            if blocked:
+                # Exit bottom, route under the blocking cell, enter left
+                exit_style = "exitX=0.5;exitY=1;exitDx=0;exitDy=0;"
+                entry_style = "entryX=0;entryY=0.5;entryDx=0;entryDy=0;"
+            else:
+                exit_style = "exitX=1;exitY=0.5;exitDx=0;exitDy=0;"
+                entry_style = "entryX=0;entryY=0.5;entryDx=0;entryDy=0;"
         elif same_book:
             # Same book, same or leftward column
             if ty > sy:
