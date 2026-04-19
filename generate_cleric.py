@@ -245,6 +245,9 @@ def assign_chain_rows(book_name, spells_in_book):
     don't cross unrelated cells. Each branch fans out to a new row.
     """
     spell_names = {s[0] for s in spells_in_book}
+    spell_tier = {s[0]: s[2] for s in spells_in_book}
+    tier_rank = {t: i for i, t in enumerate(TIER_ORDER)}
+
     # Build within-book adjacency from EDGES
     children = defaultdict(list)
     parents = defaultdict(list)
@@ -253,9 +256,12 @@ def assign_chain_rows(book_name, spells_in_book):
             children[src].append(tgt)
             parents[tgt].append(src)
 
+    # Sort children by tier so chains flow left-to-right
+    for parent in children:
+        children[parent].sort(key=lambda c: tier_rank.get(spell_tier.get(c, "Basic"), 1))
+
     # Find roots (no within-book parents)
     roots = [s[0] for s in spells_in_book if s[0] not in parents]
-    # Spells with only cross-book parents are also roots within this book
     assigned = {}
     row = [0]  # mutable counter
 
@@ -264,9 +270,15 @@ def assign_chain_rows(book_name, spells_in_book):
             return
         assigned[name] = cur_row
         kids = children.get(name, [])
-        for i, kid in enumerate(kids):
-            if i == 0:
+        # First child that is in a LATER tier stays on same row (left-to-right flow)
+        # Other children get new rows
+        parent_tier = tier_rank.get(spell_tier.get(name, "Basic"), 1)
+        same_row_used = False
+        for kid in kids:
+            kid_tier = tier_rank.get(spell_tier.get(kid, "Basic"), 1)
+            if kid_tier >= parent_tier and not same_row_used:
                 assign(kid, cur_row)
+                same_row_used = True
             else:
                 row[0] += 1
                 assign(kid, row[0])
