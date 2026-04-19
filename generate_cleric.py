@@ -497,16 +497,24 @@ def build_drawio():
 
             if ty > sy:
                 exit_style = "exitX=0.5;exitY=1;exitDx=0;exitDy=0;"
-                entry_style = "entryX=0.5;entryY=0;entryDx=0;entryDy=0;"
+                if tx >= sx:
+                    entry_style = "entryX=0;entryY=0.5;entryDx=0;entryDy=0;"
+                else:
+                    entry_style = "entryX=0.5;entryY=0;entryDx=0;entryDy=0;"
             else:
                 exit_style = "exitX=0.5;exitY=0;exitDx=0;exitDy=0;"
-                entry_style = "entryX=0.5;entryY=1;entryDx=0;entryDy=0;"
+                if tx >= sx:
+                    entry_style = "entryX=0;entryY=0.5;entryDx=0;entryDy=0;"
+                else:
+                    entry_style = "entryX=0.5;entryY=1;entryDx=0;entryDy=0;"
 
-            if src_cx != tgt_cx:
-                waypoints = [
-                    (src_cx, gap_y),
-                    (tgt_cx, gap_y),
-                ]
+            waypoints = [
+                (src_cx, gap_y),
+                (tx - 10, gap_y),
+            ] if tx >= sx else [
+                (src_cx, gap_y),
+                (tgt_cx, gap_y),
+            ]
         else:
             # Skip-band: exit right, route through right margin, enter top/bottom
             right_margin_counter += 1
