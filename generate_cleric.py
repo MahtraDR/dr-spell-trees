@@ -611,8 +611,12 @@ def build_drawio():
                         (tx - 10, tgt_cy),
                     ]
             else:
-                exit_frac = max(0.2, min(0.8, 0.5 + stagger / BOX_H))
-                exit_style = f"exitX=1;exitY={exit_frac:.2f};exitDx=0;exitDy=0;"
+                if ty == sy:
+                    # Same row, unblocked: straight horizontal, no stagger
+                    exit_style = "exitX=1;exitY=0.5;exitDx=0;exitDy=0;"
+                else:
+                    exit_frac = max(0.2, min(0.8, 0.5 + stagger / BOX_H))
+                    exit_style = f"exitX=1;exitY={exit_frac:.2f};exitDx=0;exitDy=0;"
                 entry_style = "entryX=0;entryY=0.5;entryDx=0;entryDy=0;"
         elif same_book and tx <= sx:
             # Same book, same column or leftward
