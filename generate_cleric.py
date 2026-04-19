@@ -487,6 +487,17 @@ def build_drawio():
                        width=str(BOX_W), height=str(BOX_H), **{"as": "geometry"})
 
     # --- Edges with corridor-based routing ---
+    # Pre-compute per-source and per-target edge counts for staggering
+    source_edge_count = defaultdict(int)
+    source_edge_idx = {}
+    target_edge_count = defaultdict(int)
+    target_edge_idx = {}
+    for src_name, tgt_name, _ in EDGES:
+        source_edge_idx[(src_name, tgt_name)] = source_edge_count[src_name]
+        source_edge_count[src_name] += 1
+        target_edge_idx[(src_name, tgt_name)] = target_edge_count[tgt_name]
+        target_edge_count[tgt_name] += 1
+
     band_bounds = {}
     for book_name, by, bh, _ in band_info:
         band_bounds[book_name] = (by, by + bh)
@@ -519,6 +530,18 @@ def build_drawio():
         same_book = src_bk == tgt_bk
         src_bi = book_idx[src_bk]
         tgt_bi = book_idx[tgt_bk]
+
+        # Stagger offsets for edges from same source / to same target
+        edge_idx = source_edge_idx.get((src_name, tgt_name), 0)
+        num_edges = source_edge_count.get(src_name, 1)
+        stagger = (edge_idx - num_edges // 2) * 12
+
+        tgt_idx = target_edge_idx.get((src_name, tgt_name), 0)
+        tgt_num = target_edge_count.get(tgt_name, 1)
+        tgt_stagger = (tgt_idx - tgt_num // 2) * 12
+
+        # Helper: compute staggered exit fraction for right-exiting edges
+        exit_frac_r = max(0.15, min(0.85, 0.5 + stagger / BOX_H))
 
         waypoints = None
 
@@ -555,36 +578,40 @@ def build_drawio():
                         vert_clear = False
                         break
 
+                stag_x = src_cx + stagger
+
                 if not vert_clear:
                     # Vertical blocked: exit right to corridor, then down, then right
-                    exit_style = "exitX=1;exitY=0.5;exitDx=0;exitDy=0;"
-                    corridor_x = sx + BOX_W + 20
+                    exit_style = f"exitX=1;exitY={exit_frac_r:.2f};exitDx=0;exitDy=0;"
+                    corridor_x = sx + BOX_W + 20 + abs(stagger)
                     waypoints = [
-                        (corridor_x, sy + BOX_H // 2),
+                        (corridor_x, sy + BOX_H // 2 + stagger),
                         (corridor_x, tgt_cy),
                         (tx - 10, tgt_cy),
                     ]
                 elif ty > sy:
                     exit_style = "exitX=0.5;exitY=1;exitDx=0;exitDy=0;"
+                    adj_y = tgt_cy + tgt_stagger
                     waypoints = [
-                        (src_cx, tgt_cy),
-                        (tx - 10, tgt_cy),
+                        (stag_x, adj_y),
+                        (tx - 10, adj_y),
                     ]
                 elif ty == sy:
                     exit_style = "exitX=0.5;exitY=1;exitDx=0;exitDy=0;"
-                    mid_y = sy + BOX_H + 20
+                    mid_y = sy + BOX_H + 20 + edge_idx * 12
                     waypoints = [
-                        (src_cx, mid_y),
+                        (stag_x, mid_y),
                         (tx - 10, mid_y),
                     ]
                 else:
                     exit_style = "exitX=0.5;exitY=0;exitDx=0;exitDy=0;"
                     waypoints = [
-                        (src_cx, tgt_cy),
+                        (stag_x, tgt_cy),
                         (tx - 10, tgt_cy),
                     ]
             else:
-                exit_style = "exitX=1;exitY=0.5;exitDx=0;exitDy=0;"
+                exit_frac = max(0.2, min(0.8, 0.5 + stagger / BOX_H))
+                exit_style = f"exitX=1;exitY={exit_frac:.2f};exitDx=0;exitDy=0;"
                 entry_style = "entryX=0;entryY=0.5;entryDx=0;entryDy=0;"
         elif same_book and tx <= sx:
             # Same book, same column or leftward
@@ -597,7 +624,7 @@ def build_drawio():
         elif abs(src_bi - tgt_bi) == 1:
             # Adjacent bands: check if vertical drop from source would cross
             # same-band cells below/above it
-            src_cx = sx + BOX_W // 2
+            src_cx = sx + BOX_W // 2 + stagger
             tgt_cx = tx + BOX_W // 2
             gap_key = (min(src_bk, tgt_bk), max(src_bk, tgt_bk))
             gap_bottom, gap_top = gap_regions.get((src_bk, tgt_bk), (sy, ty))
@@ -621,7 +648,7 @@ def build_drawio():
 
             if vert_blocked:
                 # Exit right instead, route to a corridor then down
-                exit_style = "exitX=1;exitY=0.5;exitDx=0;exitDy=0;"
+                exit_style = f"exitX=1;exitY={exit_frac_r:.2f};exitDx=0;exitDy=0;"
                 if tx >= sx:
                     entry_style = "entryX=0;entryY=0.5;entryDx=0;entryDy=0;"
                 else:
@@ -659,19 +686,20 @@ def build_drawio():
             margin_x = PAGE_WIDTH - 250 + (right_margin_counter * 15)
 
             if ty > sy:
-                entry_style = "entryX=0.5;entryY=0;entryDx=0;entryDy=0;"
+                # Stagger entry point for multiple edges to same target
+                entry_frac = max(0.15, min(0.85, 0.5 + tgt_stagger / BOX_H))
+                entry_style = f"entryX={entry_frac:.2f};entryY=0;entryDx=0;entryDy=0;"
                 tgt_entry_y = ty
             else:
-                entry_style = "entryX=0.5;entryY=1;entryDx=0;entryDy=0;"
+                entry_frac = max(0.15, min(0.85, 0.5 + tgt_stagger / BOX_H))
+                entry_style = f"entryX={entry_frac:.2f};entryY=1;entryDx=0;entryDy=0;"
                 tgt_entry_y = ty + BOX_H
 
             # Exit right, route through corridor to avoid same-row cells
-            exit_style = "exitX=1;exitY=0.5;exitDx=0;exitDy=0;"
-            # Find a clear y for the horizontal run to the margin
-            # Use the gap just below source band
+            exit_style = f"exitX=1;exitY={exit_frac_r:.2f};exitDx=0;exitDy=0;"
             src_band_top, src_band_bottom = band_bounds[src_bk]
-            clear_y = src_band_bottom + 15
-            corridor_x = sx + BOX_W + 20
+            clear_y = src_band_bottom + 15 + right_margin_counter * 15
+            corridor_x = sx + BOX_W + 20 + right_margin_counter * 15
             waypoints = [
                 (corridor_x, sy + BOX_H // 2),
                 (corridor_x, clear_y),

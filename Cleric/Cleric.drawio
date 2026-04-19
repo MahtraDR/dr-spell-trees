@@ -262,13 +262,13 @@
         <mxCell id="cleric-80" value="Aspects of the All-God" style="rounded=1;strokeWidth=1;strokeColor=#667788;textShadow=0;labelBackgroundColor=none;whiteSpace=wrap;fontSize=16;fontFamily=Atkinson Hyperlegible;fillColor=#AAC8EB;fontColor=#000000;shadow=1;glass=0;align=center;verticalAlign=middle;fontStyle=1;resizable=1;gradientColor=#B3D56A;gradientDirection=east;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DAtkinson%2BHyperlegible;" parent="shapes-lines" vertex="1">
           <mxGeometry x="420" y="2795" width="160" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="cleric-81" style="edgeStyle=orthogonalEdgeStyle;shape=connector;curved=0;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;strokeColor=#667788;strokeWidth=2;endArrow=none;endFill=0;" parent="shapes-lines" source="cleric-33" target="cleric-34" edge="1">
+        <mxCell id="cleric-81" style="edgeStyle=orthogonalEdgeStyle;shape=connector;curved=0;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.20;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;strokeColor=#667788;strokeWidth=2;endArrow=none;endFill=0;" parent="shapes-lines" source="cleric-33" target="cleric-34" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="cleric-82" style="edgeStyle=orthogonalEdgeStyle;shape=connector;curved=0;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;strokeColor=#667788;strokeWidth=2;endArrow=none;endFill=0;" parent="shapes-lines" source="cleric-33" target="cleric-36" edge="1">
           <mxGeometry relative="1" as="geometry">
             <Array as="points">
-              <mxPoint x="120" y="205" />
+              <mxPoint x="108" y="205" />
               <mxPoint x="410" y="205" />
             </Array>
           </mxGeometry>
@@ -281,7 +281,7 @@
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="cleric-84" style="edgeStyle=orthogonalEdgeStyle;shape=connector;curved=0;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;strokeColor=#667788;strokeWidth=2;endArrow=none;endFill=0;" parent="shapes-lines" source="cleric-34" target="cleric-35" edge="1">
+        <mxCell id="cleric-84" style="edgeStyle=orthogonalEdgeStyle;shape=connector;curved=0;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.20;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;strokeColor=#667788;strokeWidth=2;endArrow=none;endFill=0;" parent="shapes-lines" source="cleric-34" target="cleric-35" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="cleric-85" style="edgeStyle=orthogonalEdgeStyle;shape=connector;curved=0;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;strokeColor=#667788;strokeWidth=2;endArrow=none;endFill=0;" parent="shapes-lines" source="cleric-34" target="cleric-38" edge="1">
@@ -295,15 +295,15 @@
         <mxCell id="cleric-86" style="edgeStyle=orthogonalEdgeStyle;shape=connector;curved=0;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;strokeColor=#667788;strokeWidth=2;endArrow=none;endFill=0;" parent="shapes-lines" source="cleric-33" target="cleric-39" edge="1">
           <mxGeometry relative="1" as="geometry">
             <Array as="points">
-              <mxPoint x="120" y="325" />
-              <mxPoint x="810" y="325" />
+              <mxPoint x="132" y="313" />
+              <mxPoint x="810" y="313" />
             </Array>
           </mxGeometry>
         </mxCell>
         <mxCell id="cleric-87" style="edgeStyle=orthogonalEdgeStyle;shape=connector;curved=0;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;strokeColor=#667788;strokeWidth=2;endArrow=none;endFill=0;" parent="shapes-lines" source="cleric-43" target="cleric-39" edge="1">
           <mxGeometry relative="1" as="geometry">
             <Array as="points">
-              <mxPoint x="500" y="520" />
+              <mxPoint x="476" y="520" />
               <mxPoint x="800" y="520" />
             </Array>
           </mxGeometry>
@@ -311,7 +311,7 @@
         <mxCell id="cleric-88" style="edgeStyle=orthogonalEdgeStyle;shape=connector;curved=0;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;strokeColor=#667788;strokeWidth=2;endArrow=none;endFill=0;" parent="shapes-lines" source="cleric-43" target="cleric-40" edge="1">
           <mxGeometry relative="1" as="geometry">
             <Array as="points">
-              <mxPoint x="500" y="540" />
+              <mxPoint x="488" y="540" />
               <mxPoint x="1190" y="540" />
             </Array>
           </mxGeometry>
@@ -319,7 +319,7 @@
         <mxCell id="cleric-89" style="edgeStyle=orthogonalEdgeStyle;shape=connector;curved=0;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;strokeColor=#667788;strokeWidth=2;endArrow=none;endFill=0;" parent="shapes-lines" source="cleric-36" target="cleric-40" edge="1">
           <mxGeometry relative="1" as="geometry">
             <Array as="points">
-              <mxPoint x="500" y="265" />
+              <mxPoint x="488" y="265" />
               <mxPoint x="1210" y="265" />
             </Array>
           </mxGeometry>
@@ -327,21 +327,21 @@
         <mxCell id="cleric-90" style="edgeStyle=orthogonalEdgeStyle;shape=connector;curved=0;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;strokeColor=#667788;strokeWidth=2;endArrow=none;endFill=0;" parent="shapes-lines" source="cleric-42" target="cleric-37" edge="1">
           <mxGeometry relative="1" as="geometry">
             <Array as="points">
-              <mxPoint x="120" y="560" />
+              <mxPoint x="84" y="560" />
               <mxPoint x="780" y="560" />
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="cleric-91" style="edgeStyle=orthogonalEdgeStyle;shape=connector;curved=0;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;strokeColor=#667788;strokeWidth=2;endArrow=none;endFill=0;" parent="shapes-lines" source="cleric-36" target="cleric-37" edge="1">
+        <mxCell id="cleric-91" style="edgeStyle=orthogonalEdgeStyle;shape=connector;curved=0;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.50;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;strokeColor=#667788;strokeWidth=2;endArrow=none;endFill=0;" parent="shapes-lines" source="cleric-36" target="cleric-37" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="cleric-92" style="edgeStyle=orthogonalEdgeStyle;shape=connector;curved=0;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;strokeColor=#667788;strokeWidth=2;endArrow=none;endFill=0;" parent="shapes-lines" source="cleric-42" target="cleric-43" edge="1">
+        <mxCell id="cleric-92" style="edgeStyle=orthogonalEdgeStyle;shape=connector;curved=0;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.20;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;strokeColor=#667788;strokeWidth=2;endArrow=none;endFill=0;" parent="shapes-lines" source="cleric-42" target="cleric-43" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="cleric-93" style="edgeStyle=orthogonalEdgeStyle;shape=connector;curved=0;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;strokeColor=#667788;strokeWidth=2;endArrow=none;endFill=0;" parent="shapes-lines" source="cleric-42" target="cleric-44" edge="1">
           <mxGeometry relative="1" as="geometry">
             <Array as="points">
-              <mxPoint x="120" y="775" />
+              <mxPoint x="108" y="775" />
               <mxPoint x="410" y="775" />
             </Array>
           </mxGeometry>
@@ -357,7 +357,7 @@
         <mxCell id="cleric-95" style="edgeStyle=orthogonalEdgeStyle;shape=connector;curved=0;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;strokeColor=#667788;strokeWidth=2;endArrow=none;endFill=0;" parent="shapes-lines" source="cleric-42" target="cleric-48" edge="1">
           <mxGeometry relative="1" as="geometry">
             <Array as="points">
-              <mxPoint x="120" y="895" />
+              <mxPoint x="132" y="895" />
               <mxPoint x="810" y="895" />
             </Array>
           </mxGeometry>
@@ -370,7 +370,7 @@
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="cleric-97" style="edgeStyle=orthogonalEdgeStyle;shape=connector;curved=0;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;strokeColor=#667788;strokeWidth=2;endArrow=none;endFill=0;" parent="shapes-lines" source="cleric-45" target="cleric-49" edge="1">
+        <mxCell id="cleric-97" style="edgeStyle=orthogonalEdgeStyle;shape=connector;curved=0;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.20;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;strokeColor=#667788;strokeWidth=2;endArrow=none;endFill=0;" parent="shapes-lines" source="cleric-45" target="cleric-49" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="cleric-98" style="edgeStyle=orthogonalEdgeStyle;shape=connector;curved=0;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;strokeColor=#667788;strokeWidth=2;endArrow=none;endFill=0;" parent="shapes-lines" source="cleric-45" target="cleric-53" edge="1">
@@ -384,7 +384,7 @@
         <mxCell id="cleric-99" style="edgeStyle=orthogonalEdgeStyle;shape=connector;curved=0;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;strokeColor=#667788;strokeWidth=2;endArrow=none;endFill=0;" parent="shapes-lines" source="cleric-54" target="cleric-47" edge="1">
           <mxGeometry relative="1" as="geometry">
             <Array as="points">
-              <mxPoint x="500" y="1150" />
+              <mxPoint x="488" y="1150" />
               <mxPoint x="800" y="1150" />
             </Array>
           </mxGeometry>
@@ -397,7 +397,7 @@
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="cleric-101" style="edgeStyle=orthogonalEdgeStyle;shape=connector;curved=0;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;strokeColor=#667788;strokeWidth=2;endArrow=classic;endFill=1;dashed=1;" parent="shapes-lines" source="cleric-34" target="cleric-45" edge="1">
+        <mxCell id="cleric-101" style="edgeStyle=orthogonalEdgeStyle;shape=connector;curved=0;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.80;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;strokeColor=#667788;strokeWidth=2;endArrow=classic;endFill=1;dashed=1;" parent="shapes-lines" source="cleric-34" target="cleric-45" edge="1">
           <mxGeometry relative="1" as="geometry">
             <Array as="points">
               <mxPoint x="610" y="85" />
@@ -406,39 +406,39 @@
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="cleric-102" style="edgeStyle=orthogonalEdgeStyle;shape=connector;curved=0;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;strokeColor=#667788;strokeWidth=2;endArrow=classic;endFill=1;dashed=1;" parent="shapes-lines" source="cleric-43" target="cleric-45" edge="1">
+        <mxCell id="cleric-102" style="edgeStyle=orthogonalEdgeStyle;shape=connector;curved=0;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.80;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;strokeColor=#667788;strokeWidth=2;endArrow=classic;endFill=1;dashed=1;" parent="shapes-lines" source="cleric-43" target="cleric-45" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="cleric-103" style="edgeStyle=orthogonalEdgeStyle;shape=connector;curved=0;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;strokeColor=#667788;strokeWidth=2;endArrow=classic;endFill=1;dashed=1;" parent="shapes-lines" source="cleric-44" target="cleric-77" edge="1">
+        <mxCell id="cleric-103" style="edgeStyle=orthogonalEdgeStyle;shape=connector;curved=0;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.50;exitDx=0;exitDy=0;entryX=0.20;entryY=0;entryDx=0;entryDy=0;strokeColor=#667788;strokeWidth=2;endArrow=classic;endFill=1;dashed=1;" parent="shapes-lines" source="cleric-44" target="cleric-77" edge="1">
           <mxGeometry relative="1" as="geometry">
             <Array as="points">
-              <mxPoint x="600" y="775" />
-              <mxPoint x="600" y="1125" />
-              <mxPoint x="1565" y="1125" />
+              <mxPoint x="615" y="775" />
+              <mxPoint x="615" y="1140" />
+              <mxPoint x="1565" y="1140" />
               <mxPoint x="1565" y="2525" />
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="cleric-104" style="edgeStyle=orthogonalEdgeStyle;shape=connector;curved=0;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;strokeColor=#667788;strokeWidth=2;endArrow=classic;endFill=1;dashed=1;" parent="shapes-lines" source="cleric-46" target="cleric-77" edge="1">
+        <mxCell id="cleric-104" style="edgeStyle=orthogonalEdgeStyle;shape=connector;curved=0;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.50;exitDx=0;exitDy=0;entryX=0.50;entryY=0;entryDx=0;entryDy=0;strokeColor=#667788;strokeWidth=2;endArrow=classic;endFill=1;dashed=1;" parent="shapes-lines" source="cleric-46" target="cleric-77" edge="1">
           <mxGeometry relative="1" as="geometry">
             <Array as="points">
-              <mxPoint x="600" y="835" />
-              <mxPoint x="600" y="1125" />
-              <mxPoint x="1580" y="1125" />
+              <mxPoint x="630" y="835" />
+              <mxPoint x="630" y="1155" />
+              <mxPoint x="1580" y="1155" />
               <mxPoint x="1580" y="2525" />
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="cleric-105" style="edgeStyle=orthogonalEdgeStyle;shape=connector;curved=0;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;strokeColor=#667788;strokeWidth=2;endArrow=classic;endFill=1;dashed=1;" parent="shapes-lines" source="cleric-50" target="cleric-52" edge="1">
+        <mxCell id="cleric-105" style="edgeStyle=orthogonalEdgeStyle;shape=connector;curved=0;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.50;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;strokeColor=#667788;strokeWidth=2;endArrow=classic;endFill=1;dashed=1;" parent="shapes-lines" source="cleric-50" target="cleric-52" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="cleric-106" style="edgeStyle=orthogonalEdgeStyle;shape=connector;curved=0;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;strokeColor=#667788;strokeWidth=2;endArrow=classic;endFill=1;dashed=1;" parent="shapes-lines" source="cleric-47" target="cleric-52" edge="1">
+        <mxCell id="cleric-106" style="edgeStyle=orthogonalEdgeStyle;shape=connector;curved=0;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.50;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;strokeColor=#667788;strokeWidth=2;endArrow=classic;endFill=1;dashed=1;" parent="shapes-lines" source="cleric-47" target="cleric-52" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="cleric-107" style="edgeStyle=orthogonalEdgeStyle;shape=connector;curved=0;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;strokeColor=#667788;strokeWidth=2;endArrow=none;endFill=0;" parent="shapes-lines" source="cleric-42" target="cleric-54" edge="1">
           <mxGeometry relative="1" as="geometry">
             <Array as="points">
-              <mxPoint x="120" y="1190" />
+              <mxPoint x="144" y="1190" />
               <mxPoint x="380" y="1190" />
             </Array>
           </mxGeometry>
@@ -446,15 +446,15 @@
         <mxCell id="cleric-108" style="edgeStyle=orthogonalEdgeStyle;shape=connector;curved=0;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;strokeColor=#667788;strokeWidth=2;endArrow=none;endFill=0;" parent="shapes-lines" source="cleric-42" target="cleric-56" edge="1">
           <mxGeometry relative="1" as="geometry">
             <Array as="points">
-              <mxPoint x="120" y="1210" />
+              <mxPoint x="156" y="1210" />
               <mxPoint x="370" y="1210" />
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="cleric-109" style="edgeStyle=orthogonalEdgeStyle;shape=connector;curved=0;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;strokeColor=#667788;strokeWidth=2;endArrow=none;endFill=0;" parent="shapes-lines" source="cleric-54" target="cleric-55" edge="1">
+        <mxCell id="cleric-109" style="edgeStyle=orthogonalEdgeStyle;shape=connector;curved=0;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.80;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;strokeColor=#667788;strokeWidth=2;endArrow=none;endFill=0;" parent="shapes-lines" source="cleric-54" target="cleric-55" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="cleric-110" style="edgeStyle=orthogonalEdgeStyle;shape=connector;curved=0;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;strokeColor=#667788;strokeWidth=2;endArrow=none;endFill=0;" parent="shapes-lines" source="cleric-55" target="cleric-57" edge="1">
+        <mxCell id="cleric-110" style="edgeStyle=orthogonalEdgeStyle;shape=connector;curved=0;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.20;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;strokeColor=#667788;strokeWidth=2;endArrow=none;endFill=0;" parent="shapes-lines" source="cleric-55" target="cleric-57" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="cleric-111" style="edgeStyle=orthogonalEdgeStyle;shape=connector;curved=0;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;strokeColor=#667788;strokeWidth=2;endArrow=none;endFill=0;" parent="shapes-lines" source="cleric-55" target="cleric-59" edge="1">
@@ -468,12 +468,12 @@
         <mxCell id="cleric-112" style="edgeStyle=orthogonalEdgeStyle;shape=connector;curved=0;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;strokeColor=#667788;strokeWidth=2;endArrow=none;endFill=0;" parent="shapes-lines" source="cleric-55" target="cleric-61" edge="1">
           <mxGeometry relative="1" as="geometry">
             <Array as="points">
-              <mxPoint x="700" y="1345" />
+              <mxPoint x="712" y="1345" />
               <mxPoint x="1210" y="1345" />
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="cleric-113" style="edgeStyle=orthogonalEdgeStyle;shape=connector;curved=0;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;strokeColor=#667788;strokeWidth=2;endArrow=none;endFill=0;" parent="shapes-lines" source="cleric-56" target="cleric-58" edge="1">
+        <mxCell id="cleric-113" style="edgeStyle=orthogonalEdgeStyle;shape=connector;curved=0;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.20;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;strokeColor=#667788;strokeWidth=2;endArrow=none;endFill=0;" parent="shapes-lines" source="cleric-56" target="cleric-58" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="cleric-114" style="edgeStyle=orthogonalEdgeStyle;shape=connector;curved=0;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;strokeColor=#667788;strokeWidth=2;endArrow=none;endFill=0;" parent="shapes-lines" source="cleric-56" target="cleric-60" edge="1">
@@ -484,7 +484,7 @@
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="cleric-115" style="edgeStyle=orthogonalEdgeStyle;shape=connector;curved=0;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;strokeColor=#667788;strokeWidth=2;endArrow=none;endFill=0;" parent="shapes-lines" source="cleric-63" target="cleric-75" edge="1">
+        <mxCell id="cleric-115" style="edgeStyle=orthogonalEdgeStyle;shape=connector;curved=0;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.20;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;strokeColor=#667788;strokeWidth=2;endArrow=none;endFill=0;" parent="shapes-lines" source="cleric-63" target="cleric-75" edge="1">
           <mxGeometry relative="1" as="geometry">
             <Array as="points">
               <mxPoint x="610" y="1675" />
@@ -504,18 +504,18 @@
         <mxCell id="cleric-117" style="edgeStyle=orthogonalEdgeStyle;shape=connector;curved=0;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;strokeColor=#667788;strokeWidth=2;endArrow=none;endFill=0;" parent="shapes-lines" source="cleric-67" target="cleric-76" edge="1">
           <mxGeometry relative="1" as="geometry">
             <Array as="points">
-              <mxPoint x="120" y="2330" />
+              <mxPoint x="108" y="2330" />
               <mxPoint x="780" y="2330" />
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="cleric-118" style="edgeStyle=orthogonalEdgeStyle;shape=connector;curved=0;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;strokeColor=#667788;strokeWidth=2;endArrow=none;endFill=0;" parent="shapes-lines" source="cleric-76" target="cleric-78" edge="1">
+        <mxCell id="cleric-118" style="edgeStyle=orthogonalEdgeStyle;shape=connector;curved=0;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.50;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;strokeColor=#667788;strokeWidth=2;endArrow=none;endFill=0;" parent="shapes-lines" source="cleric-76" target="cleric-78" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="cleric-119" style="edgeStyle=orthogonalEdgeStyle;shape=connector;curved=0;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;strokeColor=#667788;strokeWidth=2;endArrow=none;endFill=0;" parent="shapes-lines" source="cleric-62" target="cleric-63" edge="1">
+        <mxCell id="cleric-119" style="edgeStyle=orthogonalEdgeStyle;shape=connector;curved=0;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.20;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;strokeColor=#667788;strokeWidth=2;endArrow=none;endFill=0;" parent="shapes-lines" source="cleric-62" target="cleric-63" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="cleric-120" style="edgeStyle=orthogonalEdgeStyle;shape=connector;curved=0;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;strokeColor=#667788;strokeWidth=2;endArrow=none;endFill=0;" parent="shapes-lines" source="cleric-62" target="cleric-64" edge="1">
+        <mxCell id="cleric-120" style="edgeStyle=orthogonalEdgeStyle;shape=connector;curved=0;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.50;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;strokeColor=#667788;strokeWidth=2;endArrow=none;endFill=0;" parent="shapes-lines" source="cleric-62" target="cleric-64" edge="1">
           <mxGeometry relative="1" as="geometry">
             <Array as="points">
               <mxPoint x="220" y="1675" />
@@ -524,11 +524,11 @@
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="cleric-121" style="edgeStyle=orthogonalEdgeStyle;shape=connector;curved=0;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;strokeColor=#667788;strokeWidth=2;endArrow=none;endFill=0;" parent="shapes-lines" source="cleric-62" target="cleric-66" edge="1">
+        <mxCell id="cleric-121" style="edgeStyle=orthogonalEdgeStyle;shape=connector;curved=0;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.80;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;strokeColor=#667788;strokeWidth=2;endArrow=none;endFill=0;" parent="shapes-lines" source="cleric-62" target="cleric-66" edge="1">
           <mxGeometry relative="1" as="geometry">
             <Array as="points">
-              <mxPoint x="220" y="1675" />
-              <mxPoint x="220" y="2035" />
+              <mxPoint x="232" y="1687" />
+              <mxPoint x="232" y="2035" />
               <mxPoint x="410" y="2035" />
             </Array>
           </mxGeometry>
@@ -544,10 +544,10 @@
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="cleric-124" style="edgeStyle=orthogonalEdgeStyle;shape=connector;curved=0;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;strokeColor=#667788;strokeWidth=2;endArrow=none;endFill=0;" parent="shapes-lines" source="cleric-66" target="cleric-69" edge="1">
+        <mxCell id="cleric-124" style="edgeStyle=orthogonalEdgeStyle;shape=connector;curved=0;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.20;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;strokeColor=#667788;strokeWidth=2;endArrow=none;endFill=0;" parent="shapes-lines" source="cleric-66" target="cleric-69" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="cleric-125" style="edgeStyle=orthogonalEdgeStyle;shape=connector;curved=0;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;strokeColor=#667788;strokeWidth=2;endArrow=none;endFill=0;" parent="shapes-lines" source="cleric-66" target="cleric-73" edge="1">
+        <mxCell id="cleric-125" style="edgeStyle=orthogonalEdgeStyle;shape=connector;curved=0;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.50;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;strokeColor=#667788;strokeWidth=2;endArrow=none;endFill=0;" parent="shapes-lines" source="cleric-66" target="cleric-73" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="cleric-126" style="edgeStyle=orthogonalEdgeStyle;shape=connector;curved=0;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;strokeColor=#667788;strokeWidth=2;endArrow=none;endFill=0;" parent="shapes-lines" source="cleric-67" target="cleric-73" edge="1">
@@ -558,37 +558,37 @@
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="cleric-127" style="edgeStyle=orthogonalEdgeStyle;shape=connector;curved=0;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;strokeColor=#667788;strokeWidth=2;endArrow=none;endFill=0;" parent="shapes-lines" source="cleric-63" target="cleric-70" edge="1">
+        <mxCell id="cleric-127" style="edgeStyle=orthogonalEdgeStyle;shape=connector;curved=0;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.50;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;strokeColor=#667788;strokeWidth=2;endArrow=none;endFill=0;" parent="shapes-lines" source="cleric-63" target="cleric-70" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="cleric-128" style="edgeStyle=orthogonalEdgeStyle;shape=connector;curved=0;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;strokeColor=#667788;strokeWidth=2;endArrow=none;endFill=0;" parent="shapes-lines" source="cleric-70" target="cleric-68" edge="1">
+        <mxCell id="cleric-128" style="edgeStyle=orthogonalEdgeStyle;shape=connector;curved=0;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.50;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;strokeColor=#667788;strokeWidth=2;endArrow=none;endFill=0;" parent="shapes-lines" source="cleric-70" target="cleric-68" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="cleric-129" style="edgeStyle=orthogonalEdgeStyle;shape=connector;curved=0;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;strokeColor=#667788;strokeWidth=2;endArrow=classic;endFill=1;dashed=1;" parent="shapes-lines" source="cleric-67" target="cleric-65" edge="1">
           <mxGeometry relative="1" as="geometry">
             <Array as="points">
-              <mxPoint x="120" y="1895" />
-              <mxPoint x="610" y="1895" />
+              <mxPoint x="132" y="1919" />
+              <mxPoint x="610" y="1919" />
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="cleric-130" style="edgeStyle=orthogonalEdgeStyle;shape=connector;curved=0;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;strokeColor=#667788;strokeWidth=2;endArrow=classic;endFill=1;dashed=1;" parent="shapes-lines" source="cleric-66" target="cleric-65" edge="1">
+        <mxCell id="cleric-130" style="edgeStyle=orthogonalEdgeStyle;shape=connector;curved=0;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.80;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;strokeColor=#667788;strokeWidth=2;endArrow=classic;endFill=1;dashed=1;" parent="shapes-lines" source="cleric-66" target="cleric-65" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="cleric-131" style="edgeStyle=orthogonalEdgeStyle;shape=connector;curved=0;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;strokeColor=#667788;strokeWidth=2;endArrow=classic;endFill=1;dashed=1;" parent="shapes-lines" source="cleric-63" target="cleric-72" edge="1">
           <mxGeometry relative="1" as="geometry">
             <Array as="points">
-              <mxPoint x="500" y="1795" />
-              <mxPoint x="810" y="1795" />
+              <mxPoint x="512" y="1783" />
+              <mxPoint x="810" y="1783" />
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="cleric-132" style="edgeStyle=orthogonalEdgeStyle;shape=connector;curved=0;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;strokeColor=#667788;strokeWidth=2;endArrow=classic;endFill=1;dashed=1;" parent="shapes-lines" source="cleric-43" target="cleric-72" edge="1">
+        <mxCell id="cleric-132" style="edgeStyle=orthogonalEdgeStyle;shape=connector;curved=0;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.85;exitDx=0;exitDy=0;entryX=0.50;entryY=0;entryDx=0;entryDy=0;strokeColor=#667788;strokeWidth=2;endArrow=classic;endFill=1;dashed=1;" parent="shapes-lines" source="cleric-43" target="cleric-72" edge="1">
           <mxGeometry relative="1" as="geometry">
             <Array as="points">
-              <mxPoint x="600" y="595" />
-              <mxPoint x="600" y="1125" />
-              <mxPoint x="1595" y="1125" />
+              <mxPoint x="645" y="595" />
+              <mxPoint x="645" y="1170" />
+              <mxPoint x="1595" y="1170" />
               <mxPoint x="1595" y="1775" />
             </Array>
           </mxGeometry>
