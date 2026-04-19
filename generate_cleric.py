@@ -201,6 +201,22 @@ CIRCLE_REQS = [
     ("Meraud's Cry", 70),
 ]
 
+# Manual row overrides: force specific spells to share a row with another spell
+ROW_OVERRIDES = {
+    "Bitter Feast": "Vigil",
+}
+
+# Manual position overrides: spell_name -> "align_x_with" spell
+# Places the spell at the same x as the named spell (y from ROW_OVERRIDES)
+X_ALIGN_OVERRIDES = {
+    "Bitter Feast": "Eylhaar's Feast",
+}
+
+# Edges that should always use dashed+arrow style (backward/special connections)
+ARROW_EDGES = {
+    ("Eylhaar's Feast", "Bitter Feast"),
+}
+
 BOX_W, BOX_H = 160, 40
 ROW_SPACING = 60
 BAND_PAD_TOP = 15
@@ -293,6 +309,11 @@ def assign_chain_rows(book_name, spells_in_book):
             assigned[s[0]] = row[0]
             row[0] += 1
 
+    # Apply row overrides: align spell with another spell's row
+    for spell_to_move, align_with in ROW_OVERRIDES.items():
+        if spell_to_move in assigned and align_with in assigned:
+            assigned[spell_to_move] = assigned[align_with]
+
     return assigned, row[0]
 
 
@@ -324,15 +345,33 @@ def build_drawio():
             chain_row = chain_rows[name]
             x_positions = TIER_X[tier]
             sy = y_cursor + BAND_PAD_TOP + chain_row * ROW_SPACING
-            # Try first sub-column, fall back to second if occupied
-            sx = x_positions[0]
-            if (sx, sy) in occupied and len(x_positions) > 1:
-                sx = x_positions[1]
+            # Try each sub-column in this tier, then try ALL tier columns
+            sx = None
+            for xp in x_positions:
+                if (xp, sy) not in occupied:
+                    sx = xp
+                    break
+            if sx is None:
+                # All sub-columns occupied at this y; try any available x
+                all_x = [x for xs in TIER_X.values() for x in xs]
+                for xp in all_x:
+                    if (xp, sy) not in occupied:
+                        sx = xp
+                        break
+            if sx is None:
+                sx = x_positions[0]  # last resort
             occupied.add((sx, sy))
             spell_pos[name] = (sx, sy)
 
         band_info.append((book_name, y_cursor, band_h, spells_in_book))
         y_cursor += band_h + BAND_GAP
+
+    # Apply x-alignment overrides
+    for spell_name, align_with in X_ALIGN_OVERRIDES.items():
+        if spell_name in spell_pos and align_with in spell_pos:
+            _, sy = spell_pos[spell_name]
+            ax, _ = spell_pos[align_with]
+            spell_pos[spell_name] = (ax, sy)
 
     page_height = y_cursor + 100
     line_bottom = page_height - 20
@@ -567,7 +606,8 @@ def build_drawio():
             ]
 
         eid = next_id()
-        if is_alt:
+        force_arrow = (src_name, tgt_name) in ARROW_EDGES
+        if is_alt or force_arrow:
             sty = (f"edgeStyle=orthogonalEdgeStyle;shape=connector;curved=0;rounded=1;"
                    f"orthogonalLoop=1;jettySize=auto;html=1;"
                    f"{exit_style}{entry_style}"
