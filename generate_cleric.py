@@ -218,7 +218,7 @@ BOX_W, BOX_H = 160, 40
 ROW_SPACING = 60
 BAND_PAD_TOP = 15
 BAND_PAD_BOTTOM = 15
-BAND_GAP = 50
+BAND_GAP = 80
 PAGE_WIDTH = 1800
 FONT_SOURCE = "fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DAtkinson%2BHyperlegible;"
 
@@ -330,7 +330,7 @@ def build_drawio():
     for book_name in SPELLBOOK_ORDER:
         spells_in_book = books[book_name]
         chain_rows, num_rows = assign_chain_rows(book_name, spells_in_book)
-        band_h = max(num_rows * ROW_SPACING + BAND_PAD_TOP + BAND_PAD_BOTTOM, 80)
+        band_h = max(num_rows * ROW_SPACING + BAND_PAD_TOP + BAND_PAD_BOTTOM + 40, 120)
 
         # Place spells: x from tier, y from chain row
         spell_tier = {s[0]: s[2] for s in spells_in_book}
@@ -452,11 +452,12 @@ def build_drawio():
                        style=f"rounded=1;fontFamily=Helvetica;fontSize=11;fontColor=default;labelBackgroundColor=none;fillColor={fill};strokeColor=#667788;opacity=30;glass=0;shadow=0;align=center;verticalAlign=middle;gradientColor=none;strokeWidth=2;",
                        parent="spellbook-borders", vertex="1")
         SubElement(c, "mxGeometry", x="10", y=str(by), width=str(PAGE_WIDTH - 240), height=str(bh), **{"as": "geometry"})
+        # Spellbook label inside the band, at the bottom-left
         blid = next_id()
         c = SubElement(xml_root, "mxCell", id=blid, value=book_name,
                        style=f"text;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=1;fontSize=16;fontFamily=Atkinson Hyperlegible;fontColor=#667788;strokeColor=none;{FONT_SOURCE}",
                        parent="spellbook-borders", vertex="1")
-        SubElement(c, "mxGeometry", x="10", y=str(by + bh), width="180", height="40", **{"as": "geometry"})
+        SubElement(c, "mxGeometry", x="10", y=str(by + bh - 45), width="180", height="40", **{"as": "geometry"})
 
     # --- Shapes and Lines ---
     shapes_layer = SubElement(xml_root, "mxCell", id="shapes-lines", value="Shapes and Lines", style="locked=1;", parent="0")
@@ -540,15 +541,36 @@ def build_drawio():
                 tgt_cy = ty + BOX_H // 2
                 src_cx = sx + BOX_W // 2
 
-                if ty > sy:
-                    # Target below source: L-shape down to target center, then right
+                # Check if vertical drop at src_cx would cross cells
+                vert_clear = True
+                min_y = min(sy, ty)
+                max_y = max(sy + BOX_H, ty + BOX_H)
+                for on, (ox, oy) in spell_pos.items():
+                    if on == src_name or on == tgt_name:
+                        continue
+                    if spell_book.get(on) != src_bk:
+                        continue
+                    if (ox <= src_cx <= ox + BOX_W and
+                        oy >= sy + BOX_H and oy <= ty):
+                        vert_clear = False
+                        break
+
+                if not vert_clear:
+                    # Vertical blocked: exit right to corridor, then down, then right
+                    exit_style = "exitX=1;exitY=0.5;exitDx=0;exitDy=0;"
+                    corridor_x = sx + BOX_W + 20
+                    waypoints = [
+                        (corridor_x, sy + BOX_H // 2),
+                        (corridor_x, tgt_cy),
+                        (tx - 10, tgt_cy),
+                    ]
+                elif ty > sy:
                     exit_style = "exitX=0.5;exitY=1;exitDx=0;exitDy=0;"
                     waypoints = [
                         (src_cx, tgt_cy),
                         (tx - 10, tgt_cy),
                     ]
                 elif ty == sy:
-                    # Same row: route below both cells
                     exit_style = "exitX=0.5;exitY=1;exitDx=0;exitDy=0;"
                     mid_y = sy + BOX_H + 20
                     waypoints = [
@@ -556,7 +578,6 @@ def build_drawio():
                         (tx - 10, mid_y),
                     ]
                 else:
-                    # Target above source: L-shape up to target center, then right
                     exit_style = "exitX=0.5;exitY=0;exitDx=0;exitDy=0;"
                     waypoints = [
                         (src_cx, tgt_cy),
@@ -580,7 +601,7 @@ def build_drawio():
             tgt_cx = tx + BOX_W // 2
             gap_key = (min(src_bk, tgt_bk), max(src_bk, tgt_bk))
             gap_bottom, gap_top = gap_regions.get((src_bk, tgt_bk), (sy, ty))
-            offset = gap_usage[gap_key] * 8
+            offset = gap_usage[gap_key] * 20
             gap_usage[gap_key] += 1
             gap_y = (gap_bottom + gap_top) // 2 + offset
 
