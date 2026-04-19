@@ -452,15 +452,11 @@ def build_drawio():
         if is_alt:
             sty = ("edgeStyle=orthogonalEdgeStyle;shape=connector;curved=0;rounded=1;"
                    "orthogonalLoop=1;jettySize=auto;html=1;"
-                   "exitX=1;exitY=0.5;exitDx=0;exitDy=0;"
-                   "entryX=0;entryY=0.5;entryDx=0;entryDy=0;"
                    "strokeColor=#667788;strokeWidth=2;"
                    "endArrow=classic;endFill=1;dashed=1;")
         else:
             sty = ("edgeStyle=orthogonalEdgeStyle;shape=connector;curved=0;rounded=1;"
                    "orthogonalLoop=1;jettySize=auto;html=1;"
-                   "exitX=1;exitY=0.5;exitDx=0;exitDy=0;"
-                   "entryX=0;entryY=0.5;entryDx=0;entryDy=0;"
                    "strokeColor=#667788;strokeWidth=2;"
                    "endArrow=none;endFill=0;")
 
