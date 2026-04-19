@@ -333,7 +333,7 @@ def build_drawio():
     for book_name in SPELLBOOK_ORDER:
         spells_in_book = books[book_name]
         chain_rows, num_rows = assign_chain_rows(book_name, spells_in_book)
-        band_h = max(num_rows * ROW_SPACING + BAND_PAD_TOP + BAND_PAD_BOTTOM + 40, 120)
+        band_h = max(num_rows * ROW_SPACING + BAND_PAD_TOP + BAND_PAD_BOTTOM, 80)
 
         # Place spells: x from tier, y from chain row
         spell_tier = {s[0]: s[2] for s in spells_in_book}
@@ -455,12 +455,12 @@ def build_drawio():
                        style=f"rounded=1;fontFamily=Helvetica;fontSize=11;fontColor=default;labelBackgroundColor=none;fillColor={fill};strokeColor=#667788;opacity=30;glass=0;shadow=0;align=center;verticalAlign=middle;gradientColor=none;strokeWidth=2;",
                        parent="spellbook-borders", vertex="1")
         SubElement(c, "mxGeometry", x="10", y=str(by), width=str(PAGE_WIDTH - 240), height=str(bh), **{"as": "geometry"})
-        # Spellbook label inside the band, at the bottom-left
+        # Spellbook label below the band
         blid = next_id()
         c = SubElement(xml_root, "mxCell", id=blid, value=book_name,
                        style=f"text;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=1;fontSize=16;fontFamily=Atkinson Hyperlegible;fontColor=#667788;strokeColor=none;{FONT_SOURCE}",
                        parent="spellbook-borders", vertex="1")
-        SubElement(c, "mxGeometry", x="10", y=str(by + bh - 45), width="180", height="40", **{"as": "geometry"})
+        SubElement(c, "mxGeometry", x="10", y=str(by + bh), width="180", height="40", **{"as": "geometry"})
 
     # --- Shapes and Lines ---
     shapes_layer = SubElement(xml_root, "mxCell", id="shapes-lines", value="Shapes and Lines", style="locked=1;", parent="0")
@@ -581,14 +581,12 @@ def build_drawio():
                         vert_clear = False
                         break
 
-                stag_x = src_cx + stagger
-
                 if not vert_clear:
-                    # Vertical blocked: exit right to corridor, then down, then right
                     exit_style = f"exitX=1;exitY={exit_frac_r:.2f};exitDx=0;exitDy=0;"
-                    corridor_x = sx + BOX_W + 20 + abs(stagger)
+                    exit_y = int(sy + exit_frac_r * BOX_H)
+                    corridor_x = sx + BOX_W + 20 + edge_idx * 15
                     waypoints = [
-                        (corridor_x, sy + BOX_H // 2 + stagger),
+                        (corridor_x, exit_y),
                         (corridor_x, tgt_cy),
                         (tx - 10, tgt_cy),
                     ]
@@ -596,20 +594,20 @@ def build_drawio():
                     exit_style = "exitX=0.5;exitY=1;exitDx=0;exitDy=0;"
                     adj_y = tgt_cy + tgt_stagger
                     waypoints = [
-                        (stag_x, adj_y),
+                        (src_cx, adj_y),
                         (tx - 10, adj_y),
                     ]
                 elif ty == sy:
                     exit_style = "exitX=0.5;exitY=1;exitDx=0;exitDy=0;"
                     mid_y = sy + BOX_H + 20 + edge_idx * 12
                     waypoints = [
-                        (stag_x, mid_y),
+                        (src_cx, mid_y),
                         (tx - 10, mid_y),
                     ]
                 else:
                     exit_style = "exitX=0.5;exitY=0;exitDx=0;exitDy=0;"
                     waypoints = [
-                        (stag_x, tgt_cy),
+                        (src_cx, tgt_cy),
                         (tx - 10, tgt_cy),
                     ]
             else:
@@ -627,7 +625,7 @@ def build_drawio():
         elif abs(src_bi - tgt_bi) == 1:
             # Adjacent bands: check if vertical drop from source would cross
             # same-band cells below/above it
-            src_cx = sx + BOX_W // 2 + stagger
+            src_cx = sx + BOX_W // 2  # must match exitX=0.5
             tgt_cx = tx + BOX_W // 2
             gap_key = (min(src_bk, tgt_bk), max(src_bk, tgt_bk))
             gap_bottom, gap_top = gap_regions.get((src_bk, tgt_bk), (sy, ty))
@@ -650,17 +648,16 @@ def build_drawio():
                     break
 
             if vert_blocked:
-                # Exit right instead, route to a corridor then down
                 exit_style = f"exitX=1;exitY={exit_frac_r:.2f};exitDx=0;exitDy=0;"
+                exit_y = int(sy + exit_frac_r * BOX_H)
                 if tx >= sx:
                     entry_style = "entryX=0;entryY=0.5;entryDx=0;entryDy=0;"
                 else:
                     entry_style = "entryX=0.5;entryY=0;entryDx=0;entryDy=0;"
-                # Route right to a clear corridor, then down to gap, then to target
-                corridor_x = sx + BOX_W + 30
+                corridor_x = sx + BOX_W + 30 + edge_idx * 12
                 entry_offset = gap_usage[gap_key] * 10
                 waypoints = [
-                    (corridor_x, sy + BOX_H // 2),
+                    (corridor_x, exit_y),
                     (corridor_x, gap_y),
                     (tx - 10 - entry_offset if tx >= sx else tgt_cx, gap_y),
                 ]
@@ -700,11 +697,13 @@ def build_drawio():
 
             # Exit right, route through corridor to avoid same-row cells
             exit_style = f"exitX=1;exitY={exit_frac_r:.2f};exitDx=0;exitDy=0;"
+            exit_y = int(sy + exit_frac_r * BOX_H)
             src_band_top, src_band_bottom = band_bounds[src_bk]
             clear_y = src_band_bottom + 15 + right_margin_counter * 15
             corridor_x = sx + BOX_W + 20 + right_margin_counter * 15
+            tgt_entry_x = int(tx + entry_frac * BOX_W)
             waypoints = [
-                (corridor_x, sy + BOX_H // 2),
+                (corridor_x, exit_y),
                 (corridor_x, clear_y),
                 (margin_x, clear_y),
                 (margin_x, tgt_entry_y),
