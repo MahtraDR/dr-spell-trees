@@ -87,7 +87,7 @@ TYPE_COLORS = {
 
 TIER_ORDER = ["Intro", "Basic", "Intermediate", "Advanced", "Esoteric"]
 TIER_X = {
-    "Intro":        [20, 220],
+    "Intro":        [40, 220],
     "Basic":        [420, 620],
     "Intermediate": [820, 1020],
     "Advanced":     [1220, 1420],
@@ -628,10 +628,11 @@ def build_drawio():
                     entry_style = "entryX=0.5;entryY=0;entryDx=0;entryDy=0;"
                 # Route right to a clear corridor, then down to gap, then to target
                 corridor_x = sx + BOX_W + 30
+                entry_offset = gap_usage[gap_key] * 10
                 waypoints = [
                     (corridor_x, sy + BOX_H // 2),
                     (corridor_x, gap_y),
-                    (tx - 10 if tx >= sx else tgt_cx, gap_y),
+                    (tx - 10 - entry_offset if tx >= sx else tgt_cx, gap_y),
                 ]
             else:
                 if ty > sy:
@@ -647,9 +648,10 @@ def build_drawio():
                     else:
                         entry_style = "entryX=0.5;entryY=1;entryDx=0;entryDy=0;"
 
+                entry_offset = gap_usage[gap_key] * 10
                 waypoints = [
                     (src_cx, gap_y),
-                    (tx - 10 if tx >= sx else tgt_cx, gap_y),
+                    (tx - 10 - entry_offset if tx >= sx else tgt_cx, gap_y),
                 ]
         else:
             # Skip-band: route to right margin, enter top/bottom
