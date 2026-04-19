@@ -224,7 +224,7 @@
           <mxGeometry x="20" y="1625" width="160" height="40" as="geometry" />
         </mxCell>
         <mxCell id="cleric-68" value="Bitter Feast" style="rounded=1;strokeWidth=1;strokeColor=#667788;textShadow=0;labelBackgroundColor=none;whiteSpace=wrap;fontSize=18;fontFamily=Atkinson Hyperlegible;fillColor=#D5D0CA;fontColor=#000000;shadow=0;glass=0;align=center;verticalAlign=middle;fontStyle=1;resizable=1;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DAtkinson%2BHyperlegible;" parent="shapes-lines" vertex="1">
-          <mxGeometry x="820" y="1625" width="160" height="40" as="geometry" />
+          <mxGeometry x="1020" y="1445" width="160" height="40" as="geometry" />
         </mxCell>
         <mxCell id="cleric-69" value="Chill Spirit" style="rounded=1;strokeWidth=1;strokeColor=#667788;textShadow=0;labelBackgroundColor=none;whiteSpace=wrap;fontSize=18;fontFamily=Atkinson Hyperlegible;fillColor=#E80538;fontColor=#FFFFFF;shadow=1;glass=0;align=center;verticalAlign=middle;fontStyle=1;resizable=1;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DAtkinson%2BHyperlegible;" parent="shapes-lines" vertex="1">
           <mxGeometry x="820" y="1865" width="160" height="40" as="geometry" />
@@ -468,7 +468,7 @@
         <mxCell id="cleric-127" style="edgeStyle=orthogonalEdgeStyle;shape=connector;curved=0;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;strokeColor=#667788;strokeWidth=2;endArrow=none;endFill=0;" parent="shapes-lines" source="cleric-63" target="cleric-70" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="cleric-128" style="edgeStyle=orthogonalEdgeStyle;shape=connector;curved=0;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;strokeColor=#667788;strokeWidth=2;endArrow=classic;endFill=1;dashed=1;" parent="shapes-lines" source="cleric-70" target="cleric-68" edge="1">
+        <mxCell id="cleric-128" style="edgeStyle=orthogonalEdgeStyle;shape=connector;curved=0;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;strokeColor=#667788;strokeWidth=2;endArrow=classic;endFill=1;dashed=1;" parent="shapes-lines" source="cleric-70" target="cleric-68" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="cleric-129" style="edgeStyle=orthogonalEdgeStyle;shape=connector;curved=0;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;strokeColor=#667788;strokeWidth=2;endArrow=classic;endFill=1;dashed=1;" parent="shapes-lines" source="cleric-67" target="cleric-65" edge="1">
@@ -616,7 +616,7 @@
           <mxGeometry x="140" y="1645" width="50" height="20" as="geometry" />
         </mxCell>
         <mxCell id="cleric-175" value="●●○○" style="text;align=center;verticalAlign=middle;rounded=0;fontFamily=Georgia;fontSize=13;fontColor=default;labelBackgroundColor=none;spacing=0;spacingTop=0;spacingBottom=-5;fillColor=none;" parent="spell-dots" vertex="1">
-          <mxGeometry x="940" y="1645" width="50" height="20" as="geometry" />
+          <mxGeometry x="1140" y="1465" width="50" height="20" as="geometry" />
         </mxCell>
         <mxCell id="cleric-176" value="●●○○" style="text;align=center;verticalAlign=middle;rounded=0;fontFamily=Georgia;fontSize=13;fontColor=#FFFFFF;labelBackgroundColor=none;spacing=0;spacingTop=0;spacingBottom=-5;fillColor=none;" parent="spell-dots" vertex="1">
           <mxGeometry x="940" y="1885" width="50" height="20" as="geometry" />

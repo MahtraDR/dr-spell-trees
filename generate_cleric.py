@@ -203,16 +203,15 @@ CIRCLE_REQS = [
 
 # Manual row overrides: force specific spells to share a row with another spell
 ROW_OVERRIDES = {
-    "Bitter Feast": "Vigil",
-}
-
-# Manual position overrides: spell_name -> "align_x_with" spell
-# Places the spell at the same x as the named spell (y from ROW_OVERRIDES)
-X_ALIGN_OVERRIDES = {
     "Bitter Feast": "Eylhaar's Feast",
 }
 
-# Edges that should always use dashed+arrow style (backward/special connections)
+# Manual x-position: spell placed 200px right of the named spell
+X_ALIGN_OVERRIDES = {
+    "Bitter Feast": ("Eylhaar's Feast", 200),
+}
+
+# Edges that should always use dashed+arrow style regardless of position
 ARROW_EDGES = {
     ("Eylhaar's Feast", "Bitter Feast"),
 }
@@ -367,11 +366,11 @@ def build_drawio():
         y_cursor += band_h + BAND_GAP
 
     # Apply x-alignment overrides
-    for spell_name, align_with in X_ALIGN_OVERRIDES.items():
+    for spell_name, (align_with, x_offset) in X_ALIGN_OVERRIDES.items():
         if spell_name in spell_pos and align_with in spell_pos:
             _, sy = spell_pos[spell_name]
             ax, _ = spell_pos[align_with]
-            spell_pos[spell_name] = (ax, sy)
+            spell_pos[spell_name] = (ax + x_offset, sy)
 
     page_height = y_cursor + 100
     line_bottom = page_height - 20
