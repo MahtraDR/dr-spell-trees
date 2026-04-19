@@ -397,10 +397,11 @@
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="cleric-101" style="edgeStyle=orthogonalEdgeStyle;shape=connector;curved=0;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;strokeColor=#667788;strokeWidth=2;endArrow=classic;endFill=1;dashed=1;" parent="shapes-lines" source="cleric-34" target="cleric-45" edge="1">
+        <mxCell id="cleric-101" style="edgeStyle=orthogonalEdgeStyle;shape=connector;curved=0;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;strokeColor=#667788;strokeWidth=2;endArrow=classic;endFill=1;dashed=1;" parent="shapes-lines" source="cleric-34" target="cleric-45" edge="1">
           <mxGeometry relative="1" as="geometry">
             <Array as="points">
-              <mxPoint x="500" y="489" />
+              <mxPoint x="610" y="85" />
+              <mxPoint x="610" y="489" />
               <mxPoint x="610" y="489" />
             </Array>
           </mxGeometry>
@@ -479,10 +480,11 @@
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="cleric-115" style="edgeStyle=orthogonalEdgeStyle;shape=connector;curved=0;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;strokeColor=#667788;strokeWidth=2;endArrow=none;endFill=0;" parent="shapes-lines" source="cleric-63" target="cleric-75" edge="1">
+        <mxCell id="cleric-115" style="edgeStyle=orthogonalEdgeStyle;shape=connector;curved=0;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;strokeColor=#667788;strokeWidth=2;endArrow=none;endFill=0;" parent="shapes-lines" source="cleric-63" target="cleric-75" edge="1">
           <mxGeometry relative="1" as="geometry">
             <Array as="points">
-              <mxPoint x="500" y="2025" />
+              <mxPoint x="610" y="1465" />
+              <mxPoint x="610" y="2025" />
               <mxPoint x="810" y="2025" />
             </Array>
           </mxGeometry>

@@ -557,7 +557,8 @@ def build_drawio():
                 exit_style = "exitX=0.5;exitY=0;exitDx=0;exitDy=0;"
                 entry_style = "entryX=0.5;entryY=1;entryDx=0;entryDy=0;"
         elif abs(src_bi - tgt_bi) == 1:
-            # Adjacent bands: exit bottom/top, horizontal in gap, enter top/bottom
+            # Adjacent bands: check if vertical drop from source would cross
+            # same-band cells below/above it
             src_cx = sx + BOX_W // 2
             tgt_cx = tx + BOX_W // 2
             gap_key = (min(src_bk, tgt_bk), max(src_bk, tgt_bk))
@@ -566,26 +567,52 @@ def build_drawio():
             gap_usage[gap_key] += 1
             gap_y = (gap_bottom + gap_top) // 2 + offset
 
-            if ty > sy:
-                exit_style = "exitX=0.5;exitY=1;exitDx=0;exitDy=0;"
+            # Check if vertical segment from source would cross same-band cells
+            vert_blocked = False
+            src_band_top, src_band_bottom = band_bounds[src_bk]
+            for other_name, (ox, oy) in spell_pos.items():
+                if other_name == src_name:
+                    continue
+                if spell_book.get(other_name) != src_bk:
+                    continue
+                # Would vertical line at src_cx cross this cell?
+                if (ox <= src_cx <= ox + BOX_W and
+                    ((ty > sy and oy > sy) or (ty < sy and oy < sy))):
+                    vert_blocked = True
+                    break
+
+            if vert_blocked:
+                # Exit right instead, route to a corridor then down
+                exit_style = "exitX=1;exitY=0.5;exitDx=0;exitDy=0;"
                 if tx >= sx:
                     entry_style = "entryX=0;entryY=0.5;entryDx=0;entryDy=0;"
                 else:
                     entry_style = "entryX=0.5;entryY=0;entryDx=0;entryDy=0;"
+                # Route right to a clear corridor, then down to gap, then to target
+                corridor_x = sx + BOX_W + 30
+                waypoints = [
+                    (corridor_x, sy + BOX_H // 2),
+                    (corridor_x, gap_y),
+                    (tx - 10 if tx >= sx else tgt_cx, gap_y),
+                ]
             else:
-                exit_style = "exitX=0.5;exitY=0;exitDx=0;exitDy=0;"
-                if tx >= sx:
-                    entry_style = "entryX=0;entryY=0.5;entryDx=0;entryDy=0;"
+                if ty > sy:
+                    exit_style = "exitX=0.5;exitY=1;exitDx=0;exitDy=0;"
+                    if tx >= sx:
+                        entry_style = "entryX=0;entryY=0.5;entryDx=0;entryDy=0;"
+                    else:
+                        entry_style = "entryX=0.5;entryY=0;entryDx=0;entryDy=0;"
                 else:
-                    entry_style = "entryX=0.5;entryY=1;entryDx=0;entryDy=0;"
+                    exit_style = "exitX=0.5;exitY=0;exitDx=0;exitDy=0;"
+                    if tx >= sx:
+                        entry_style = "entryX=0;entryY=0.5;entryDx=0;entryDy=0;"
+                    else:
+                        entry_style = "entryX=0.5;entryY=1;entryDx=0;entryDy=0;"
 
-            waypoints = [
-                (src_cx, gap_y),
-                (tx - 10, gap_y),
-            ] if tx >= sx else [
-                (src_cx, gap_y),
-                (tgt_cx, gap_y),
-            ]
+                waypoints = [
+                    (src_cx, gap_y),
+                    (tx - 10 if tx >= sx else tgt_cx, gap_y),
+                ]
         else:
             # Skip-band: exit right, route through right margin, enter top/bottom
             right_margin_counter += 1
